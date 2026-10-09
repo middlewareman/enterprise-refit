@@ -1,4 +1,8 @@
-# Migration Lab
+# Mission: Enterprise Refit
+
+Exploring approaches to modernizing legacy enterprise Java.
+
+*To boldly build what nobody has built in years.*
 
 A workspace for exploring and comparing ways to modernize legacy Java enterprise applications, combining human expertise, transformation tools, and AI coding agents such as Codex.
 
