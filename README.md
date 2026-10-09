@@ -115,6 +115,8 @@ There is value in giving a problem a sustained attempt before studying how other
 
 Theseus combines Markdown documentation intended to be read by both humans and agents with scripts that perform parts of the transformations. The documentation explains what we want to achieve and how to approach parts of the work; the scripts make selected changes repeatable. We will examine how these pieces support each other, where they depend on human judgment, and which ideas transfer to other applications. Theseus contributes experience and hypotheses to the comparison, with its assumptions and results open to the same scrutiny as those of other approaches.
 
+A [provisional account of Theseus's initial reasoning](docs/theseus-initial-reasoning.md) distinguishes early documented choices, later method observations, and questions for public experiments. Author recollection and outcome evidence remain incomplete.
+
 ### Theseus and publishable evidence
 
 Keep the current Theseus checkout optional and private, outside the public submodule manifest. Removing customer-code submodules does not establish that the remaining prompts, documentation, configuration, or Git history are publishable.
