@@ -1,23 +1,39 @@
 # Migration Lab
 
-A workspace for investigating and demonstrating the modernization of legacy Java enterprise applications using AI coding agents such as Codex.
+A workspace for exploring and comparing ways to modernize legacy Java enterprise applications, combining human expertise, transformation tools, and AI coding agents such as Codex.
 
-The aim is to develop a reusable migration method: give agents enough context to make coherent changes, preserve that context across sessions, and verify that the resulting application still does what it is supposed to do. Prompts, scripts, agent instructions, decisions, failed experiments, and human interventions are part of the deliverable alongside the migrated code.
+The aim is to understand how different approaches tackle migration, what assumptions they make, where they need help, and what evidence supports their results. Reusable practices may emerge from that comparison. Prompts, scripts, documentation, decisions, failed experiments, and human interventions are part of the result alongside the migrated code.
 
 This superproject brings together application sources, migration tools, research benchmarks, and documented case studies through Git submodules. It is initially a research and experiment scaffold; no migration or reproduction result is claimed yet.
+
+A useful outcome could be a practical guide, a toolbox, or a method that engineers apply manually or with agent assistance. The degree of automation can vary across steps and evolve as agents improve. We assess an approach by the quality of its results, the confidence in its validation, and the effort required to use it.
+
+## What we want to compare
+
+| Dimension | Questions |
+|---|---|
+| Migration scope | Which changes does the approach address, and what does it assume is already working? |
+| Application understanding | How does it discover architecture, business rules, dependencies, and constraints? |
+| Transformation strategy | How does it combine human judgment, deterministic tools, and agent reasoning? |
+| Context and continuity | What knowledge does it retain, and how does work continue across sessions and tools? |
+| Human involvement | Where are planning, review, correction, and specialist knowledge needed? |
+| Validation and outcomes | What was demonstrated, what remains uncertain, and what time and effort were required? |
+
+Comparison includes both studying documented approaches and conducting local experiments where suitable. Some references contribute techniques or evaluation tools; others offer experience we can learn from. Each can inform the investigation in its own way.
 
 ## Vocabulary
 
 | Term | Meaning in this project |
 |---|---|
-| **Migration subject** | An application selected for modernization. Before selection, a **prospective migration subject**. |
-| **Reference approach** | An existing tool, method, research implementation, or case study that informs our work. Inclusion does not imply that its claims have been independently verified. |
+| **Migration subject** | An application, or a selected part of one, used to investigate a migration question. Before selection, a **prospective migration subject**. |
+| **Reference material** | A tool, method, implementation, case study, or evaluation resource that informs our work. Inclusion does not imply that its claims have been independently verified. |
+| **Reference approach** | A migration method or strategy we want to understand and compare, whether independently developed or described in reference material. |
 | **Evaluation framework** | Tests, fixtures, and tooling used to assess the result, separately from the approach that produces it. |
 | **Migration experiment** | A particular subject, source revision, target stack, approach, and evaluation contract. |
 | **Baseline** | The pinned original application and its documented behavior in a reproducible environment, with any necessary restoration patches recorded separately. |
 | **Migration contract** | What must change, what must be preserved, what may intentionally differ, and how those conditions will be checked. |
 
-“Reference approaches” replaces “solution candidates” or “published attempts”: these materials serve different purposes, and some are benchmarks rather than solutions. Once a method is actually run against a subject, its execution becomes a migration experiment.
+“Reference materials” is the umbrella term for the resources collected here; “reference approaches” identifies the methods and strategies they describe. Once a method is actually run against a subject, its execution becomes a migration experiment.
 
 ## What does migration mean?
 
@@ -46,6 +62,8 @@ Success need not mean adopting the latest version of every component. Choose a c
 Two useful scopes are **minimal compatibility migration**, which changes enough to run correctly on the target platform, and **expanded modernization**, which includes selected dependency, structural, or operational improvements. Define our scope explicitly; similarly named scopes in research benchmarks may have different acceptance rules.
 
 ## Prospective migration subjects
+
+deftERP and DayTrader 3 are initial examples of the kinds of legacy code we might want to modernize. The selection is open to additions and substitutions as we identify useful migration questions. Subjects should expose relevant challenges, such as sparse tests, intertwined business logic, container services, or difficult build environments. One application can support several experiments with different scopes and target stacks.
 
 ### deftERP
 
@@ -81,9 +99,17 @@ The following are starting points for investigation. Repository documentation an
 | [Amazon MigrationBench](https://github.com/amazon-science/MigrationBench) | Dataset and evaluation framework | Build/test success, compiled bytecode level, preservation of test methods and test counts, and dependency criteria for its minimal/maximal scopes. These checks approximate equivalence; they do not establish that untested business behavior is preserved. |
 | [AI-assisted code migration](https://github.com/rmadabusiml/ai-assisted-code-migration) | Demonstration and case study | Claude Code modernization of Bank of Anthos's Transaction History Service, including Java and Spring upgrades, agent instructions, and human review checkpoints. Inspect the actual changes and validation rather than adopting its outcome claims. |
 | [Alex Manrique's migration account](https://alexmanrique.com/blog/development/2026/02/19/migrating-to-java17-and-spring-boot-335-using-claude-code-and-cursor.html) and [example repository](https://github.com/alexmanrique/spring-boot-application-example) | Practitioner case study | Reported Java 8 / Spring Boot 1.4.3 → Java 17 / Boot 3.3.5 work using Claude Code and Cursor. Review planning, tests, incremental commits, and continuity across tool changes. The article is a reference link; the repository can be a submodule. |
-| Theseus | Internal reference approach | Existing prompts, scripts, agent instructions, and accumulated migration knowledge. Identify transferable methods and test them on public subjects. Its current contents are not suitable for publication as-is. |
+| Theseus | Independently developed internal approach | Markdown documentation for humans and agents, transformation scripts, and accumulated migration knowledge. Examine its assumptions and techniques alongside other approaches, and test which parts transfer to public subjects. Its current contents are not suitable for publication as-is. |
 
 For each reference, record its pinned revision, prerequisites, license, claimed scope, available evidence, and what we actually reproduce. Some will inform our method without being executable competitors.
+
+### Theseus: an independent starting point
+
+Theseus has a special place in this investigation because it was developed iteratively by the project's author while working through migration problems, before stepping back to survey existing approaches. It preserves an independent first attempt, with room for both naive assumptions and original ideas.
+
+There is value in giving a problem a sustained attempt before studying how others have solved it. That lets initial ideas develop on their own terms. Existing work can then illuminate gaps and suggest better techniques, while also shaping the possibilities we consider. Keeping the original reasoning visible helps us examine what we discovered independently, what others add, and what deserves revision.
+
+Theseus combines Markdown documentation intended to be read by both humans and agents with scripts that perform parts of the transformations. The documentation explains what we want to achieve and how to approach parts of the work; the scripts make selected changes repeatable. We will examine how these pieces support each other, where they depend on human judgment, and which ideas transfer to other applications. Theseus contributes experience and hypotheses to the comparison, with its assumptions and results open to the same scrutiny as those of other approaches.
 
 ### Theseus and publishable evidence
 
@@ -138,19 +164,23 @@ Add `/local-private/` to the superproject's ignore rules before using it. Public
 
 ## Experiment workflow
 
+The following is a starting hypothesis for a useful migration method. Planning, task decomposition, checkpoints, and recovery are themselves part of what we want to compare. For comparable experiments, agree on the starting state, requested change, and acceptance evidence, then record how each approach organizes the work and what adaptation it requires.
+
 1. **Inventory and pin.** Select a source revision, inspect the stack and business flows, and record environment requirements, missing artifacts, and uncertainty.
 2. **Restore a runnable baseline.** Reconstruct the original build/runtime environment. Record dependency-resolution fixes or minimal repairs separately from migration. If the original cannot run, state the limitation and identify which claims can still be tested.
-3. **Characterize behavior.** Use controlled fixtures and scenarios covering responses, persisted state, side effects, errors, and relevant concurrency. Review generated tests against original behavior and domain expectations; tests written by an agent are not automatically a trustworthy oracle.
+3. **Characterize behavior and fill test gaps.** Preserve existing tests and add missing coverage using controlled fixtures and scenarios covering responses, persisted state, side effects, errors, and relevant concurrency. Humans or agents can generate characterization tests; review them against original behavior and domain expectations before relying on them.
 4. **Define the contract and plan.** Select target versions and compatible components, permitted changes, excluded scope, checkpoints, and rollback strategy. Bundle changes only where compatibility requires it.
-5. **Execute in reviewable steps.** Give the agent bounded tasks and allow it to inspect, edit, build, run tests, and diagnose failures. Combine deterministic transformations with agent reasoning where useful. Save decisions and unresolved issues in the repository.
+5. **Transform incrementally.** Apply bounded changes using manual work, scripts, agents, or a combination. At each completed step, build, run, and validate the application so the next step begins from a working state. Interdependent changes may need to form one step. Save decisions and unresolved issues in the repository.
 6. **Evaluate independently.** Run the preserved baseline suite and target checks. Review diffs for disabled features, weakened tests, hidden fallback paths, and unintended behavior changes. For schema changes, test existing-data conversion and recovery.
-7. **Report and generalize.** Record failures and human interventions, compare against the baseline, and extract reusable instructions only after they have worked on concrete cases.
+7. **Report, learn, and refine.** Record failures and human interventions, compare against the baseline, and extract reusable instructions after they have worked on concrete cases. Use necessary manual fixes to improve documentation, scripts, tests, and subsequent agent-driven transformations.
 
-A first sequence could be baseline restoration → JVM/build compatibility → selected dependencies → enterprise platform/server upgrade. Framework replacement and structural cleanup can become subsequent experiments with their own contracts. This ordering is a hypothesis to validate against each subject's compatibility constraints, not a universal recipe.
+A practical deliverable may be a document that guides an engineer through making the original application build and run, generating and reviewing missing tests, and applying transformations step by step, leaving a running application at each checkpoint. Scripts and agent instructions can support individual steps. As agents become more capable, they may take responsibility for longer parts of this chain while preserving the same observable checkpoints.
 
-## Agent context and verification
+After establishing the baseline and tests, a first transformation sequence could be JVM/build compatibility → selected dependencies → enterprise platform/server upgrade. Framework replacement and structural cleanup can become subsequent experiments with their own contracts. This ordering is a hypothesis to validate against each subject's compatibility constraints, not a universal recipe.
 
-Durable project knowledge should explain the current architecture, build/run commands, known quirks, chosen target stack, decisions, and exact evidence required for completion. Keep it versioned and concise enough to remain useful across sessions and tool changes.
+## Shared context and verification
+
+Durable project knowledge should explain the current architecture, build/run commands, known quirks, chosen target stack, decisions, and exact evidence required for completion. Write it for both humans and agents, and keep it versioned and concise enough to remain useful across sessions and tool changes. Markdown documentation can provide a shared account of the intent and procedure, while scripts make repeatable operations executable.
 
 For Codex, a root `AGENTS.md` can define workspace boundaries and subject-specific instructions can refine them. Check instruction discovery and precedence for each agent/tool; merely placing instructions in the superproject does not ensure every invocation uses them.
 
@@ -160,9 +190,11 @@ For Codex, a root `AGENTS.md` can define workspace boundaries and subject-specif
 - Require executed validation and inspectable artifacts for completion. A successful build or the agent's assertion of success is insufficient.
 - Record human decisions, corrections, and effort. Autonomy is something to measure, not assume from the presence of agent-generated code.
 
-Initially target reproducible tasks driven by prompts, scripts, and checkpoints, with human supervision. Fully autonomous migration is a possible later experiment. The strongest demonstration is a traceable result and a clear account of where engineering judgment was necessary.
+Human intervention is an accepted part of the method. Record what required help, why it was necessary, and how the correction can inform future work. Where possible, turn a manual fix into a clarified instruction, a repeatable transformation, or a regression check. This feedback can improve agent-driven work over time. Fully autonomous migration remains one possible experiment; a well-documented method used by an engineer is also a useful result.
 
 ## Evidence and comparison
+
+Descriptive comparisons should distinguish an approach's claims, available artifacts, and our own observations. Local experiments support stronger comparisons when they share a suitable subject, scope, and evaluation contract. Record differences in setup, supplied knowledge, and adaptation effort; resources with different roles can contribute to the study without all being run against every subject.
 
 Every experiment should record:
 
@@ -180,11 +212,11 @@ Do not call passing tests a proof of universal equivalence. State the behaviors 
 
 ## Initial milestones
 
-1. Populate public submodules and record the selected revisions and licenses.
-2. Inspect both subjects and establish which can be built and run with reasonable effort.
-3. Select the first subject and freeze a small but substantive behavioral slice.
-4. Inspect Kai, ScarfBench, and MigrationBench first; document which ideas or checks transfer to our scope.
-5. Run a bounded Codex migration and publish its contract, commits, executed checks, failures, and human interventions.
-6. Repeat on another slice or subject, then distill the method into a reusable migration skill.
+1. Document Theseus's initial reasoning and compare its assumptions and techniques with selected reference approaches and evaluation resources.
+2. Populate the relevant public submodules and record the selected revisions and licenses.
+3. Inspect initial subjects and establish which can be built and run with reasonable effort; revise the selection where useful.
+4. Select a concrete migration question, a suitable subject or behavioral slice, and the evidence needed to evaluate it.
+5. Run a bounded migration using the chosen combination of human work, scripts, and agents. Publish its contract, commits, executed checks, failures, and human interventions.
+6. Compare with another approach where feasible, or explore another scope or subject. Distill supported findings into a practical guide, toolbox, or reusable agent instructions.
 
-The eventual portfolio artifact should make the source state, target state, process, and evidence easy to inspect. Public experiments can demonstrate technical competence directly without depending on publication of customer work.
+The published results should make the source state, target state, process, and evidence easy to inspect, including what people needed to do and how the approach improved through that experience. Public experiments can demonstrate transferable methods without depending on publication of customer work.
