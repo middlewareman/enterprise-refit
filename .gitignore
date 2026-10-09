@@ -1,0 +1,8 @@
+# Optional private checkouts and material.
+/local-private/
+
+# Local IntelliJ project configuration.
+/.idea/
+
+# macOS directory metadata.
+.DS_Store

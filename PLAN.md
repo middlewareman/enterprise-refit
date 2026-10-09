@@ -13,7 +13,7 @@ The author has identified a tendency to become absorbed in details and lose sigh
 ## Current position
 
 - The README establishes the investigation; this plan and [AGENTS.md](AGENTS.md) establish the working agreements.
-- Public subject and reference submodules have not been populated.
+- All eight public subject, reference, and evaluation submodules are populated at initial pinned revisions. [docs/submodules.md](docs/submodules.md) records the commits, selection rule, license evidence, and unresolved license terms for the Spring Boot example and ScarfBench.
 - No local build, runtime baseline, migration, or reproduction result has been established.
 - Theseus is an independent starting point described in the README. Its methods still need a publishable account; its current contents remain private.
 - DayTrader 3 and deftERP are prospective subjects. Earlier observations about them need verification against pinned revisions.
@@ -21,9 +21,9 @@ The author has identified a tendency to become absorbed in details and lose sigh
 
 ## Current focus and next action
 
-**Current task (completed):** establish durable planning and steering across chats.
+**Current task (completed):** review and commit the workspace scaffold, ignore rules, and eight public submodules, supporting subject feasibility work and later comparisons.
 
-**Completion criteria:** this plan records the goal, current position, decisions, and next action; AGENTS.md instructs agents to use and maintain that context and to help detect drift. Both documents are written in English. Whether a particular integration automatically loads AGENTS.md still needs checking when used.
+**Completion criteria:** the eight repositories are registered in `.gitmodules`, checked out at commits matching the recorded Git links, and left clean. Revisions and license observations are recorded; README and plan reflect the populated workspace. The reviewed scaffold and registrations are committed. No build or migration result is implied.
 
 **Recommended next action:** draft a short, public account of Theseus's initial reasoning, using the author's recollections and reviewed material. Capture the problem, assumptions, techniques, expected benefits, known limitations, and open questions before extending the reference survey. Label retrospective recollections and prior exposure to other approaches accurately. If safe source material is unavailable, record the gap and proceed with public subject feasibility work.
 
@@ -35,8 +35,8 @@ This sequence is a working proposal derived from the README. Refine it as eviden
 
 | Milestone | Outcome and completion evidence | Status |
 |---|---|---|
-| 1. Preserve initial reasoning | A reviewed, public account of Theseus's hypotheses and limitations; any unavailable or private evidence is identified. | Next proposed |
-| 2. Assess subject feasibility | Selected public sources are pinned; prerequisites and licenses are recorded; build/run attempts and blockers support a subject recommendation. Add references as needed for specific questions. | Planned |
+| 1. Preserve initial reasoning | A reviewed, public account of Theseus's hypotheses and limitations; any unavailable or private evidence is identified. | Pending; next proposed before deeper reference study |
+| 2. Assess subject feasibility | Selected public sources are pinned; prerequisites and licenses are recorded; build/run attempts and blockers support a subject recommendation. | In progress: public sources pinned; prerequisites and feasibility remain to be assessed |
 | 3. Establish a baseline | A selected subject has repeatable build/run instructions, controlled fixtures, and executed behavioral checks. Restoration patches are recorded separately. If restoration is infeasible, document the evidence and revisit subject selection. | Planned |
 | 4. Define and execute an experiment | A source state, compatible target stack, permitted changes, and acceptance checks are recorded; bounded transformations produce inspectable commits and validation results. | Planned |
 | 5. Evaluate and compare | Results, gaps, failures, and human effort are reported. Compare another approach where feasible, or explicitly state why comparison is limited. Extract practices supported by the evidence. | Planned |
@@ -58,6 +58,8 @@ Before ending a substantive work session, update this file with verified progres
 | 2026-10-09 | Author: maintain project documentation in English. | Make the work accessible to the widest audience. |
 | 2026-10-09 | Author: use the project to show prospective employers how AI and agents support engineering and maintaining focus. | Preserve an honest account of collaboration, self-awareness, and judgment alongside technical results. |
 | 2026-10-09 | Author: create PLAN.md and AGENTS.md following the discussion of continuity across chats. | Store the plan and working agreements in the repository so future sessions can resume from explicit context. |
+| 2026-10-09 | Author: create the directory structure and `.gitignore`. | Keep private material and local IDE files out of version control and leave submodule locations available. |
+| 2026-10-09 | Author: add the Git submodules. Agent implementation: add all eight public repositories listed in the README at their default-branch HEADs and record license observations. | Populate the workspace ahead of the proposed Theseus account; keep deeper reference study separate from preserving initial reasoning. Theseus remains outside the public manifest. |
 
 Record later material decisions here with their origin, rationale, and relevant evidence. Keep recommendations distinguishable from accepted decisions.
 
@@ -71,8 +73,8 @@ These ideas can be revisited when they serve a concrete milestone:
 
 ## Session handoff
 
-- **Completed:** the initial plan and agent working agreements have been created. No application work was performed in this task.
-- **Validation:** both documents were reviewed against the README and the author's instructions; whitespace checks reported no issues.
-- **Open:** Theseus's publishable account; subject feasibility; subject selection; target stack; baseline and behavioral checks.
+- **Completed:** workspace scaffold, `.gitignore`, and eight public submodules reviewed for this commit. Revision and license inventory created; README and plan updated. Nine `.gitkeep` placeholders retain public directories; private material and local IDE files are excluded.
+- **Validation:** verified all eight manifest URLs, full-history checkouts, recorded pins, inventory commit IDs, clean worktrees, license evidence, local documentation links, scaffold placeholders, and Git ignore rules. Recursive status showed eight initialized entries and no nested submodules. No private repository is registered; whitespace checks passed. No application builds or tests were run, and a fresh clone of the published superproject remains untested.
+- **Open:** Theseus's publishable account; subject feasibility; subject selection; target stack; baseline and behavioral checks; unresolved license terms for the Spring Boot example and ScarfBench.
 - **Next:** draft the initial Theseus account, or record the evidence gap and begin public subject feasibility work.
 - **Resume prompt:** "Read README.md, PLAN.md, and AGENTS.md. Summarize the current focus, check it against the workspace, and continue with the next action. Help me maintain perspective and flag work that loses its connection to the goal."

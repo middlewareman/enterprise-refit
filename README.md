@@ -123,7 +123,7 @@ Derive public instructions and examples from reviewed, non-customer-specific met
 
 ## Superproject layout
 
-The following paths are a proposed layout, not files already present:
+The public directories and eight submodules below are in place. Initial revisions and license observations are recorded in [docs/submodules.md](docs/submodules.md). `.gitkeep` placeholders retain empty public directories; keep placeholders outside submodule checkouts.
 
 | Path | Purpose |
 |---|---|
@@ -142,7 +142,7 @@ The superproject owns orchestration and experiment metadata. Each application or
 
 ### Initial public submodules
 
-Run these examples from the root of an initialized superproject when ready to populate it:
+The eight public submodules are populated. The following commands document their initial setup and can be used in a new initialized superproject:
 
 ```bash
 git submodule add https://github.com/medbounaga/deftERP.git subjects/upstream/deftERP
@@ -155,7 +155,7 @@ git submodule add https://github.com/scarfbench/benchmark.git evaluation/scarfbe
 git submodule add https://github.com/amazon-science/MigrationBench.git evaluation/migrationbench
 ```
 
-Review and select each revision, then commit `.gitmodules` and the submodule pointers in the superproject. For an existing checkout:
+The initial pins capture upstream default-branch snapshots; assess their suitability before selecting experiment revisions. Commit `.gitmodules` and the submodule pointers in the superproject to share them. For an existing checkout:
 
 ```bash
 git submodule update --init --recursive
@@ -164,7 +164,7 @@ git submodule status --recursive
 
 Submodules normally initialize at a detached HEAD. Perform editable experiments on explicit branches in forks or independent checkouts. Push implementation commits before updating and committing their superproject pointers so collaborators can fetch them. Keep reference updates separate from experiment runs; avoid automatically advancing to upstream HEAD during evaluation.
 
-Add `/local-private/` to the superproject's ignore rules before using it. Public instructions and recursive cloning must work without Theseus credentials. Each submodule retains its own license and attribution requirements; this superproject's license does not replace them.
+The root `.gitignore` excludes `/local-private/`, local IntelliJ configuration, and macOS directory metadata. `local-private/` is an optional local directory and is absent from public clones. Public instructions and recursive cloning must work without Theseus credentials. Each submodule retains its own license and attribution requirements; this superproject's license does not replace them.
 
 ## Experiment workflow
 
