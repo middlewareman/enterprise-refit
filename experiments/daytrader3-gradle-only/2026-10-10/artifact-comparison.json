@@ -1,0 +1,38 @@
+[
+  {
+    "artifact": "daytrader3-ee6/build/libs/daytrader3-ee6.ear",
+    "before_sha256": "4655c60e90ace886b5c3009cfbdb906c1a2b6035729f0393d1a9532708d67c51",
+    "after_sha256": "60ea7a09d2e1002fc1d3adf1ed500b01c72d2b579f8afcc68ecba4c4f5eb5752",
+    "entries_before": 452,
+    "entries_after": 452,
+    "content_equal": true,
+    "differing_entries": []
+  },
+  {
+    "artifact": "daytrader3-ee6-ejb/build/libs/dt-ejb.jar",
+    "before_sha256": "0580ddc624825ba8f86e85e10b4297bb9c9a17d8de1c1205abf7bf45945b4145",
+    "after_sha256": "80a1a378ade887fff22dcaa73ffc170eebfe5cc17f3415cbf514c8741ed9a1a9",
+    "entries_before": 37,
+    "entries_after": 37,
+    "content_equal": true,
+    "differing_entries": []
+  },
+  {
+    "artifact": "daytrader3-ee6-web/build/libs/web.war",
+    "before_sha256": "f0dd445d2cef8564c1140020b382eac3daef0c4e9accee79a52dda82f970079f",
+    "after_sha256": "a3b67881e506309441dfc53ee66c6fb42327a06a90c9b7b43ca566a443e2dd09",
+    "entries_before": 403,
+    "entries_after": 403,
+    "content_equal": true,
+    "differing_entries": []
+  },
+  {
+    "artifact": "daytrader3-ee6-rest/build/libs/Rest.war",
+    "before_sha256": "309303212ae7155c793ef94bbcedcfbbf2406561a7f9ee8ab06858fb179c9ee9",
+    "after_sha256": "562c0caa1f13e254e0d2acf2476f440a1005b944417efcf56a33f26457758268",
+    "entries_before": 8,
+    "entries_after": 8,
+    "content_equal": true,
+    "differing_entries": []
+  }
+]

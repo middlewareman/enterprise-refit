@@ -1,0 +1,38 @@
+> Task :daytrader3-ee6:copyDerbyLib
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources
+> Task :daytrader3-ee6:classes
+
+> Task :daytrader3-ee6-ejb:compileJava
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :daytrader3-ee6-ejb:processResources
+> Task :daytrader3-ee6-ejb:classes
+> Task :daytrader3-ee6-ejb:jar
+> Task :daytrader3-ee6-rest:compileJava
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes
+> Task :daytrader3-ee6-rest:war
+> Task :daytrader3-ee6-web:compileJava
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes
+> Task :daytrader3-ee6-web:war
+> Task :daytrader3-ee6:ear
+> Task :daytrader3-ee6:installLiberty FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':daytrader3-ee6:installLiberty'.
+> Offline mode. File index.yml is not available in the cache.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 5s
+11 actionable tasks: 11 executed

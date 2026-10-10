@@ -1,0 +1,81 @@
+> Task :daytrader3-ee6:copyDerbyLib UP-TO-DATE
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:jar UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes UP-TO-DATE
+> Task :daytrader3-ee6-rest:war UP-TO-DATE
+> Task :daytrader3-ee6-web:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes UP-TO-DATE
+> Task :daytrader3-ee6-web:war UP-TO-DATE
+> Task :daytrader3-ee6:ear UP-TO-DATE
+
+> Task :daytrader3-ee6:installLiberty
+Liberty is already installed at: /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/wlp
+
+> Task :daytrader3-ee6:libertyCreate SKIPPED
+> Task :daytrader3-ee6:installApps
+> Task :daytrader3-ee6:assemble
+> Task :daytrader3-ee6:installDayTraderFeatures SKIPPED
+[ant:server]
+[ant:server] Starting server daytrader3_Sample.
+
+> Task :daytrader3-ee6:libertyStart
+[ant:server] CWWKM2001I: server.config.dir is /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample.
+[ant:server] CWWKM2001I: server.output.dir is /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/liberty-output/daytrader3_Sample.
+[ant:server] CWWKM2001I: Invoke command is [/private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/wlp/bin/server, start, daytrader3_Sample].
+
+[ant:server] Server daytrader3_Sample started with process ID 78708.
+
+> Task :daytrader3-ee6:libertyStart
+[ant:server] Waiting up to 30 seconds for server confirmation:  CWWKF0011I to be found in /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/liberty-output/daytrader3_Sample/logs/messages.log
+[ant:server] CWWKM2010I: Searching for CWWKF0011I in /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/liberty-output/daytrader3_Sample/logs/messages.log. This search will timeout after 30 seconds.
+[ant:server] CWWKM2015I: Match number: 1 is [10/10/26 20:40:56:493 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The daytrader3_Sample server is ready to run a smarter planet. The daytrader3_Sample server started in 9.761 seconds..
+
+> Task :daytrader3-ee6:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6:processTestResources NO-SOURCE
+> Task :daytrader3-ee6:testClasses UP-TO-DATE
+> Task :daytrader3-ee6:fvt NO-SOURCE
+[ant:server]
+[ant:server] Stopping server daytrader3_Sample.
+
+> Task :daytrader3-ee6:libertyStop
+[ant:server] CWWKM2001I: server.config.dir is /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample.
+[ant:server] CWWKM2001I: server.output.dir is /private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/liberty-output/daytrader3_Sample.
+[ant:server] CWWKM2001I: Invoke command is [/private/tmp/daytrader-gradle-only-nujyx8h8/after/daytrader3-ee6/build/wlp/bin/server, stop, daytrader3_Sample].
+
+[ant:server] Server daytrader3_Sample stopped.
+
+> Task :daytrader3-ee6:test NO-SOURCE
+> Task :daytrader3-ee6:check UP-TO-DATE
+> Task :daytrader3-ee6:build
+> Task :daytrader3-ee6-ejb:assemble UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6-ejb:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-ejb:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-ejb:test NO-SOURCE
+> Task :daytrader3-ee6-ejb:check UP-TO-DATE
+> Task :daytrader3-ee6-ejb:build UP-TO-DATE
+> Task :daytrader3-ee6-rest:assemble UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6-rest:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-rest:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-rest:test NO-SOURCE
+> Task :daytrader3-ee6-rest:check UP-TO-DATE
+> Task :daytrader3-ee6-rest:build UP-TO-DATE
+> Task :daytrader3-ee6-web:assemble UP-TO-DATE
+> Task :daytrader3-ee6-web:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6-web:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-web:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-web:test NO-SOURCE
+> Task :daytrader3-ee6-web:check UP-TO-DATE
+> Task :daytrader3-ee6-web:build UP-TO-DATE
+
+BUILD SUCCESSFUL in 17s
+14 actionable tasks: 4 executed, 10 up-to-date
