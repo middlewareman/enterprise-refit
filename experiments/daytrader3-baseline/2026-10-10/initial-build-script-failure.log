@@ -1,0 +1,22 @@
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle' line: 42
+
+* What went wrong:
+Could not compile build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle'.
+> startup failed:
+  build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle': 42: expecting ')', found '$' @ line 42, column 57.
+     'httpPort="9083"', "httpPort="${testPort
+                                   ^
+
+  1 error
+
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s

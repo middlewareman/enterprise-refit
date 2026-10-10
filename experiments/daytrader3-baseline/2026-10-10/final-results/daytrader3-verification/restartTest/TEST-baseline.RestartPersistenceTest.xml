@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.RestartPersistenceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-10T20:33:33" hostname="Monet.local" time="0.9">
+  <properties/>
+  <testcase name="cashAndHoldingsSurviveRestart(int)[1]" classname="baseline.RestartPersistenceTest" time="0.6"/>
+  <testcase name="cashAndHoldingsSurviveRestart(int)[2]" classname="baseline.RestartPersistenceTest" time="0.03"/>
+  <testcase name="cashAndHoldingsSurviveRestart(int)[3]" classname="baseline.RestartPersistenceTest" time="0.052"/>
+  <testcase name="cashAndHoldingsSurviveRestart(int)[4]" classname="baseline.RestartPersistenceTest" time="0.028"/>
+  <testcase name="cashAndHoldingsSurviveRestart(int)[5]" classname="baseline.RestartPersistenceTest" time="0.026"/>
+  <testcase name="cashAndHoldingsSurviveRestart(int)[6]" classname="baseline.RestartPersistenceTest" time="0.027"/>
+  <testcase name="orderHistorySurvivesRestart(int)[1]" classname="baseline.RestartPersistenceTest" time="0.025"/>
+  <testcase name="orderHistorySurvivesRestart(int)[2]" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <testcase name="orderHistorySurvivesRestart(int)[3]" classname="baseline.RestartPersistenceTest" time="0.02"/>
+  <testcase name="orderHistorySurvivesRestart(int)[4]" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <testcase name="orderHistorySurvivesRestart(int)[5]" classname="baseline.RestartPersistenceTest" time="0.02"/>
+  <testcase name="orderHistorySurvivesRestart(int)[6]" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

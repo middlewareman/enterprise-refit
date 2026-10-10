@@ -2,9 +2,12 @@
 
 The author requested correctness, test-coverage, and performance baselines before
 refitting DayTrader. This is the proposed measurement contract and implementation
-sequence. No new tests, coverage collection, or load runs were executed during
-this inventory. Numerical performance limits and the final migration scope are
-still to be agreed after observing baseline variability.
+sequence. The initial inventory was followed by an implemented Gradle/JUnit suite
+and server coverage. [Execution record](../experiments/daytrader3-baseline/2026-10-10/README.md):
+44 cases pass in two ordinary builds, including strict restart order history
+and SQL persistence. An initial harness configuration mismatch was diagnosed
+with runtime debugger evidence and corrected without changing assertions. No load runs have been
+executed; numerical performance limits and the migration contract remain open.
 
 ## Frozen application and current evidence
 
@@ -12,7 +15,10 @@ Use restoration commit `37a8facf9729f271160aabc02dcf312fff7e0fc9`, preserving or
 source `a2d61af8c75c771fe4c9ad3f101bbdef08046c1a`. The fork's `restore/runtime`
 branch is fetchable, and superproject commit `c6c9c88` records its gitlink. Keep
 application changes separate from baseline harness, fixture, and instrumentation
-changes; record their own revisions and configuration.
+changes; record their own revisions and configuration. The harness is now
+published as `fd8c371a1bd5dbb26c28b7bbd5216de50a181660` on
+`tooling/baseline-tests`, based on Gradle-only tooling `0894dc9`; this milestone
+pins it in the superproject. Application Java sources remain unchanged.
 
 The established environment is Gradle 4.10.3, Liberty plugin 2.4, Zulu Java
 1.8.0_282/aarch64, IBM Liberty 24.0.0.9 with the original Java EE 6 features,
@@ -29,11 +35,11 @@ Java 7 class-file output alone is insufficient evidence of Java 7 API compatibil
 | Baseline dimension | Verified so far | Evidence still needed |
 |---|---|---|
 | Build/deployment | IDEA compilation, EAR packaging, full EAR-module build, server readiness | Repeatable setup and dependency/artifact identities for later comparisons |
-| Test success | One external smoke script passes Full EJB3/synchronous login, quote, buy/sell, and holding persistence | Named test cases with pass/fail/skipped counts and response, money, database, and side-effect assertions |
-| Test coverage | No measurement; no files under `src/test` found, inherited `test`/`fvt` were `NO-SOURCE` | Runtime line/branch coverage by application module and a scenario-to-behavior map |
+| Test success | JUnit: 8 unit, 15 HTTP, 12 restart, and 9 SQL cases pass; two ordinary builds pass | Extend concurrency/failure checks and retain the corrected restart profile |
+| Test coverage | Server/unit JaCoCo: 1713/4784 source lines (35.8%), 342/1085 source branches; module and key-class counts recorded | Broader failure, concurrency, and messaging scenarios; review critical uncovered branches |
 | Performance/resources | No measured result | Latency distribution, successful throughput, errors, CPU, memory, GC, startup, and asynchronous completion where applicable |
 
-The absence of tests is not a measured 0% coverage result. `TestServlet.java` is
+The original absence of tests was not a measured 0% coverage result. `TestServlet.java` is
 an application servlet, not a discovered automated unit-test suite. A passing
 build with `NO-SOURCE` test tasks does not establish test success.
 
@@ -102,12 +108,11 @@ scenarios so adapter reuse does not hide interface regressions. Database inspect
 and fixture loading are environment-specific adapters too; transaction assertions
 must exercise the real deployed application and its persistence/messaging services.
 
-Prefer JUnit 5 with a pinned Java 8-compatible release for the initial harness.
-Gradle 4.10.3 supports JUnit Platform; confirm the selected test dependencies before
-implementation. The EAR module already wires `fvt` into `check`, depends on server
-startup, and finalizes with server shutdown. It currently has no test sources or
-JUnit dependencies. Use that hook or a dedicated verification module with equivalent
-build wiring; avoid an application/build-tool upgrade just to introduce tests.
+Implemented choice: JUnit Jupiter 5.10.3 with Jsoup 1.17.2 and JaCoCo 0.8.12
+on Java 8 / Gradle 4.10.3. The dedicated verification module owns the isolated
+fixture/server, HTTP/restart/SQL tasks and coverage; EAR `fvt` aliases its `check`.
+Normal builds package the EAR and drive this server. The suite has no application
+classpath dependency. [Usage and reports](../subjects/upstream/sample.daytrader3/docs/Testing.md).
 
 Proposed build contract: `build` invokes `check`; `check` runs unit tests and the
 bounded functional suite against an isolated test server and fixture. Functional
@@ -148,7 +153,7 @@ and a small browser suite only when required by interface scope. JUnit 4.13.2 is
 an option for minimal runner setup; JUnit 5.x offers useful parameterization and
 organization and is preferred if its selected Java 8-compatible dependencies work
 in the existing build. Neither requires migrating the application first. No runner
-has been selected or tested in this discussion.
+had been selected or tested at the initial discussion; the implementation now uses JUnit Jupiter 5.10.3.
 
 Keep reusable tests in their own module with no dependency on the EJB/web artifacts.
 The existing EAR `fvt` task can instead host external tests initially, provided its
@@ -204,8 +209,8 @@ A modern wrapper requires script changes and a compatible Liberty plugin, not
 only a distribution URL change. Select the exact Gradle/plugin/build-JDK tuple
 by compatibility and validate preserved packaging/bytecode, deployment, readiness,
 functional outcomes, and cleanup. New plugin defaults must not silently substitute
-Open Liberty for the pinned IBM Liberty baseline. No tooling upgrade or test-runner
-compatibility trial was performed in this discussion.
+Open Liberty for the pinned IBM Liberty baseline. No tooling upgrade has been performed. The subsequent baseline execution
+verified JUnit Jupiter 5.10.3 on the pinned Java 8 / Gradle 4.10.3 build.
 
 ## Migration direction and candidate platforms
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.PersistedStateTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-10T20:33:39" hostname="Monet.local" time="0.25">
+  <properties/>
+  <testcase name="successfulProfileAndRegistrationPersistAndRejectedProfileDoesNot()" classname="baseline.PersistedStateTest" time="0.137"/>
+  <testcase name="persistedOrdersRetainExecutionPricesFeesQuantitiesAndCompletion()" classname="baseline.PersistedStateTest" time="0.01"/>
+  <testcase name="persistedHoldingRetainsPurchasePriceQuantityAndOwner()" classname="baseline.PersistedStateTest" time="0.004"/>
+  <testcase name="cashHoldingsAndOrderCountsMatchBusinessExpectations(int)[1]" classname="baseline.PersistedStateTest" time="0.038"/>
+  <testcase name="cashHoldingsAndOrderCountsMatchBusinessExpectations(int)[2]" classname="baseline.PersistedStateTest" time="0.001"/>
+  <testcase name="cashHoldingsAndOrderCountsMatchBusinessExpectations(int)[3]" classname="baseline.PersistedStateTest" time="0.001"/>
+  <testcase name="cashHoldingsAndOrderCountsMatchBusinessExpectations(int)[4]" classname="baseline.PersistedStateTest" time="0.001"/>
+  <testcase name="cashHoldingsAndOrderCountsMatchBusinessExpectations(int)[5]" classname="baseline.PersistedStateTest" time="0.001"/>
+  <testcase name="cashHoldingsAndOrderCountsMatchBusinessExpectations(int)[6]" classname="baseline.PersistedStateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

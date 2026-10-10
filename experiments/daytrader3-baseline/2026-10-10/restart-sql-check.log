@@ -1,0 +1,10 @@
+> Task :daytrader3-verification:compileJava UP-TO-DATE
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes UP-TO-DATE
+> Task :daytrader3-verification:compileTestJava UP-TO-DATE
+> Task :daytrader3-verification:processTestResources NO-SOURCE
+> Task :daytrader3-verification:testClasses UP-TO-DATE
+> Task :daytrader3-verification:persistedTest
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 1 executed, 2 up-to-date

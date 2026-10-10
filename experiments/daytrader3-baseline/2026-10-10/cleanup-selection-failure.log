@@ -1,0 +1,54 @@
+> Task :daytrader3-verification:compileJava UP-TO-DATE
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes UP-TO-DATE
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:jar UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes UP-TO-DATE
+> Task :daytrader3-ee6-rest:war UP-TO-DATE
+> Task :daytrader3-ee6-web:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes UP-TO-DATE
+> Task :daytrader3-ee6-web:war UP-TO-DATE
+> Task :daytrader3-ee6:ear UP-TO-DATE
+> Task :daytrader3-ee6:installLiberty UP-TO-DATE
+> Task :daytrader3-ee6:installDayTraderFeatures SKIPPED
+> Task :daytrader3-verification:prepareTestServer
+
+> Task :daytrader3-verification:loadFixture
+Deterministic fixture: 40 accounts, 40 quotes, zero holdings/orders; fixed timestamps and key seeds.
+
+> Task :daytrader3-verification:startTestServer
+
+Starting server daytrader3_Baseline.
+Server daytrader3_Baseline started with process ID 82348.
+
+> Task :daytrader3-verification:compileTestJava UP-TO-DATE
+> Task :daytrader3-verification:processTestResources NO-SOURCE
+> Task :daytrader3-verification:testClasses UP-TO-DATE
+> Task :daytrader3-verification:test FAILED
+
+> Task :daytrader3-verification:stopTestServer
+
+Stopping server daytrader3_Baseline.
+Server daytrader3_Baseline stopped.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':daytrader3-verification:test'.
+> No tests found for given includes: [**/PersistedStateTest.class, **/RestartPersistenceTest.class](exclude rules) [baseline.DeliberatelyMissingTest](--tests filter)
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 13s
+17 actionable tasks: 5 executed, 12 up-to-date

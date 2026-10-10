@@ -70,3 +70,16 @@ published on the configured fork, and `git ls-remote` verified its exact tip
 before this gitlink update. Application sources and runtime/dependency versions
 are retained; the other seven submodule pins are unchanged.
 [Change and validation evidence](../experiments/daytrader3-gradle-only/2026-10-10/README.md).
+
+## DayTrader baseline-test milestone
+
+On 2026-10-11, harness commit `fd8c371a1bd5dbb26c28b7bbd5216de50a181660` was
+committed and pushed on the fork's `tooling/baseline-tests` branch, based on
+Gradle-only commit `0894dc9`. `git ls-remote` verified the exact branch tip
+before this milestone staged the gitlink. Application Java sources and the
+original server XML remain unchanged.
+
+The suite records 44 passing cases, two ordinary Gradle builds, and scoped
+server/unit coverage. The experiment retains an initial restart setup failure
+and its debugger-supported correction. [Execution and publication record](../experiments/daytrader3-baseline/2026-10-10/README.md).
+Other submodule revisions remain unchanged.

@@ -1,0 +1,22 @@
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileTestJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-ejb:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-ejb:test UP-TO-DATE
+> Task :daytrader3-verification:compileJava UP-TO-DATE
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes UP-TO-DATE
+> Task :daytrader3-verification:compileTestJava UP-TO-DATE
+> Task :daytrader3-verification:processTestResources NO-SOURCE
+> Task :daytrader3-verification:testClasses UP-TO-DATE
+> Task :daytrader3-verification:persistedTest
+> Task :daytrader3-verification:prepareCoverageClasses
+> Task :daytrader3-verification:applicationCoverage
+
+> Task :daytrader3-verification:coverageSummary
+Application source coverage summary: [EJB:[linesCovered:1384, linesTotal:2953, branchesCovered:258, branchesTotal:732], web:[linesCovered:307, linesTotal:1732, branchesCovered:85, branchesTotal:343], REST:[linesCovered:22, linesTotal:99, branchesCovered:0, branchesTotal:10]]
+
+BUILD SUCCESSFUL in 5s
+10 actionable tasks: 4 executed, 6 up-to-date

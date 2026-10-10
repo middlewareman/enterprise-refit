@@ -1,0 +1,44 @@
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:jar UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes UP-TO-DATE
+> Task :daytrader3-ee6-rest:war UP-TO-DATE
+> Task :daytrader3-ee6-web:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes UP-TO-DATE
+> Task :daytrader3-ee6-web:war UP-TO-DATE
+> Task :daytrader3-ee6:ear UP-TO-DATE
+> Task :daytrader3-ee6:assemble UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileTestJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-ejb:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-ejb:test UP-TO-DATE
+> Task :daytrader3-verification:compileJava UP-TO-DATE
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes UP-TO-DATE
+> Task :daytrader3-ee6:installLiberty UP-TO-DATE
+> Task :daytrader3-ee6:installDayTraderFeatures SKIPPED
+> Task :daytrader3-verification:prepareTestServer FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle' line: 42
+
+* What went wrong:
+Execution failed for task ':daytrader3-verification:prepareTestServer'.
+> java.net.BindException: Address already in use (Bind failed)
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 2s
+14 actionable tasks: 1 executed, 13 up-to-date
