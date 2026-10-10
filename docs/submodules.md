@@ -60,3 +60,13 @@ and the fork default branch remains an upstream mirror. [Build and runtime evide
 The restoration commit is now published on the fork's `restore/runtime` branch;
 `git ls-remote` verified its tip. Superproject commit `c6c9c88` records this
 restoration gitlink. All other submodule revisions are unchanged.
+
+## DayTrader Gradle-only tooling milestone
+
+The current DayTrader pin is `0894dc9998d42fe8563169aabca479a63372d675` on
+`tooling/gradle-only`, derived from restoration commit `37a8fac`. It removes Maven
+build support before introducing the Gradle verification suite. The branch is
+published on the configured fork, and `git ls-remote` verified its exact tip
+before this gitlink update. Application sources and runtime/dependency versions
+are retained; the other seven submodule pins are unchanged.
+[Change and validation evidence](../experiments/daytrader3-gradle-only/2026-10-10/README.md).

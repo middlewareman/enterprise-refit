@@ -9,8 +9,8 @@ contents and can deploy/start/stop the original runtime.
 
 Work branch: `tooling/gradle-only`, created from restoration commit
 `37a8facf9729f271160aabc02dcf312fff7e0fc9`. Tooling commit:
-`0894dc9998d42fe8563169aabca479a63372d675`, committed locally; publication is pending.
-The superproject gitlink still records the restoration commit. Original source
+`0894dc9998d42fe8563169aabca479a63372d675`, published on the fork branch;
+`git ls-remote` verified its tip. This milestone records its superproject gitlink. Original source
 remains `a2d61af8c75c771fe4c9ad3f101bbdef08046c1a`. Application Java sources,
 server configuration, dependency versions, Gradle 4.10.3, Liberty plugin 2.4,
 Zulu Java 8 `1.8.0_282`, Derby 10.10.1.1, and IBM Liberty 24.0.0.9 are retained.
@@ -88,7 +88,5 @@ inspection; no subagents, reference migration implementations, or Theseus conten
 
 ## Next action
 
-Publish the committed tooling milestone with author authorization before
-intentionally advancing the gitlink.
-Then implement deterministic fixtures and framework-independent trading tests
+Implement deterministic fixtures and framework-independent trading tests
 through Gradle `check`/`build`, as described in the [baseline plan](../../../docs/daytrader-baseline.md).

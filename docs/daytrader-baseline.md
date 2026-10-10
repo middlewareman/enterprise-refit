@@ -75,12 +75,12 @@ runs and enforce the access boundary required by AGENTS.md.
 
 The author subsequently requested removing Maven support before tests. The
 `tooling/gradle-only` branch derives from the restored revision and retains the
-application/runtime/tool versions. Tooling commit `0894dc9` is local, with
-publication pending; archive contents match the restoration build and an isolated
-Gradle build lifecycle passed.
+application/runtime/tool versions. Tooling commit `0894dc9` is published on the
+fork; `git ls-remote` verified its tip. Archive contents match the restoration
+build and an isolated Gradle build lifecycle passed.
 [Tooling change and validation](../experiments/daytrader3-gradle-only/2026-10-10/README.md).
-The restored commit remains the comparison reference. The gitlink can record the
-tooling commit once it is fetchable from the fork.
+The restored commit remains the comparison reference; this milestone selects the
+fetchable tooling commit in the superproject gitlink.
 
 ## Reusable tests and Gradle integration
 
