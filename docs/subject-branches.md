@@ -2,7 +2,7 @@
 
 Prepared: 2026-10-10
 
-The author requested using the DayTrader fork and separating build restoration, focused tooling upgrades, and migration work. The names below are an agent-proposed convention. No work branches or baseline tags have been created yet.
+The author requested using the DayTrader fork and separating build restoration, focused tooling upgrades, and migration work. The names below are an agent-proposed convention. `restore/runtime` now records the first DayTrader restoration milestone; no baseline tag has been created.
 
 ## Repository and checkout roles
 
@@ -60,4 +60,4 @@ git -C subjects/upstream/sample.daytrader3 remote add upstream https://github.co
 
 The pinned DayTrader root `build.gradle` only applies the Eclipse plugin; module build files contain the application build and Liberty configuration. The EAR module uses Liberty Gradle plugin 2.4 and legacy Gradle APIs. The repository also has Maven builds, and no tracked Gradle wrapper was found in the inspected source inventory. These observations do not establish which build currently works.
 
-The [feasibility assessment](daytrader-feasibility.md) now verifies unchanged-source compilation and packaging with Gradle 4.10.3 and Java 8 in temporary storage. Runtime selection and startup remain. Keep restoration and tooling upgrades visible as separate changes when evaluating migration results.
+The [feasibility assessment](daytrader-feasibility.md) now verifies unchanged-source compilation and packaging with Gradle 4.10.3 and Java 8 in temporary storage. The [restoration record](../experiments/daytrader3-restoration/2026-10-10/README.md) now records successful IDEA build, pinned Liberty startup, and synchronous trading smoke checks on `restore/runtime`. Keep restoration and tooling upgrades visible as separate changes when evaluating migration results.

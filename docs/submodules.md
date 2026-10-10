@@ -49,3 +49,14 @@ On 2026-10-10, the author selected [middlewareman/sample.daytrader3](https://git
 No application source, branch, gitlink, or build output was changed during this configuration. No build or runtime check was performed, and a fresh clone using the revised URL has not been tested.
 
 Theseus is absent from the public manifest. The shared workspace currently contains reference target implementations; isolate the permitted context before measuring independent agent performance.
+
+## DayTrader restoration milestone
+
+Restoration commit `37a8facf9729f271160aabc02dcf312fff7e0fc9` on `restore/runtime`
+adds the Gradle 4.10.3 wrapper, pinned Liberty runtime, generated-state isolation,
+and build/run instructions. The original source remains the initial revision above,
+and the fork default branch remains an upstream mirror. [Build and runtime evidence](../experiments/daytrader3-restoration/2026-10-10/README.md).
+
+The restoration commit is currently local; publication approval is pending. The
+superproject gitlink remains at the original revision until this fork commit is
+fetchable. All other submodule revisions are unchanged.

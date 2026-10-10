@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "mode": "Full EJB3 / synchronous",
+  "user": "uid:0",
+  "quote": "s:0",
+  "quantity": 2,
+  "holding_id": "1000",
+  "holdings_before": 5,
+  "holdings_after_buy": 6,
+  "holdings_after_sell": 5,
+  "buy": "DayTrader Order information DayTrader New Orders DayTrader Home Account Portfolio Quotes/Trade Logoff Sat Oct 10 17:32:11 CEST 2026 New Order Order 1000 to buy 2.0 shares of s:0 has been submitted for processing. Order 1000 details: order ID order status creation date completion date txn fee type symbol quantity 1000 closed Sat Oct 10 17:32:11 CEST 2026 Sat Oct 10 17:32:11 CEST 2026 24.95 buy s:0 2.0 Note: Click any symbol for a quote or to trade. DayTrader New Orders DayTrader",
+  "sell": "DayTrader Order information DayTrader New Orders DayTrader Home Account Portfolio Quotes/Trade Logoff Sat Oct 10 17:32:11 CEST 2026 New Order Order 1001 to sell 2.0 shares of s:0 has been submitted for processing. Order 1001 details: order ID order status creation date completion date txn fee type symbol quantity 1001 closed Sat Oct 10 17:32:11 CEST 2026 Sat Oct 10 17:32:11 CEST 2026 24.95 sell s:0 2.0 Note: Click any symbol for a quote or to trade. DayTrader New Orders DayTrader"
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/middlewareman/Work/Migration/experiments/daytrader3-restoration/2026-10-10/runtime-smoke.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "/Users/middlewareman/Work/Migration/experiments/daytrader3-restoration/2026-10-10/runtime-smoke.py", line 61, in main
+    login()
+    ~~~~~^^
+  File "/Users/middlewareman/Work/Migration/experiments/daytrader3-restoration/2026-10-10/runtime-smoke.py", line 59, in login
+    assert "Ready to Trade" in plain(html), plain(html)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Welcome to DayTrader DayTrader Home DayTrader Home Account Portfolio Quotes/Trade Logoff Sat Oct 10 17:31:59 CEST 2026 Alert: The following Order(s) have completed. order ID order status creation date completion date txn fee type symbol quantity 1 completed Sat Oct 10 17:31:26 CEST 2026 Sat Oct 10 17:31:26 CEST 2026 24.95 buy s:94 129.0 order ID order status creation date completion date txn fee type symbol quantity 2 completed Sat Oct 10 17:31:26 CEST 2026 Sat Oct 10 17:31:26 CEST 2026 24.95 buy s:48 187.0 order ID order status creation date completion date txn fee type symbol quantity 3 completed Sat Oct 10 17:31:26 CEST 2026 Sat Oct 10 17:31:26 CEST 2026 24.95 buy s:84 93.0 order ID order status creation date completion date txn fee type symbol quantity 4 completed Sat Oct 10 17:31:26 CEST 2026 Sat Oct 10 17:31:26 CEST 2026 24.95 buy s:51 62.0 order ID order status creation date completion date txn fee type symbol quantity 5 completed Sat Oct 10 17:31:26 CEST 2026 Sat Oct 10 17:31:26 CEST 2026 24.95 buy s:30 116.0 Welcome uid:0, User Statistics account ID: account created: total logins: session created: 1 Sat Oct 10 17:31:26 CEST 2026 1 Sat Oct 10 17:31:58 CEST 2026 Account Summary cash balance: number of holdings: total of holdings: sum of cash/holdings opening balance: $ 914675.25 5 $ 85200.00 $ 999875.25 $ 1000000.00 current gain/(loss): $ -124.75 ( +0.00% ) Market Summary 2026-10-10 DayTrader Stock Index (TSIA) 0.00 ( +0.00% ) Trading Volume 0.0 Top Gainers symbol price change Top Losers symbol price change Note: Click any symbol for a quote or to trade. DayTrader Home DayTrader

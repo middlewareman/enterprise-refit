@@ -1,0 +1,38 @@
+> Task :daytrader3-ee6:copyDerbyLib UP-TO-DATE
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:jar UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes UP-TO-DATE
+> Task :daytrader3-ee6-rest:war UP-TO-DATE
+> Task :daytrader3-ee6-web:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes UP-TO-DATE
+> Task :daytrader3-ee6-web:war UP-TO-DATE
+> Task :daytrader3-ee6:ear UP-TO-DATE
+> Task :daytrader3-ee6:installLiberty UP-TO-DATE
+> Task :daytrader3-ee6:libertyCreate SKIPPED
+> Task :daytrader3-ee6:installApps
+> Task :daytrader3-ee6:assemble
+> Task :daytrader3-ee6:installDayTraderFeatures SKIPPED
+> Task :daytrader3-ee6:libertyStart
+> Task :daytrader3-ee6:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6:processTestResources NO-SOURCE
+> Task :daytrader3-ee6:testClasses UP-TO-DATE
+> Task :daytrader3-ee6:fvt NO-SOURCE
+> Task :daytrader3-ee6:libertyStop
+> Task :daytrader3-ee6:test NO-SOURCE
+> Task :daytrader3-ee6:check UP-TO-DATE
+> Task :daytrader3-ee6:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 5s
+14 actionable tasks: 3 executed, 11 up-to-date

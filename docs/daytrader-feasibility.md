@@ -88,3 +88,13 @@ The [current Liberty plugin compatibility guidance](https://github.com/OpenLiber
 An upgrade would replace `compile`/`runtime` appropriately with `implementation`/`runtimeClasspath`, convert archive/report properties to modern APIs, review project artifact dependencies and EAR packaging, and adapt Liberty configuration and renamed tasks such as `installApps` to the selected plugin. Move the Derby copy to a dedicated driver dependency configuration instead of relying on all runtime dependencies. Preserve the observed mixed bytecode targets explicitly or record an intentional target change. Add a checksum-pinned wrapper and verify outputs, deployment, task ordering, and behavior against the original baseline. A plugin upgrade must also explicitly preserve the selected server distribution: newer plugin defaults use Open Liberty, which is not an automatic baseline-equivalent choice.
 
 **Next concrete action:** select and verify a pinned Liberty runtime against the existing server features on a restoration branch, then attempt deployment/startup using the proven Gradle 4.10.3 / Java 8 build path.
+
+## Restoration follow-up
+
+The author accepted runtime restoration and requested IDEA setup first. The
+[restoration record](../experiments/daytrader3-restoration/2026-10-10/README.md)
+now records a Gradle 4.10.3 wrapper, successful IDEA import/full build with Java 8,
+pinned IBM Liberty 24.0.0.9 startup, Derby initialization, and passing Full
+EJB3/synchronous login, quote, buy/sell, and portfolio-persistence smoke checks.
+Broader transactional coverage remains open. This follow-up does not turn the
+earlier packaging-only assessment into an earlier runtime result.

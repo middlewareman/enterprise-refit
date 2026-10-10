@@ -8,7 +8,7 @@ A workspace for exploring and comparing ways to modernize legacy Java enterprise
 
 The aim is to understand how different approaches tackle migration, what assumptions they make, where they need help, and what evidence supports their results. Reusable practices may emerge from that comparison. Prompts, scripts, documentation, decisions, failed experiments, and human interventions are part of the result alongside the migrated code.
 
-This superproject brings together application sources, migration tools, research benchmarks, and documented case studies through Git submodules. It remains a research and experiment scaffold. [DayTrader's unchanged-source compilation and packaging](docs/daytrader-feasibility.md) have been checked; no runtime baseline, migration, or reference-method reproduction result is claimed yet.
+This superproject brings together application sources, migration tools, research benchmarks, and documented case studies through Git submodules. It remains a research and experiment scaffold. [DayTrader's unchanged-source compilation and packaging](docs/daytrader-feasibility.md) and [first restored runtime smoke check](experiments/daytrader3-restoration/2026-10-10/README.md) have been checked. IDEA builds with Gradle 4.10.3 / Java 8, and Full EJB3/synchronous login, quote, buy/sell, and portfolio persistence pass on pinned Liberty. Broader behavior, migration, and reference-method reproduction remain unverified.
 
 A useful outcome could be a practical guide, a toolbox, or a method that engineers apply manually or with agent assistance. The degree of automation can vary across steps and evolve as agents improve. We assess an approach by the quality of its results, the confidence in its validation, and the effort required to use it.
 
@@ -81,7 +81,7 @@ This subject is attractive for studying how agents understand tangled business l
 
 ### DayTrader 3
 
-[middlewareman/sample.daytrader3](https://github.com/middlewareman/sample.daytrader3), forked from [WASdev/sample.daytrader3](https://github.com/WASdev/sample.daytrader3), is our proposed subject for enterprise platform and framework migration. The submodule now uses the author's fork while preserving its original source pin.
+[middlewareman/sample.daytrader3](https://github.com/middlewareman/sample.daytrader3), forked from [WASdev/sample.daytrader3](https://github.com/WASdev/sample.daytrader3), is our proposed subject for enterprise platform and framework migration. The submodule uses the author's fork, with the original source revision and restoration result recorded separately.
 
 The original repository is an archived Java EE 6 stock-trading benchmark with login, quotes, portfolios, and share purchases/sales. Its sources include enterprise modules, server configuration, and JMeter workload material. The upstream README describes both end-to-end workloads and functional/performance primitives.
 

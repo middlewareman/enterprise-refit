@@ -1,0 +1,176 @@
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:jar UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes UP-TO-DATE
+> Task :daytrader3-ee6-rest:war UP-TO-DATE
+> Task :daytrader3-ee6-web:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes UP-TO-DATE
+> Task :daytrader3-ee6-web:war UP-TO-DATE
+> Task :daytrader3-ee6:ear UP-TO-DATE
+> Task :daytrader3-ee6:installLiberty UP-TO-DATE
+> Task :daytrader3-ee6:libertyCreate SKIPPED
+> Task :daytrader3-ee6:installApps
+> Task :daytrader3-ee6:copyDerbyLib UP-TO-DATE
+> Task :daytrader3-ee6:installDayTraderFeatures
+Initializing ...
+Resolving remote features. This process might take several minutes to complete.
+Preparing assets for installation. This process might take several minutes to complete.
+Verifying signatures ...
+All features were successfully verified.
+Starting installation ...
+Successfully installed feature ejbLite-3.1.
+Successfully installed feature servlet-3.0.
+Successfully installed feature servlet-4.0.
+Successfully installed feature jsp-2.2.
+Successfully installed feature beanValidation-1.0.
+Successfully installed feature jsf-2.0.
+Successfully installed feature jca-1.6.
+Successfully installed feature jmsMdb-3.1.
+Successfully installed feature jaxrs-1.1.
+Successfully installed feature jdbc-4.0.
+Successfully installed feature jdbc-4.2.
+Successfully installed feature jpa-2.0.
+Successfully installed feature wasJmsClient-1.1.
+Successfully installed feature bells-1.0.
+Successfully installed feature cdi-4.0.
+Successfully installed feature servlet-5.0.
+Successfully installed feature jsonp-1.1.
+Successfully installed feature servlet-6.0.
+Successfully installed feature jaxrsClient-2.1.
+Successfully installed feature jaxrs-2.1.
+Successfully installed feature mpConfig-2.0.
+Successfully installed feature mpOpenAPI-2.0.
+Successfully installed feature jdbc-4.3.
+Successfully installed feature xmlBinding-3.0.
+Successfully installed feature persistenceContainer-3.0.
+Successfully installed feature xmlBinding-4.0.
+Successfully installed feature xmlWS-4.0.
+Successfully installed feature persistenceContainer-3.1.
+Successfully installed feature jsonp-2.1.
+Successfully installed feature persistence-3.1.
+Successfully installed feature cdi-3.0.
+Successfully installed feature expressionLanguage-4.0.
+Successfully installed feature appSecurity-4.0.
+Successfully installed feature batch-2.1.
+Successfully installed feature enterpriseBeansLite-4.0.
+Successfully installed feature enterpriseBeansRemote-4.0.
+Successfully installed feature connectors-2.1.
+Successfully installed feature concurrent-2.0.
+Successfully installed feature jsonp-2.0.
+Successfully installed feature restfulWSClient-3.0.
+Successfully installed feature restfulWS-3.0.
+Successfully installed feature mpConfig-3.0.
+Successfully installed feature mpOpenAPI-3.0.
+Successfully installed feature messagingClient-3.0.
+Successfully installed feature messagingServer-3.0.
+Successfully installed feature cdi-2.0.
+Successfully installed feature mpFaultTolerance-3.0.
+Successfully installed feature mpMetrics-3.0.
+Successfully installed feature restfulWSClient-3.1.
+Successfully installed feature mpConfig-3.1.
+Successfully installed feature mpOpenTracing-3.0.
+Successfully installed feature mpRestClient-3.0.
+Successfully installed feature expressionLanguage-5.0.
+Successfully installed feature faces-4.0.
+Successfully installed feature beanValidation-3.0.
+Successfully installed feature restfulWS-3.1.
+Successfully installed feature cdi-1.0.
+Successfully installed feature mpConfig-1.4.
+Successfully installed feature mpConfig-1.3.
+Successfully installed feature mpMetrics-2.3.
+Successfully installed feature appSecurity-5.0.
+Successfully installed feature appAuthorization-2.1.
+Successfully installed feature opentracing-2.0.
+Successfully installed feature mpOpenTracing-2.0.
+Successfully installed feature mpRestClient-2.0.
+Successfully installed feature mpJwt-2.1.
+Successfully installed feature mpJwt-2.0.
+Successfully installed feature mpMetrics-5.0.
+Successfully installed feature beanValidation-2.0.
+Successfully installed feature mpFaultTolerance-1.1.
+Successfully installed feature websocket-2.0.
+Successfully installed feature appSecurity-3.0.
+Successfully installed feature mpMetrics-2.2.
+Successfully installed feature jsf-2.3.
+Successfully installed feature persistence-3.0.
+Successfully installed feature batch-2.0.
+Successfully installed feature mpFaultTolerance-4.0.
+Successfully installed feature mpMetrics-4.0.
+Successfully installed feature concurrent-3.0.
+Successfully installed feature mpMetrics-1.0.
+Successfully installed feature mpFaultTolerance-2.1.
+Successfully installed feature mpJwt-1.2.
+Successfully installed feature mpMetrics-2.0.
+Successfully installed feature mpFaultTolerance-2.0.
+Successfully installed feature jpaContainer-2.2.
+Successfully installed feature opentracing-1.3.
+Successfully installed feature mpOpenTracing-1.3.
+Successfully installed feature mpRestClient-1.3.
+Successfully installed feature pages-3.0.
+Successfully installed feature faces-3.0.
+Successfully installed feature connectors-2.0.
+Successfully installed feature enterpriseBeansPersistentTimer-4.0.
+Successfully installed feature enterpriseBeansHome-4.0.
+Successfully installed feature mdb-4.0.
+Successfully installed feature enterpriseBeans-4.0.
+Successfully installed feature websocket-2.1.
+Successfully installed feature mdb-3.1.
+Successfully installed feature messagingSecurity-3.0.
+Successfully installed feature messaging-3.0.
+Successfully installed feature mpHealth-3.0.
+Successfully installed feature mail-2.0.
+Successfully installed feature mpRestClient-1.2.
+Successfully installed feature mpRestClient-1.1.
+Successfully installed feature xmlWS-3.0.
+Successfully installed feature appAuthentication-2.0.
+Successfully installed feature mpHealth-2.1.
+Successfully installed feature mail-2.1.
+Successfully installed feature connectorsInboundSecurity-2.0.
+Successfully installed feature javaMail-1.6.
+Successfully installed feature appAuthentication-3.0.
+Successfully installed feature appAuthorization-2.0.
+Successfully installed feature appClientSupport-2.0.
+Successfully installed feature mpOpenAPI-1.1.
+Successfully installed feature pages-3.1.
+Successfully installed feature jpa-2.2.
+Successfully installed feature mpHealth-3.1.
+Successfully installed feature opentracing-1.2.
+Successfully installed feature mpOpenTracing-1.2.
+Successfully installed feature mpHealth-2.0.
+Successfully installed feature jms-1.1.
+Successfully installed feature mpHealth-4.0.
+Successfully installed feature opentracing-1.1.
+Successfully installed feature mpOpenTracing-1.1.
+Successfully installed feature mpRestClient-1.4.
+Successfully installed feature mpMetrics-5.1.
+Successfully installed feature managedBeans-2.0.
+Successfully installed feature mpOpenAPI-3.1.
+Successfully installed feature mpJwt-1.1.
+Successfully installed feature mpHealth-2.2.
+Successfully installed feature messaging-3.1.
+All features were successfully installed.
+Start product validation...
+Product validation completed successfully.
+[ant:server]
+[ant:server] Starting server daytrader3_Sample.
+> Task :daytrader3-ee6:libertyStart
+[ant:server] CWWKM2001I: server.config.dir is /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample.
+[ant:server] CWWKM2001I: server.output.dir is /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample.
+[ant:server] CWWKM2001I: Invoke command is [/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6/build/wlp/bin/server, start, daytrader3_Sample].
+[ant:server] Server daytrader3_Sample started with process ID 65869.
+> Task :daytrader3-ee6:libertyStart
+[ant:server] Waiting up to 30 seconds for server confirmation:  CWWKF0011I to be found in /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample/logs/messages.log
+[ant:server] CWWKM2010I: Searching for CWWKF0011I in /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample/logs/messages.log. This search will timeout after 30 seconds.
+[ant:server] CWWKM2015I: Match number: 1 is [10/10/26 17:30:17:176 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The daytrader3_Sample server is ready to run a smarter planet. The daytrader3_Sample server started in 6.839 seconds..
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
+BUILD SUCCESSFUL in 6m 44s
+14 actionable tasks: 3 executed, 11 up-to-date
