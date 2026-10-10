@@ -19,10 +19,11 @@ smoke check is a first runtime baseline, not equivalence across all application 
 - Restoration commit: `37a8facf9729f271160aabc02dcf312fff7e0fc9` on `restore/runtime`, created from that source.
   The fork's `master` is unchanged. The prior superproject setup/feasibility
   commit is `892d2bc`.
-- Publication/gitlink status: the restoration commit is local. Automatic approval
-  review rejected its push because the commit request did not explicitly authorize
-  remote publication. Push approval is pending; the superproject gitlink retains
-  the original source revision until the fork commit is fetchable.
+- Publication/gitlink status: an earlier push was rejected by automatic approval
+  review because the commit request did not explicitly authorize publication.
+  Subsequent workspace inspection and `git ls-remote` now confirm that the fork
+  branch is published at the restoration commit; superproject commit `c6c9c88`
+  records its gitlink. The original source revision remains separately recorded.
 - macOS / Apple Silicon; Zulu Java `1.8.0_282`, aarch64, installed before this work.
 - Gradle 4.10.3; Liberty Gradle plugin 2.4 retained.
 - IDEA 2026.2.3; IDEA's own runtime remains independent of the Gradle/project SDK.

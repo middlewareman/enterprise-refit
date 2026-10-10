@@ -57,6 +57,6 @@ adds the Gradle 4.10.3 wrapper, pinned Liberty runtime, generated-state isolatio
 and build/run instructions. The original source remains the initial revision above,
 and the fork default branch remains an upstream mirror. [Build and runtime evidence](../experiments/daytrader3-restoration/2026-10-10/README.md).
 
-The restoration commit is currently local; publication approval is pending. The
-superproject gitlink remains at the original revision until this fork commit is
-fetchable. All other submodule revisions are unchanged.
+The restoration commit is now published on the fork's `restore/runtime` branch;
+`git ls-remote` verified its tip. Superproject commit `c6c9c88` records this
+restoration gitlink. All other submodule revisions are unchanged.
