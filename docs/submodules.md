@@ -34,10 +34,18 @@ For a fresh clone:
 git clone --recurse-submodules https://github.com/middlewareman/enterprise-refit.git
 ```
 
-The fresh-clone command will reproduce these additions after `.gitmodules` and the Git links have been committed and published. Each recorded revision must remain fetchable from its upstream URL.
+The fresh-clone command will reproduce these additions after `.gitmodules` and the Git links have been committed and published. Each recorded revision must remain fetchable from its configured repository URL.
 
 Verification during setup checked that all eight repositories were initialized, their HEADs matched the Git links staged in the superproject, and their worktrees were clean. None contained a nested `.gitmodules` file at the recorded revision. Recursive status showed eight initialized entries with no uninitialized or revision-mismatch markers. A fresh clone of the published superproject has not been tested in this task.
 
-The initial `git submodule add` checkouts are on their upstream default branches; the superproject pins commit IDs, not moving branch tips. Later initialization normally produces detached HEADs. Do not pull or edit these reference and upstream checkouts as part of an experiment. Use a separate implementation checkout, and record any deliberate reference revision update separately.
+The initial `git submodule add` checkouts are on their upstream default branches; the superproject pins commit IDs, not moving branch tips. Later initialization normally produces detached HEADs. Original upstream subjects and reference checkouts remain untouched. Author-controlled subject forks may use explicitly assigned work branches at the existing subject path; [the proposed branch convention](subject-branches.md) separates restoration, tooling, and experiments. Record deliberate source or reference revision updates separately.
+
+## DayTrader fork configuration
+
+On 2026-10-10, the author selected [middlewareman/sample.daytrader3](https://github.com/middlewareman/sample.daytrader3) as the configured DayTrader submodule repository. Its provenance remains [WASdev/sample.daytrader3](https://github.com/WASdev/sample.daytrader3). The initial revision table above is unchanged.
+
+`git ls-remote` verified that the fork's HEAD and `master` were both `a2d61af8c75c771fe4c9ad3f101bbdef08046c1a`, matching the existing pin. `git submodule set-url` updated [.gitmodules](../.gitmodules) and synchronized local configuration; the local DayTrader `origin` now points to the fork, and an `upstream` remote records the original repository. That additional remote must be configured separately in a new clone.
+
+No application source, branch, gitlink, or build output was changed during this configuration. No build or runtime check was performed, and a fresh clone using the revised URL has not been tested.
 
 Theseus is absent from the public manifest. The shared workspace currently contains reference target implementations; isolate the permitted context before measuring independent agent performance.

@@ -1,0 +1,30 @@
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources
+> Task :daytrader3-ee6:classes
+
+> Task :daytrader3-ee6-ejb:compileJava
+warning: [options] bootstrap class path not set in conjunction with -source 1.7
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+> Task :daytrader3-ee6-ejb:processResources
+> Task :daytrader3-ee6-ejb:classes
+> Task :daytrader3-ee6-ejb:jar
+> Task :daytrader3-ee6-rest:compileJava
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes
+> Task :daytrader3-ee6-rest:war
+> Task :daytrader3-ee6-web:compileJava
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes
+> Task :daytrader3-ee6-web:war
+> Task :daytrader3-ee6:ear
+> Task :daytrader3-ee6:copyDerbyLib
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/4.10.3/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 7s
+10 actionable tasks: 10 executed

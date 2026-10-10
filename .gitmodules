@@ -3,7 +3,7 @@
 	url = https://github.com/medbounaga/deftERP.git
 [submodule "subjects/upstream/sample.daytrader3"]
 	path = subjects/upstream/sample.daytrader3
-	url = https://github.com/WASdev/sample.daytrader3.git
+	url = https://github.com/middlewareman/sample.daytrader3.git
 [submodule "references/kai"]
 	path = references/kai
 	url = https://github.com/konveyor/kai.git

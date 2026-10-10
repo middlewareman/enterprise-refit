@@ -1,0 +1,41 @@
+Gradle 4.10.3 distribution SHA-256: 8626cbf206b4e201ade7b87779090690447054bc93f052954c78480fa6ed186e
+Distribution checksum matches services.gradle.org published checksum.
+Source: a2d61af8c75c771fe4c9ad3f101bbdef08046c1a (git archive, no source edits)
+OS: macOS 27.0.1 arm64
+JDK: Zulu 8.52.0.23, OpenJDK 1.8.0_282-b08
+
+daytrader3-ee6/build/libs/daytrader3-ee6.ear
+SHA-256: 23c2d572c9cbc1e48caf098e142562304e95e3e9e8042534ecd026185c181f13
+Direct class major-version counts: {}
+EAR members: META-INF/, META-INF/MANIFEST.MF, dt-ejb.jar, web.war, Rest.war, META-INF/application.xml, META-INF/DEPENDENCIES, META-INF/LICENSE.txt
+EAR descriptor:
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" version="6">
+  <description>DayTrader Stock Trading Performance Benchmark Sample</description>
+  <display-name>DayTrader EE6</display-name>
+  <module id="Module_1301664127401">
+    <web>
+      <web-uri>web.war</web-uri>
+      <context-root>/daytrader</context-root>
+    </web>
+  </module>
+  <module id="Module_1301664127268">
+    <ejb>dt-ejb.jar</ejb>
+  </module>
+  <module id="Module_1344870536695">
+        <web>
+                <web-uri>Rest.war</web-uri>
+                <context-root>rest</context-root>
+        </web>
+  </module>
+</application>
+
+daytrader3-ee6-ejb/build/libs/dt-ejb.jar
+SHA-256: 10e22fa91df72b0a839019360901a9f1045911681a71fc8d2a9ad82bb030f083
+Direct class major-version counts: {51: 28}
+daytrader3-ee6-rest/build/libs/Rest.war
+SHA-256: ada82be41882a2286e93098a3feb09981eb1f9e225be3168968920082460442f
+Direct class major-version counts: {52: 6}
+daytrader3-ee6-web/build/libs/web.war
+SHA-256: 41f251ec23a911002c333414dbf71114ab5c6012f959d163f979abc3f76af3af
+Direct class major-version counts: {52: 43}

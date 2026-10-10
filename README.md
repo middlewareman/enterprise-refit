@@ -8,7 +8,7 @@ A workspace for exploring and comparing ways to modernize legacy Java enterprise
 
 The aim is to understand how different approaches tackle migration, what assumptions they make, where they need help, and what evidence supports their results. Reusable practices may emerge from that comparison. Prompts, scripts, documentation, decisions, failed experiments, and human interventions are part of the result alongside the migrated code.
 
-This superproject brings together application sources, migration tools, research benchmarks, and documented case studies through Git submodules. It is initially a research and experiment scaffold; no migration or reproduction result is claimed yet.
+This superproject brings together application sources, migration tools, research benchmarks, and documented case studies through Git submodules. It remains a research and experiment scaffold. [DayTrader's unchanged-source compilation and packaging](docs/daytrader-feasibility.md) have been checked; no runtime baseline, migration, or reference-method reproduction result is claimed yet.
 
 A useful outcome could be a practical guide, a toolbox, or a method that engineers apply manually or with agent assistance. The degree of automation can vary across steps and evolve as agents improve. We assess an approach by the quality of its results, the confidence in its validation, and the effort required to use it.
 
@@ -81,9 +81,9 @@ This subject is attractive for studying how agents understand tangled business l
 
 ### DayTrader 3
 
-[WASdev/sample.daytrader3](https://github.com/WASdev/sample.daytrader3) is our proposed subject for enterprise platform and framework migration.
+[middlewareman/sample.daytrader3](https://github.com/middlewareman/sample.daytrader3), forked from [WASdev/sample.daytrader3](https://github.com/WASdev/sample.daytrader3), is our proposed subject for enterprise platform and framework migration. The submodule now uses the author's fork while preserving its original source pin.
 
-It is an archived Java EE 6 stock-trading benchmark with login, quotes, portfolios, and share purchases/sales. Its repository includes enterprise modules, server configuration, and JMeter workload material. The upstream README describes both end-to-end workloads and functional/performance primitives.
+The original repository is an archived Java EE 6 stock-trading benchmark with login, quotes, portfolios, and share purchases/sales. Its sources include enterprise modules, server configuration, and JMeter workload material. The upstream README describes both end-to-end workloads and functional/performance primitives.
 
 The earlier code inspection identified EJB/JPA and JDBC paths, JMS/MDB mechanisms, and EAR packaging. Recheck which paths and deployment modes are runnable in the baseline. Initial scenarios should cover login, a quote lookup, a purchase, a sale, and consistent portfolio/order state; include asynchronous completion, rollback, and concurrent access where the selected mode uses them.
 
@@ -132,7 +132,7 @@ The public directories and eight submodules below are in place. Initial revision
 | Path | Purpose |
 |---|---|
 | `subjects/upstream/deftERP/` | Pinned upstream submodule, used as an untouched source baseline. |
-| `subjects/upstream/sample.daytrader3/` | Pinned upstream submodule, used as an untouched source baseline. |
+| `subjects/upstream/sample.daytrader3/` | Author-controlled subject fork; preserve the original source pin and use assigned branches for restoration, tooling, and migration work. |
 | `references/kai/`, `references/java-migration/` | Pinned reference approach submodules. |
 | `references/ai-assisted-code-migration/`, `references/spring-boot-example/` | Pinned case-study code submodules. |
 | `evaluation/scarfbench/`, `evaluation/migrationbench/` | Pinned evaluation/reference resources. |
@@ -146,11 +146,11 @@ The superproject owns orchestration and experiment metadata. Each application or
 
 ### Initial public submodules
 
-The eight public submodules are populated. The following commands document their initial setup and can be used in a new initialized superproject:
+The eight public submodules are populated. The following commands use their current configured URLs and can be used in a new initialized superproject. DayTrader now uses the author's fork; its initial revision is unchanged:
 
 ```bash
 git submodule add https://github.com/medbounaga/deftERP.git subjects/upstream/deftERP
-git submodule add https://github.com/WASdev/sample.daytrader3.git subjects/upstream/sample.daytrader3
+git submodule add https://github.com/middlewareman/sample.daytrader3.git subjects/upstream/sample.daytrader3
 git submodule add https://github.com/konveyor/kai.git references/kai
 git submodule add https://github.com/amazon-science/JavaMigration.git references/java-migration
 git submodule add https://github.com/rmadabusiml/ai-assisted-code-migration.git references/ai-assisted-code-migration
@@ -167,6 +167,8 @@ git submodule status --recursive
 ```
 
 Submodules normally initialize at a detached HEAD. Perform editable experiments on explicit branches in forks or independent checkouts. Push implementation commits before updating and committing their superproject pointers so collaborators can fetch them. Keep reference updates separate from experiment runs; avoid automatically advancing to upstream HEAD during evaluation.
+
+[The proposed subject branch convention](docs/subject-branches.md) separates `restore/*`, `tooling/*`, and `experiment/*` in author-controlled forks. The fork's default branch preserves upstream history; experiment records identify exact starting and result commits. Fork-backed subjects may be edited on assigned branches at their existing paths. Other original upstream and reference checkouts remain untouched.
 
 The root `.gitignore` excludes `/local-private/`, local IntelliJ configuration, and macOS directory metadata. `local-private/` is an optional local directory and is absent from public clones. Public instructions and recursive cloning must work without Theseus credentials. Each submodule retains its own license and attribution requirements; this superproject's license does not replace them.
 
@@ -192,7 +194,7 @@ Durable project knowledge should explain the current architecture, build/run com
 
 For Codex, a root `AGENTS.md` can define workspace boundaries and subject-specific instructions can refine them. Check instruction discovery and precedence for each agent/tool; merely placing instructions in the superproject does not ensure every invocation uses them.
 
-- Keep upstream and reference checkouts untouched; write implementation changes only to the assigned experiment checkout.
+- Keep original upstream and reference checkouts untouched; write application changes only to assigned work branches in author-controlled forks or assigned implementation checkouts. Preserve original source pins and distinguish restoration, tooling, and migration revisions.
 - Give the migration agent approved context. When measuring independent performance, exclude reference target implementations and held-out tests from its accessible workspace. Instructions alone are not an access boundary. Runs that consult reference solutions should be labeled **reference-assisted**.
 - Keep evaluation expectations under separate control. Test-porting changes may be necessary, but weakening an assertion or changing its meaning needs explicit review and a recorded reason.
 - Require executed validation and inspectable artifacts for completion. A successful build or the agent's assertion of success is insufficient.
