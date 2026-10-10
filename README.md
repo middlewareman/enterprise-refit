@@ -111,11 +111,13 @@ For each reference, record its pinned revision, prerequisites, license, claimed 
 
 Theseus has a special place in this investigation because it was developed iteratively by the project's author while working through migration problems, before stepping back to survey existing approaches. It preserves an independent first attempt, with room for both naive assumptions and original ideas.
 
+Theseus is the public alias for a private effort. Its retrospective account and supporting material require disclosure review; the questions and author answers are private for now.
+
 There is value in giving a problem a sustained attempt before studying how others have solved it. That lets initial ideas develop on their own terms. Existing work can then illuminate gaps and suggest better techniques, while also shaping the possibilities we consider. Keeping the original reasoning visible helps us examine what we discovered independently, what others add, and what deserves revision.
 
 Theseus combines Markdown documentation intended to be read by both humans and agents with scripts that perform parts of the transformations. The documentation explains what we want to achieve and how to approach parts of the work; the scripts make selected changes repeatable. We will examine how these pieces support each other, where they depend on human judgment, and which ideas transfer to other applications. Theseus contributes experience and hypotheses to the comparison, with its assumptions and results open to the same scrutiny as those of other approaches.
 
-A [provisional account of Theseus's initial reasoning](docs/theseus-initial-reasoning.md) distinguishes early documented choices, later method observations, and questions for public experiments. Author recollection and outcome evidence remain incomplete.
+A [provisional account of Theseus's initial reasoning](docs/theseus-initial-reasoning.md) distinguishes author recollections, documented choices, current method observations, and questions for public experiments. Client-history chronology is retained privately. The account remains subject to disclosure review, and outcome evidence remains incomplete.
 
 ### Theseus and publishable evidence
 

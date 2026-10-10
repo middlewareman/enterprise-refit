@@ -1,6 +1,6 @@
 # Mission: Enterprise Refit — Working Plan
 
-Last updated: 2026-10-09
+Last updated: 2026-10-10
 
 ## Purpose and intended outcomes
 
@@ -15,19 +15,21 @@ The author has identified a tendency to become absorbed in details and lose sigh
 - The README establishes the investigation; this plan and [AGENTS.md](AGENTS.md) establish the working agreements.
 - All eight public subject, reference, and evaluation submodules are populated at initial pinned revisions. [docs/submodules.md](docs/submodules.md) records the commits, selection rule, license evidence, and unresolved license terms for the Spring Boot example and ScarfBench.
 - No local build, runtime baseline, migration, or reproduction result has been established.
-- A [provisional account of Theseus's initial reasoning](docs/theseus-initial-reasoning.md) now records reviewed early documentation, current method observations, and hypotheses for public experiments. Private source references are retained locally; author recollection, prior-exposure chronology, and shareable outcome evidence remain incomplete.
+- The Theseus chronology is internal and private. The questions, original author answer, and agent-written summary are private for now and retained in ignored local storage. The [initial account](docs/theseus-initial-reasoning.md) also requires disclosure review. Source fidelity and anonymized names do not establish permission to publish client information.
 - DayTrader 3 and deftERP are prospective subjects. Earlier observations about them need verification against pinned revisions.
 - Inspecting DayTrader first was an agent recommendation. Subject selection, target stack, and experiment contract remain undecided.
 
 ## Current focus and next action
 
-**Current task (draft prepared):** document Theseus's initial reasoning before deeper reference study.
+**Current task (privacy boundary corrected; publication review pending):** retain Theseus evidence privately and determine which generic material is suitable for a public account.
 
-**Completion criteria:** a public account distinguishes early documented choices, current observations, intended benefits, and unverified outcomes; raw private material and customer-specific content are excluded; historical gaps and the author's review status are explicit. The draft is available, but author context and review remain pending.
+**Completion criteria:** preserve source material privately, exclude client chronology from public documents, keep questions and answers private, and publish only material whose disclosure suitability has been established. Historical accuracy and outcome evidence remain separate review concerns.
 
 **Recommended next action:** create `docs/daytrader-feasibility.md` with the pinned revision, prerequisites, upstream build/run instructions, existing checks, environment gaps, and a proposed first build command. Stop when the note supports a decision to attempt that build or inspect deftERP. This is a proposed first inspection, not final subject selection. Incorporate the author's recollection and review into the Theseus account when available; keep deeper reference study separate until the initial account is reviewed.
 
-**Next decision:** which subject and migration question provide a useful, feasible first experiment? Buildability and behavioral evidence should inform that decision. DayTrader is a provisional first inspection candidate.
+**Author contribution:** the author supplied private context and requested a history investigation. The chronology, questions, and answers are private for now. Further author context is maintained in private notes.
+
+**Next decision:** which subject and migration question provide a useful, feasible first experiment? Buildability and available evidence should inform selection. DayTrader remains a provisional first inspection candidate.
 
 ## Working roadmap
 
@@ -35,7 +37,7 @@ This sequence is a working proposal derived from the README. Refine it as eviden
 
 | Milestone | Outcome and completion evidence | Status |
 |---|---|---|
-| 1. Preserve initial reasoning | A reviewed, public account of Theseus's hypotheses and limitations; any unavailable or private evidence is identified. | Draft prepared from early and current documents; author context and review pending |
+| 1. Preserve initial reasoning | Private evidence retained; any public account contains only material suitable for disclosure, with hypotheses and limitations accurately attributed. | Chronology, questions, and answers private; related account review pending |
 | 2. Assess subject feasibility | Selected public sources are pinned; prerequisites and licenses are recorded; build/run attempts and blockers support a subject recommendation. | In progress: public sources pinned; prerequisites and feasibility remain to be assessed |
 | 3. Establish a baseline | A selected subject has repeatable build/run instructions, controlled fixtures, and executed behavioral checks. Restoration patches are recorded separately. If restoration is infeasible, document the evidence and revisit subject selection. | Planned |
 | 4. Define and execute an experiment | A source state, compatible target stack, permitted changes, and acceptance checks are recorded; bounded transformations produce inspectable commits and validation results. | Planned |
@@ -61,6 +63,11 @@ Before ending a substantive work session, update this file with verified progres
 | 2026-10-09 | Author: create the directory structure and `.gitignore`. | Keep private material and local IDE files out of version control and leave submodule locations available. |
 | 2026-10-09 | Author: add the Git submodules. Agent implementation: add all eight public repositories listed in the README at their default-branch HEADs and record license observations. | Populate the workspace ahead of the proposed Theseus account; keep deeper reference study separate from preserving initial reasoning. Theseus remains outside the public manifest. |
 | 2026-10-09 | Author: perform the next step. Agents: draft the Theseus account from selected early and current private method documents, with source references kept locally and historical gaps explicit. | Preserve an initial account without inventing recollections or outcomes. Public feasibility work can continue while author context is pending. |
+| 2026-10-09 | Author: create questions about Theseus. Agents: prepare a questionnaire for gathering author context. | Gather useful context in manageable batches; clarify the public name and scope. |
+| 2026-10-09 | Author: supply initial answers and invite follow-ups; use only the Theseus alias publicly. Agents: preserve the original privately and prepare an anonymized draft. | Distinguish retrospective recollection from demonstrated results. Publication suitability remains subject to review. |
+| 2026-10-09 | Author: use Git history rather than remembered dates. Agents: reconstruct selected milestones and initially prepare an anonymized chronology for the public document area. | The later privacy correction supersedes that placement; the chronology is retained internally. |
+| 2026-10-10 | Author: keep the chronology internal and private; publication of questions and answers is undecided. Agent: move the chronology into ignored storage, remove copied timeline details and links, and unstage undecided drafts. | Anonymization and factual accuracy are insufficient disclosure checks. Record the publication boundary in AGENTS.md so later sessions preserve it. |
+| 2026-10-10 | Author: keep the questions and answer private for now. Agent: move the questionnaire and answer summary into ignored private storage, preserving the original response and earlier snapshots. | All versions and their contents stay out of public documents and commits unless the author explicitly changes this decision. |
 
 Record later material decisions here with their origin, rationale, and relevant evidence. Keep recommendations distinguishable from accepted decisions.
 
@@ -74,8 +81,8 @@ These ideas can be revisited when they serve a concrete milestone:
 
 ## Session handoff
 
-- **Completed:** provisional Theseus account drafted; early documentation distinguished from current methods and new hypotheses. Private source-review notes retained outside version control; README and plan updated. No implementation changes were made.
-- **Validation:** early claims checked against two historical documents; current method claims reviewed against selected documentation and scripts. Two additional agents reviewed provenance wording and change-transfer claims; their wording corrections were applied. Local links, table structure, selected private identifiers, ignored review-note paths, and whitespace were checked. The private checkout remains unchanged. These checks support the draft's accuracy, not migration outcomes or a complete disclosure audit. No private scripts or application checks were executed.
-- **Open:** author recollection and review of the Theseus account; subject feasibility; subject selection; target stack; baseline and behavioral checks; unresolved license terms for the Spring Boot example and ScarfBench.
-- **Next:** create the bounded DayTrader feasibility note while awaiting author context on Theseus.
+- **Completed:** chronology moved into ignored private review storage. Pre-correction working documents and staged draft versions preserved privately; copied timeline dates and chronology links removed from the public document area. The copied author-answer narrative is withheld from the account pending review. Questions and the answer summary moved from the public document area into ignored private storage. The original answer remains separately preserved; all versions are private for now. AGENTS.md records the disclosure boundary. No source checkout was changed.
+- **Validation:** private working snapshots preserved byte-for-byte; chronology, questions, and answer summary absent from public files and the index, with no commits of those files found in current refs. Checked local document links, tables, whitespace, ignore behavior, and removal of copied timeline details. Commit review removed remaining additions that echoed private question/answer content and corrected the decision-log table. These checks establish the scope of this privacy correction, not clearance to publish the underlying private materials. No scripts, builds, deployments, or application tests were run.
+- **Open:** disclosure review of the related account; outcome evidence and contribution attribution; subject feasibility and experiment scope; unresolved license terms for the Spring Boot example and ScarfBench.
+- **Next:** the next independent technical task remains the bounded DayTrader feasibility note. Keep the Theseus chronology, questions, and answers private; incorporate further private context when supplied.
 - **Resume prompt:** "Read README.md, PLAN.md, and AGENTS.md. Summarize the current focus, check it against the workspace, and continue with the next action. Help me maintain perspective and flag work that loses its connection to the goal."
