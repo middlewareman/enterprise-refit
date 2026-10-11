@@ -1,0 +1,1 @@
+IDEA MCP reformat_file applied to TradingWorkload.java and run-workload.py before execution. Compile and six full workload/SQL runs validated these formatted sources. No application or test assertions changed in this step.

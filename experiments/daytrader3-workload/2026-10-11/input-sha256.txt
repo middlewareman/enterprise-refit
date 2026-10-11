@@ -1,0 +1,4 @@
+5aa55be47a8ed7d98e9ee2710e0cbfdaaf0cfbc9df5e6d34ad64b1a11cd1e2ed  subjects/upstream/sample.daytrader3/daytrader3-ee6/build/libs/daytrader3-ee6.ear
+197bf1f1bc35d8100757bb2ba9ceeb06bea45e11450aae538092741591b4a527  subjects/upstream/sample.daytrader3/daytrader3-verification/src/test/java/baseline/TradeClient.java
+528e9d5456766fb1d909d08141487c86db478bfaebcf5fcb75923597048cf8ea  subjects/upstream/sample.daytrader3/daytrader3-ee6-wlpcfg/servers/daytrader3_Sample/server.xml
+851d6a78f82416bf410c23a5cececeb6ddb9027455c8393a84438436bdac4cbb  subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/webapp/dbscripts/derby/Table.ddl

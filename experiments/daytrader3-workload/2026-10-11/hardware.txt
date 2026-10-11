@@ -1,0 +1,5 @@
+hw.model: MacBookPro17,1
+hw.memsize: 17179869184
+hw.ncpu: 8
+hw.physicalcpu: 8
+machdep.cpu.brand_string: Apple M1

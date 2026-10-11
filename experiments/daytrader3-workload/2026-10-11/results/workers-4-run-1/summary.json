@@ -1,0 +1,16 @@
+{
+  "workers": 4,
+  "repeat": 1,
+  "measuredPurchases": 80,
+  "measurementSeconds": 0.851696125,
+  "completedPurchasesPerSecond": 93.93021484041623,
+  "buyResponseMs": {
+    "p50": 11.29725,
+    "p95": 19.79,
+    "p99": 25.469458
+  },
+  "startupToHttpReadySeconds": 5.925042749993736,
+  "sampledPeakRssKiB": 535424.0,
+  "sampledPeakCpuPercent": 364.8,
+  "HTTPAndSqlInvariants": "pass"
+}

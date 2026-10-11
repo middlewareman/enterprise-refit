@@ -1,0 +1,44 @@
+[
+  {
+    "run": "workers-1-run-1",
+    "scope": "Entire server lifetime, including startup/warmup/validation",
+    "recordedPauses": 17,
+    "totalPauseSeconds": 0.4329273,
+    "maxPauseSeconds": 0.1299042
+  },
+  {
+    "run": "workers-1-run-2",
+    "scope": "Entire server lifetime, including startup/warmup/validation",
+    "recordedPauses": 17,
+    "totalPauseSeconds": 0.3879368,
+    "maxPauseSeconds": 0.0947384
+  },
+  {
+    "run": "workers-1-run-3",
+    "scope": "Entire server lifetime, including startup/warmup/validation",
+    "recordedPauses": 16,
+    "totalPauseSeconds": 0.3870787,
+    "maxPauseSeconds": 0.1019795
+  },
+  {
+    "run": "workers-4-run-1",
+    "scope": "Entire server lifetime, including startup/warmup/validation",
+    "recordedPauses": 16,
+    "totalPauseSeconds": 0.34665,
+    "maxPauseSeconds": 0.0923337
+  },
+  {
+    "run": "workers-4-run-2",
+    "scope": "Entire server lifetime, including startup/warmup/validation",
+    "recordedPauses": 17,
+    "totalPauseSeconds": 0.3794063,
+    "maxPauseSeconds": 0.0979481
+  },
+  {
+    "run": "workers-4-run-3",
+    "scope": "Entire server lifetime, including startup/warmup/validation",
+    "recordedPauses": 16,
+    "totalPauseSeconds": 0.4298367,
+    "maxPauseSeconds": 0.1167799
+  }
+]

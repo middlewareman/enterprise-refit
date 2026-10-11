@@ -1,0 +1,31 @@
+OpenJDK 64-Bit Server VM (25.504-b01) for bsd-aarch64 JRE (Zulu 8.96.0.205-CA-macos-aarch64) (1.8.0_504-b01), built on Aug  7 2026 15:00:44 by "zulu_re" with gcc Apple LLVM 12.0.0 (clang-1200.0.32.28)
+Memory: 16k page, physical 16777216k(687824k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:InitialHeapSize=268435456 -XX:MaxHeapSize=536870912 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+0.676: [GC (Allocation Failure) [PSYoungGen: 65536K->10724K(76288K)] 65536K->21428K(251392K), 0.0097042 secs] [Times: user=0.02 sys=0.01, real=0.01 secs] 
+1.100: [GC (Allocation Failure) [PSYoungGen: 76260K->10750K(141824K)] 86964K->26768K(316928K), 0.0062419 secs] [Times: user=0.03 sys=0.01, real=0.01 secs] 
+1.551: [GC (Allocation Failure) [PSYoungGen: 141822K->10730K(141824K)] 157840K->38929K(316928K), 0.0083615 secs] [Times: user=0.05 sys=0.01, real=0.01 secs] 
+1.683: [GC (Metadata GC Threshold) [PSYoungGen: 84465K->10742K(163840K)] 112663K->40276K(338944K), 0.0076888 secs] [Times: user=0.05 sys=0.00, real=0.00 secs] 
+1.691: [Full GC (Metadata GC Threshold) [PSYoungGen: 10742K->0K(163840K)] [ParOldGen: 29534K->22575K(175104K)] 40276K->22575K(338944K), [Metaspace: 20078K->20067K(1069056K)], 0.0335889 secs] [Times: user=0.16 sys=0.01, real=0.04 secs] 
+2.554: [GC (Metadata GC Threshold) [PSYoungGen: 129032K->10743K(163840K)] 151608K->41476K(338944K), 0.0069323 secs] [Times: user=0.04 sys=0.00, real=0.00 secs] 
+2.561: [Full GC (Metadata GC Threshold) [PSYoungGen: 10743K->0K(163840K)] [ParOldGen: 30732K->36064K(201728K)] 41476K->36064K(365568K), [Metaspace: 32323K->32323K(1081344K)], 0.0400975 secs] [Times: user=0.20 sys=0.01, real=0.04 secs] 
+3.712: [GC (Allocation Failure) [PSYoungGen: 153088K->10745K(125952K)] 189152K->63303K(327680K), 0.0092775 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+3.786: [GC (Metadata GC Threshold) [PSYoungGen: 21083K->12444K(144896K)] 73641K->65010K(346624K), 0.0048689 secs] [Times: user=0.03 sys=0.00, real=0.00 secs] 
+3.791: [Full GC (Metadata GC Threshold) [PSYoungGen: 12444K->0K(144896K)] [ParOldGen: 52566K->39611K(264192K)] 65010K->39611K(409088K), [Metaspace: 53551K->53551K(1101824K)], 0.0923337 secs] [Times: user=0.42 sys=0.02, real=0.10 secs] 
+4.465: [GC (Allocation Failure) [PSYoungGen: 115200K->14800K(143872K)] 154811K->54419K(408064K), 0.0053185 secs] [Times: user=0.02 sys=0.00, real=0.00 secs] 
+5.358: [GC (Allocation Failure) [PSYoungGen: 130000K->13983K(144384K)] 169619K->53610K(408576K), 0.0062686 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+6.417: [GC (Allocation Failure) [PSYoungGen: 129183K->20759K(145408K)] 168810K->60395K(409600K), 0.0098064 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+6.841: [GC (Metadata GC Threshold) [PSYoungGen: 68204K->20772K(137216K)] 107840K->60415K(401408K), 0.0069185 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+6.848: [Full GC (Metadata GC Threshold) [PSYoungGen: 20772K->0K(137216K)] [ParOldGen: 39643K->51398K(349696K)] 60415K->51398K(486912K), [Metaspace: 91722K->91711K(1136640K)], 0.0910528 secs] [Times: user=0.31 sys=0.01, real=0.09 secs] 
+8.869: [GC (Allocation Failure) [PSYoungGen: 116224K->8987K(143872K)] 167622K->60393K(493568K), 0.0081900 secs] [Times: user=0.04 sys=0.00, real=0.01 secs] 
+Heap
+ PSYoungGen      total 143872K, used 67493K [0x0000000146d80000, 0x0000000151800000, 0x0000000151800000)
+  eden space 115200K, 50% used [0x0000000146d80000,0x000000014a6a2880,0x000000014de00000)
+  from space 28672K, 31% used [0x000000014fb00000,0x00000001503c6dc8,0x0000000151700000)
+  to   space 29696K, 0% used [0x000000014de00000,0x000000014de00000,0x000000014fb00000)
+ ParOldGen       total 349696K, used 51406K [0x0000000131800000, 0x0000000146d80000, 0x0000000146d80000)
+  object space 349696K, 14% used [0x0000000131800000,0x0000000134a339e0,0x0000000146d80000)
+ Metaspace       used 99513K, capacity 107150K, committed 107440K, reserved 1142784K
+  class space    used 10635K, capacity 13149K, committed 13232K, reserved 1048576K

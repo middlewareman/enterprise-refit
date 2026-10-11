@@ -1,0 +1,144 @@
+********************************************************************************
+product = WebSphere Application Server 24.0.0.9 (wlp-1.0.93.cl241020240827-1743)
+wlp.install.dir = /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6/build/wlp/
+server.config.dir = /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-user/servers/daytrader3_Baseline/
+server.output.dir = /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/
+java.home = /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre
+java.version = 1.8.0_504
+java.runtime = OpenJDK Runtime Environment (1.8.0_504-b01)
+os = Mac OS X (27.0.1; aarch64) (en_GB)
+process = 48534@Monet.local
+Classpath = /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6/build/wlp/bin/tools/ws-server.jar:/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6/build/wlp/bin/tools/ws-javaagent.jar
+Java Library path = /Users/middlewareman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[10/11/26 17:37:07:793 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server daytrader3_Baseline has been launched.
+[10/11/26 17:37:07:804 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/24.0.0.9/lafiles/en.html
+[10/11/26 17:37:08:646 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.022 seconds
+[10/11/26 17:37:08:865 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[10/11/26 17:37:09:749 CEST] 00000019 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[10/11/26 17:37:10:330 CEST] 00000016 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1553I: The minimum reserved size in the configuration information of the permanent store file is 20,971,520 bytes. The maximum size is 209,715,200 bytes.
+[10/11/26 17:37:10:332 CEST] 00000016 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1557I: The minimum reserved size in the configuration information of the temporary store file is 20,971,520 bytes. The maximum size is 209,715,200 bytes.
+[10/11/26 17:37:10:456 CEST] 00000016 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[10/11/26 17:37:10:904 CEST] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application daytrader3.
+[10/11/26 17:37:10:905 CEST] 00000025 bm.ws.app.manager.ear.internal.EARDeployedAppInfoFactoryImpl I CWWKZ0136I: The daytrader3 application is using the archive file at the /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6/build/libs/daytrader3-ee6.ear location.
+[10/11/26 17:37:11:758 CEST] 00000025 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[TradeDataSource].
+[10/11/26 17:37:11:881 CEST] 00000025 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (daytrader3_Baseline).
+[10/11/26 17:37:11:916 CEST] 00000042 com.ibm.ws.recoverylog.spi.LogHandle                         I CWRLS0007I: No existing recovery log files found in /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/tranlog. Cold starting the recovery log.
+[10/11/26 17:37:11:917 CEST] 00000042 com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/tranlog/log1.
+[10/11/26 17:37:11:921 CEST] 00000042 com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/tranlog/log2.
+[10/11/26 17:37:11:933 CEST] 00000042 com.ibm.ws.recoverylog.spi.LogHandle                         I CWRLS0007I: No existing recovery log files found in /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/partnerlog. Cold starting the recovery log.
+[10/11/26 17:37:11:933 CEST] 00000042 com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/partnerlog/log1.
+[10/11/26 17:37:11:934 CEST] 00000042 com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/partnerlog/log2.
+[10/11/26 17:37:11:945 CEST] 00000025 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (daytrader3_Baseline).
+[10/11/26 17:37:11:945 CEST] 00000042 com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[10/11/26 17:37:11:955 CEST] 00000025 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[NoTxTradeDataSource].
+[10/11/26 17:37:12:453 CEST] 00000025 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[10/11/26 17:37:12:454 CEST] 00000025 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.10.1.1 - (1458268)
+[10/11/26 17:37:12:454 CEST] 00000025 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[10/11/26 17:37:12:454 CEST] 00000025 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.10.1.1 - (1458268)
+[10/11/26 17:37:12:473 CEST] 00000025 openjpa.jdbc.JDBC                                            I CWWJP9990I: openjpa.jdbc.JDBC: Info: Using dictionary class "org.apache.openjpa.jdbc.sql.DerbyDictionary" (Apache Derby 10.10.1.1 - (1458268) ,Apache Derby Embedded JDBC Driver 10.10.1.1 - (1458268)).
+[10/11/26 17:37:12:501 CEST] 00000025 openjpa.Runtime                                              I CWWJP9990I: openjpa.Runtime: Info: OpenJPA dynamically loaded a validation provider.
+[10/11/26 17:37:12:516 CEST] 00000025 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[10/11/26 17:37:12:529 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The dt-ejb.jar EJB module in the daytrader3 application is starting.
+[10/11/26 17:37:12:597 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal interface of the DirectSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:daytrader3/dt-ejb.jar/DirectSLSBBean#com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal
+[10/11/26 17:37:12:599 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal interface of the DirectSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal
+[10/11/26 17:37:12:599 CEST] 00000025 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal interface of the DirectSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: java:global/daytrader3-ee6/dt-ejb/DirectSLSBBean!com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal
+[10/11/26 17:37:12:599 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:daytrader3/dt-ejb.jar/TradeSLSBBean#com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[10/11/26 17:37:12:600 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[10/11/26 17:37:12:600 CEST] 00000025 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: java:global/daytrader3-ee6/dt-ejb/TradeSLSBBean!com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[10/11/26 17:37:12:600 CEST] 00000025 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The DTBroker3MDB message-driven bean in the dt-ejb.jar module of the daytrader3 application is bound to the eis/TradeBrokerMDB activation specification.
+[10/11/26 17:37:12:601 CEST] 00000025 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The DTStreamer3MDB message-driven bean in the dt-ejb.jar module of the daytrader3 application is bound to the eis/TradeStreamerMDB activation specification.
+[10/11/26 17:37:12:601 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4001I: The dt-ejb.jar EJB module in the daytrader3 application has started successfully.
+[10/11/26 17:37:12:614 CEST] 00000025 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: DayTrader Web.
+[10/11/26 17:37:12:616 CEST] 00000025 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module DayTrader Web has been bound to default_host.
+[10/11/26 17:37:12:618 CEST] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.4:19083/daytrader/
+[10/11/26 17:37:12:628 CEST] 00000025 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Rest.
+[10/11/26 17:37:12:628 CEST] 00000025 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Rest has been bound to default_host.
+[10/11/26 17:37:12:628 CEST] 00000025 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://192.168.0.4:19083/rest/
+[10/11/26 17:37:12:648 CEST] 0000002d com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/rest
+[10/11/26 17:37:12:658 CEST] 0000002d com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/11/26 17:37:12:820 CEST] 00000029 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/logs/state/plugin-cfg.xml.
+[10/11/26 17:37:12:857 CEST] 0000002d apache.wink.server.internal.application.ApplicationProcessor I The following JAX-RS application has been processed: com.ibm.ws.jaxrs.webcontainer.JAXRSDefaultApplicationSubclassProxy
+[10/11/26 17:37:12:858 CEST] 0000002d org.apache.wink.server.internal.log.Resources                I The server has registered the JAX-RS resource class com.ibm.websphere.samples.daytrader.rest.AddressBook with @Path(/addresses).
+[10/11/26 17:37:12:859 CEST] 0000002d org.apache.wink.server.internal.log.Providers                I There are no custom JAX-RS providers defined in the application.
+[10/11/26 17:37:13:063 CEST] 0000002d com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/rest] [javax.ws.rs.core.Application]: Initialization successful.
+[10/11/26 17:37:13:076 CEST] 00000026 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/daytrader
+[10/11/26 17:37:13:076 CEST] 00000026 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[10/11/26 17:37:13:190 CEST] 00000026 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading standard config META-INF/standard-faces-config.xml
+[10/11/26 17:37:13:240 CEST] 00000026 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading config /WEB-INF/faces-config.xml
+[10/11/26 17:37:13:321 CEST] 00000026 org.apache.myfaces.config.FacesConfigurator                  I Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+[10/11/26 17:37:13:328 CEST] 00000026 org.apache.myfaces.webapp.AbstractFacesInitializer           I ServletContext 'null' initialized.
+[10/11/26 17:37:13:371 CEST] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application daytrader3 started in 2.466 seconds.
+[10/11/26 17:37:13:383 CEST] 00000023 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 19083.
+[10/11/26 17:37:13:386 CEST] 00000023 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint320 has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 17276.
+[10/11/26 17:37:13:448 CEST] 00000023 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination TradeBrokerQueue on bus defaultBus has been successfully created.
+[10/11/26 17:37:13:448 CEST] 00000023 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification eis/TradeBrokerMDB will now be able to receive the messages from destination TradeBrokerQueue.
+[10/11/26 17:37:13:451 CEST] 00000023 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification eis/TradeBrokerMDB and message driven bean application daytrader3#dt-ejb.jar#DTBroker3MDB is activated.
+[10/11/26 17:37:13:461 CEST] 00000023 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination TradeTopicSpace on bus defaultBus has been successfully created.
+[10/11/26 17:37:13:461 CEST] 00000023 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification eis/TradeStreamerMDB will now be able to receive the messages from destination TradeTopicSpace.
+[10/11/26 17:37:13:461 CEST] 00000023 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification eis/TradeStreamerMDB and message driven bean application daytrader3#dt-ejb.jar#DTStreamer3MDB is activated.
+[10/11/26 17:37:13:485 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [beanValidation-1.0, ejbLite-3.1, jaxrs-1.1, jca-1.6, jdbc-4.0, jmsMdb-3.1, jndi-1.0, jpa-2.0, jsf-2.0, json-1.0, jsp-2.2, servlet-3.0, wasJmsClient-1.1, wasJmsServer-1.0].
+[10/11/26 17:37:13:485 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 4.840 seconds.
+[10/11/26 17:37:13:485 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The daytrader3_Baseline server is ready to run a smarter planet. The daytrader3_Baseline server started in 5.861 seconds.
+[10/11/26 17:37:13:697 CEST] 0000004e com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [TradeConfigServlet]: Initialization successful.
+[10/11/26 17:37:13:700 CEST] 0000004e SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[10/11/26 17:37:14:121 CEST] 0000004e com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/config.jsp]: Initialization successful.
+[10/11/26 17:37:14:263 CEST] 00000048 openjpa.Runtime                                              I CWWJP9990I: openjpa.Runtime: Info: Starting OpenJPA 2.2.3-SNAPSHOT
+[10/11/26 17:37:14:271 CEST] 00000048 openjpa.jdbc.JDBC                                            I CWWJP9990I: openjpa.jdbc.JDBC: Info: Using dictionary class "org.apache.openjpa.jdbc.sql.DerbyDictionary" (Apache Derby 10.10.1.1 - (1458268) ,Apache Derby Embedded JDBC Driver 10.10.1.1 - (1458268)).
+[10/11/26 17:37:14:280 CEST] 00000048 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[10/11/26 17:37:14:280 CEST] 00000048 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.10.1.1 - (1458268)
+[10/11/26 17:37:14:281 CEST] 00000048 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[10/11/26 17:37:14:281 CEST] 00000048 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.10.1.1 - (1458268)
+[10/11/26 17:37:14:591 CEST] 00000048 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [TradeAppServlet]: Initialization successful.
+[10/11/26 17:37:14:953 CEST] 00000048 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/tradehome.jsp]: Initialization successful.
+[10/11/26 17:37:15:012 CEST] 00000048 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/marketSummary.jsp]: Initialization successful.
+[10/11/26 17:37:15:113 CEST] 00000047 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/quote.jsp]: Initialization successful.
+[10/11/26 17:37:15:148 CEST] 00000047 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/displayQuote.jsp]: Initialization successful.
+[10/11/26 17:37:15:299 CEST] 0000004a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/order.jsp]: Initialization successful.
+[10/11/26 17:37:16:441 CEST] 00000046 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/welcome.jsp]: Initialization successful.
+[10/11/26 17:37:16:540 CEST] 00000023 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/account.jsp]: Initialization successful.
+[10/11/26 17:37:16:644 CEST] 00000029 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/portfolio.jsp]: Initialization successful.
+[10/11/26 17:37:16:886 CEST] 00000012 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Sunday, October 11, 2026 at 5:37 PM. The server daytrader3_Baseline is shutting down.
+[10/11/26 17:37:16:888 CEST] 0000005b com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[10/11/26 17:37:16:891 CEST] 00000023 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint320 has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 17276.
+[10/11/26 17:37:16:893 CEST] 0000004b com.ibm.ws.jca.service.EndpointActivationService             I J2CA8804I: The message endpoint for activation specification eis/TradeStreamerMDB and message driven bean application daytrader3#dt-ejb.jar#DTStreamer3MDB is deactivated.
+[10/11/26 17:37:16:892 CEST] 00000023 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host *  (IPv6) port 19083.
+[10/11/26 17:37:16:894 CEST] 0000004b com.ibm.ws.jca.service.EndpointActivationService             I J2CA8804I: The message endpoint for activation specification eis/TradeBrokerMDB and message driven bean application daytrader3#dt-ejb.jar#DTBroker3MDB is deactivated.
+[10/11/26 17:37:16:894 CEST] 00000023 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.4:19083/daytrader/
+[10/11/26 17:37:16:894 CEST] 00000023 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://192.168.0.4:19083/rest/
+[10/11/26 17:37:16:895 CEST] 00000048 .ibm.ws.ejbcontainer.mdb.internal.MessageEndpointFactoryImpl I CNTR4014I: The message endpoint for the DTBroker3MDB message-driven bean has been deactivated and is unavailable to accept messages.
+[10/11/26 17:37:16:895 CEST] 00000048 .ibm.ws.ejbcontainer.mdb.internal.MessageEndpointFactoryImpl I CNTR4014I: The message endpoint for the DTStreamer3MDB message-driven bean has been deactivated and is unavailable to accept messages.
+[10/11/26 17:37:17:900 CEST] 0000005b com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[10/11/26 17:37:17:924 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/rest] [javax.ws.rs.core.Application]: Destroy successful.
+[10/11/26 17:37:17:930 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [TradeAppServlet]: Destroy successful.
+[10/11/26 17:37:17:930 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/config.jsp]: Destroy successful.
+[10/11/26 17:37:17:931 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/account.jsp]: Destroy successful.
+[10/11/26 17:37:17:931 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/displayQuote.jsp]: Destroy successful.
+[10/11/26 17:37:17:931 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/welcome.jsp]: Destroy successful.
+[10/11/26 17:37:17:931 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/order.jsp]: Destroy successful.
+[10/11/26 17:37:17:931 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/marketSummary.jsp]: Destroy successful.
+[10/11/26 17:37:17:931 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/tradehome.jsp]: Destroy successful.
+[10/11/26 17:37:17:932 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [TradeConfigServlet]: Destroy successful.
+[10/11/26 17:37:17:932 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/portfolio.jsp]: Destroy successful.
+[10/11/26 17:37:17:932 CEST] 00000025 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/quote.jsp]: Destroy successful.
+[10/11/26 17:37:17:953 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4003I: The dt-ejb.jar EJB module in the daytrader3 application is stopping.
+[10/11/26 17:37:17:959 CEST] 00000025 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4004I: The dt-ejb.jar EJB module in the daytrader3 application has stopped successfully.
+[10/11/26 17:37:17:965 CEST] 00000025 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application daytrader3 has stopped successfully.
+[10/11/26 17:37:18:025 CEST] 0000005b com.ibm.tx.jta.impl.FailureScopeController                   A WTRN0105I: The transaction service has shutdown successfully with no transactions requiring recovery.
+[10/11/26 17:37:18:077 CEST] 0000005b com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[10/11/26 17:37:18:198 CEST] 0000005b com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[10/11/26 17:37:20:410 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server daytrader3_Baseline stopped after 12.786 seconds.

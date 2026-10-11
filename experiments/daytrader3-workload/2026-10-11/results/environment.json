@@ -1,0 +1,16 @@
+{
+  "subject": "f43c5f2ec403285a5d50fe9c2eaa2327618e8b3a",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "cpuCount": 8,
+  "javaHome": "/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home",
+  "heap": "-Xms256m -Xmx512m",
+  "instrumentation": "No JaCoCo, debugger or application tracing",
+  "workload": "Full EJB synchronous, independent accounts, 1 share purchases; 5 warmup + 20 measured per worker; 20ms think time",
+  "hashes": {
+    "/Users/middlewareman/Work/Migration/harness/daytrader/TradingWorkload.java": "94f7cbe7a64165e8881d7e2a1408d641b42c82686782a5805e0a26eca70c48d0",
+    "/Users/middlewareman/Work/Migration/harness/daytrader/run-workload.py": "d3ca717ca046be3e884809be7460a5274bb46333c911f81719a8be60e4605229",
+    "/private/tmp/daytrader-gradle-inspection/user-home/caches/modules-2/files-2.1/org.jsoup/jsoup/1.17.2/1e75b08d7019546a954f1e359477f916f537a34d/jsoup-1.17.2.jar": "f60b33b38e9d7ac93eaaa68a6c70f706bb99036494b2e2add2bfee11d09ac6f5",
+    "/private/tmp/daytrader-gradle-inspection/user-home/caches/modules-2/files-2.1/org.apache.derby/derby/10.10.1.1/9f6f910f0373adc1b23c10f9b4bb151b7e7449f/derby-10.10.1.1.jar": "619ca69e8622c85b0c28dc743fff7d6e684ee3a0452972cec04d49cf1d4c7bcf"
+  }
+}

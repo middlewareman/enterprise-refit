@@ -1,0 +1,17 @@
+----------------------------------------------------------------
+Sun Oct 11 17:38:27 CEST 2026:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-01a1-2b9d-8bde-00000e8b3300 
+on database directory /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-user/shared/resources/data/tradedb with class loader sun.misc.Launcher$AppClassLoader@15db9742 
+Loaded from file:/private/tmp/daytrader-gradle-inspection/user-home/caches/modules-2/files-2.1/org.apache.derby/derby/10.10.1.1/9f6f910f0373adc1b23c10f9b4bb151b7e7449f/derby-10.10.1.1.jar
+java.vendor=Azul Systems, Inc.
+java.runtime.version=1.8.0_504-b01
+user.dir=/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3
+os.name=Mac OS X
+os.arch=aarch64
+os.version=27.0.1
+derby.system.home=null
+derby.stream.error.file=/Users/middlewareman/Work/Migration/experiments/daytrader3-workload/2026-10-11/results/workers-4-run-2/derby.log
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Oct 11 17:38:28 CEST 2026:
+Shutting down instance a816c00e-01a1-2b9d-8bde-00000e8b3300 on database directory /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-user/shared/resources/data/tradedb with class loader sun.misc.Launcher$AppClassLoader@15db9742 
