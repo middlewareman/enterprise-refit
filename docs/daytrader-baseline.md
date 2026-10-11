@@ -116,7 +116,7 @@ and fixture loading are environment-specific adapters too; transaction assertion
 must exercise the real deployed application and its persistence/messaging services.
 
 Implemented choice: JUnit Jupiter 5.10.3 with Jsoup 1.17.2 and JaCoCo 0.8.12
-on Java 8 / Gradle 4.10.3. The dedicated verification module owns the isolated
+initially on Java 8 / Gradle 4.10.3, subsequently validated on Gradle 8.14.3 / Liberty plugin 3.10.0. The dedicated verification module owns the isolated
 fixture/server, HTTP/restart/SQL tasks and coverage; EAR `fvt` aliases its `check`.
 Normal builds package the EAR and drive this server. The suite has no application
 classpath dependency. [Usage and reports](../subjects/upstream/sample.daytrader3/docs/Testing.md).
@@ -216,8 +216,7 @@ A modern wrapper requires script changes and a compatible Liberty plugin, not
 only a distribution URL change. Select the exact Gradle/plugin/build-JDK tuple
 by compatibility and validate preserved packaging/bytecode, deployment, readiness,
 functional outcomes, and cleanup. New plugin defaults must not silently substitute
-Open Liberty for the pinned IBM Liberty baseline. No tooling upgrade has been performed. The subsequent baseline execution
-verified JUnit Jupiter 5.10.3 on the pinned Java 8 / Gradle 4.10.3 build.
+Open Liberty for the pinned IBM Liberty baseline. The later [tooling upgrade](../experiments/daytrader3-gradle-upgrade/2026-10-11/README.md) preserves Java 8/IBM Liberty and passes all original 44 cases. The [account repair](../experiments/daytrader3-account-repair/2026-10-11/README.md) then passes the unchanged 49-case concurrency extension.
 
 ## Migration direction and candidate platforms
 
@@ -307,13 +306,20 @@ test results and coverage, repeated performance/resource measurements, known def
 and accepted scope/tolerances. A fresh baseline run must reproduce the checks;
 unmeasured dimensions stay explicitly unknown.
 
-**Next action (updated after the two assigned iterations):** prepare a separate
-baseline repair contract for concurrent cash updates, with the intended financial
-behavior correction explicitly reviewed before application changes. The
-[tooling upgrade](../experiments/daytrader3-gradle-upgrade/2026-10-11/README.md)
-passes all original checks. The
-[concurrency experiment](../experiments/daytrader3-concurrency/2026-10-11/README.md)
-adds five cases and exposes a durable lost debit in two reset fixtures; its
-49-case suite is red. Original 44 checks still pass across the recorded phases.
-Keep strict financial expectations, then validate an accepted repair before
-controlled performance measurements and the Jakarta migration contract.
+**Current preparation outcome:** the author-authorized account correction passes
+the unchanged 49-case suite, with three fresh concurrency fixtures and restart/SQL
+evidence. [Repair](../experiments/daytrader3-account-repair/2026-10-11/README.md).
+The [bounded workload](../experiments/daytrader3-workload/2026-10-11/README.md)
+passes six uninstrumented reset fixtures, but its sub-second measurement windows
+are smoke measurements; sustained performance and comparison tolerances remain
+open. The [target preparation](../experiments/daytrader3-migration-readiness/2026-10-11/README.md)
+validates exact Java 21 / Liberty archives and clean application-free feature
+startup after a recorded LTPA configuration correction. Target application
+behavior remains untested.
+
+**Next action:** lengthen workload warmup/measurement windows and define comparison
+tolerances from repeated baseline observations. The author-selected sequence
+remains baseline before migration. The [first migration contract](daytrader-jakarta-contract.md)
+is prepared for the subsequent isolated transformation from repaired `f43c5f2`,
+keeping all evaluation assertions. Do not treat workload smoke measurements as
+completion of the full performance baseline or a performance acceptance gate.

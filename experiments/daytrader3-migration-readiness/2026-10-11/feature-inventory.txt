@@ -1,0 +1,8 @@
+jakartaee-11.0: io.openliberty.jakartaee-11.0.mf
+persistence-3.2: com.ibm.websphere.appserver.org.eclipse.persistence-3.2.mf, io.openliberty.jakarta.persistence-3.2.mf, io.openliberty.persistence-3.2.mf
+messagingServer-3.0: io.openliberty.messagingServer-3.0.mf
+messagingClient-3.0: io.openliberty.messagingClient-3.0.mf
+mdb-4.0: io.openliberty.mdb-4.0.mf, io.openliberty.internal.versionless.mdb-4.0.mf
+faces-4.1: io.openliberty.jakarta.faces-4.1.mf, io.openliberty.faces-4.1.mf
+restfulWS-4.0: io.openliberty.restfulWS-4.0.mf, io.openliberty.jakarta.restfulWS-4.0.mf
+xmlBinding-4.0: io.openliberty.xmlBinding-4.0.mf, io.openliberty.jakarta.xmlBinding-4.0.mf

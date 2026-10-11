@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<server>
+    <featureManager><feature>jakartaee-11.0</feature><feature>xmlBinding-4.0</feature></featureManager><httpEndpoint host="localhost" httpPort="29083" httpsPort="29443" id="defaultHttpEndpoint"> 
+			<tcpOptions soReuseAddr="true" /> 
+			<httpOptions maxKeepAliveRequests="-1" />
+		</httpEndpoint>
+		
+		<connectionManager id="conMgr1" agedTimeout="-1" connectionTimeout="0" maxIdleTime="-1" maxPoolSize="70" minPoolSize="70" purgePolicy="FailingConnectionOnly" reapTime="-1" />
+        <connectionManager id="conMgr2" agedTimeout="-1" connectionTimeout="0" maxIdleTime="-1" maxPoolSize="50" minPoolSize="10" purgePolicy="FailingConnectionOnly" reapTime="-1" />
+        
+        <jdbcDriver id="DerbyEmbedded" libraryRef="DerbyLib" />
+        <library id="DerbyLib" filesetRef="DerbyFileset" />
+        <fileset id="DerbyFileset" dir="${shared.resource.dir}/Daytrader3_SampleDerbyLibs" includes="derby-10.10.1.1.jar" />
+
+        <authData id="TradeDataSourceAuthData" user="db_username" password="db_password" />
+        <authData id="TradeAdminAuthData" user="db_username" password="db_password" />
+
+        <dataSource jndiName="jdbc/TradeDataSource" jdbcDriverRef="DerbyEmbedded" id="TradeDataSource" connectionManagerRef="conMgr1" statementCacheSize="60" isolationLevel="TRANSACTION_READ_COMMITTED">
+                <properties.derby.embedded databaseName="${shared.resource.dir}/data/tradedb" createDatabase="create" user="db_username" password="db_password" />
+        </dataSource>
+
+        <dataSource jndiName="jdbc/NoTxTradeDataSource" jdbcDriverRef="DerbyEmbedded" id="NoTxTradeDataSource" transactional="false" connectionManagerRef="conMgr2" statementCacheSize="10" isolationLevel="TRANSACTION_READ_COMMITTED">
+                <properties.derby.embedded databaseName="${shared.resource.dir}/data/tradedb" createDatabase="create" user="db_username" password="db_password" />
+        </dataSource>
+
+        <messagingEngine id="defaultME">
+                <queue id="TradeBrokerQueue" />
+                <topicSpace id="TradeTopicSpace" />
+        </messagingEngine>
+
+        <jmsQueueConnectionFactory jndiName="jms/TradeBrokerQCF" connectionManagerRef="ConMgr3">
+                <properties.wasJms />
+        </jmsQueueConnectionFactory>
+        <connectionManager id="ConMgr3" maxPoolSize="20" />
+
+        <jmsTopicConnectionFactory jndiName="jms/TradeStreamerTCF" connectionManagerRef="ConMgr4">
+                <properties.wasJms />
+        </jmsTopicConnectionFactory>
+        <connectionManager id="ConMgr4" maxPoolSize="20" />
+
+        <jmsQueue id="jms/TradeBrokerQueue" jndiName="jms/TradeBrokerQueue">
+                <properties.wasJms queueName="TradeBrokerQueue" deliveryMode="NonPersistent" />
+        </jmsQueue>
+        
+        <jmsTopic id="jms/TradeStreamerTopic" jndiName="jms/TradeStreamerTopic">
+                <properties.wasJms topicSpace="TradeTopicSpace" deliveryMode="NonPersistent" />
+        </jmsTopic>
+
+        <jmsActivationSpec id="eis/TradeBrokerMDB">
+                <properties.wasJms destinationRef="jms/TradeBrokerQueue" />
+        </jmsActivationSpec>
+
+        <jmsActivationSpec id="eis/TradeStreamerMDB">
+                <properties.wasJms destinationRef="jms/TradeStreamerTopic" destinationType="jakarta.jms.Topic" />
+        </jmsActivationSpec>
+<wasJmsEndpoint wasJmsPort="27276" wasJmsSSLPort="27286" /><keyStore id="defaultKeyStore" password="public-probe-only-password" /><ltpa keysPassword="public-probe-only-password" /></server>

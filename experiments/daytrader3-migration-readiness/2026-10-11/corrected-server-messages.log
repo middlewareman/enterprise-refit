@@ -1,0 +1,39 @@
+********************************************************************************
+product = Open Liberty 26.0.0.9 (wlp-1.0.117.cl260920260824-0859)
+wlp.install.dir = /private/tmp/daytrader-target-probe/liberty/wlp/
+server.config.dir = /private/tmp/daytrader-target-probe/probe-user/servers/DayTrader_Target_Probe/
+server.output.dir = /private/tmp/daytrader-target-probe/probe-output/DayTrader_Target_Probe/
+java.home = /private/tmp/daytrader-target-probe/java21/jdk-21.0.12.1+1/Contents/Home
+java.version = 21.0.12.1
+java.runtime = OpenJDK Runtime Environment (21.0.12.1+1-LTS)
+os = Mac OS X (27.0.1; aarch64) (en_GB)
+process = 49471@Monet.local
+Classpath = /private/tmp/daytrader-target-probe/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/middlewareman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[11/10/2026, 17:42:07:316 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server DayTrader_Target_Probe has been launched.
+[11/10/2026, 17:42:07:633 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 0.448 seconds
+[11/10/2026, 17:42:07:657 CEST] 00000032 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[11/10/2026, 17:42:08:306 CEST] 00000025 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[11/10/2026, 17:42:08:393 CEST] 00000027 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[11/10/2026, 17:42:08:496 CEST] 00000027 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[11/10/2026, 17:42:08:497 CEST] 00000027 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[11/10/2026, 17:42:08:498 CEST] 00000027 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/10/2026, 17:42:08:559 CEST] 00000029 org.jboss.weld.Version                                       I WELD-000900: 6.0.2 (Final)
+[11/10/2026, 17:42:08:612 CEST] 0000002d com.ibm.ws.ssl.config.WSKeyStore                             I CWPKI0802I: Creating the SSL certificate. This may take a few seconds.
+[11/10/2026, 17:42:09:045 CEST] 00000025 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[11/10/2026, 17:42:09:052 CEST] 00000035 com.ibm.ws.security.token.ltpa.LTPAKeyInfoManager            I CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
+[11/10/2026, 17:42:09:074 CEST] 00000025 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[11/10/2026, 17:42:09:207 CEST] 00000035 com.ibm.ws.security.token.ltpa.LTPAKeyInfoManager            A CWWKS4104A: LTPA keys created in 0.155 seconds. LTPA key file: /private/tmp/daytrader-target-probe/probe-output/DayTrader_Target_Probe/resources/security/ltpa.keys
+[11/10/2026, 17:42:09:209 CEST] 00000035 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.157 seconds.
+[11/10/2026, 17:42:09:247 CEST] 00000025 com.ibm.ws.security.jaspi.AuthConfigFactoryWrapper           I CWWKS1655I: The default Java Authentication SPI for Containers (JASPIC) AuthConfigFactory class com.ibm.ws.security.jaspi.ProviderRegistry is being used because the Java security property authconfigprovider.factory is not set. 
+[11/10/2026, 17:42:09:362 CEST] 0000002d com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0803A: SSL certificate created in 0.750 seconds. SSL key file: /private/tmp/daytrader-target-probe/probe-output/DayTrader_Target_Probe/resources/security/key.p12
+[11/10/2026, 17:42:09:363 CEST] 0000002d com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: /private/tmp/daytrader-target-probe/probe-output/DayTrader_Target_Probe/resources/security/key.p12 of type: PKCS12
+[11/10/2026, 17:42:09:499 CEST] 00000032 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 29083.
+[11/10/2026, 17:42:09:501 CEST] 00000032 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint506 has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 27276.
+[11/10/2026, 17:42:09:502 CEST] 00000032 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 29443.
+[11/10/2026, 17:42:09:503 CEST] 00000032 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint506-ssl has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 27286.
+[11/10/2026, 17:42:09:528 CEST] 00000032 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF1037I: The server added the [xmlBinding-4.0] features to the existing feature set.
+[11/10/2026, 17:42:09:529 CEST] 00000032 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appAuthentication-3.1, appAuthorization-3.0, appClientSupport-2.0, appSecurity-6.0, batch-2.1, cdi-4.1, concurrent-3.1, connectors-2.1, data-1.0, distributedMap-1.0, enterpriseBeansLite-4.0, enterpriseBeansPersistentTimer-4.0, enterpriseBeansRemote-4.0, expressionLanguage-6.0, faces-4.1, jakartaee-11.0, jdbc-4.2, jndi-1.0, jsonb-3.0, jsonp-2.1, mail-2.1, mdb-4.0, messaging-3.1, messagingClient-3.0, messagingSecurity-3.0, messagingServer-3.0, pages-4.0, persistence-3.2, persistenceContainer-3.2, restfulWS-4.0, restfulWSClient-4.0, servlet-6.1, ssl-1.0, transportSecurity-1.0, validation-3.1, webProfile-11.0, websocket-2.2, xmlBinding-4.0].
+[11/10/2026, 17:42:09:529 CEST] 00000032 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 1.896 seconds.
+[11/10/2026, 17:42:09:529 CEST] 00000032 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The DayTrader_Target_Probe server is ready to run a smarter planet. The DayTrader_Target_Probe server started in 2.344 seconds.

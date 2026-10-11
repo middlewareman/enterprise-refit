@@ -1,0 +1,14 @@
+[
+  {
+    "name": "java21",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.12.1%2B1/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.12.1_1.tar.gz",
+    "sha256": "3623232f33a9c3baadf304480b2535f9a3cba8a58d42ecbb438ba267315d9998",
+    "size": 200073404
+  },
+  {
+    "name": "liberty",
+    "url": "https://repo.maven.apache.org/maven2/io/openliberty/openliberty-runtime/26.0.0.9/openliberty-runtime-26.0.0.9.zip",
+    "sha256": "5695e734b8716119e17b8af2c0cb85e9e2bb704b15144071daf559bd63539127",
+    "size": 374344149
+  }
+]

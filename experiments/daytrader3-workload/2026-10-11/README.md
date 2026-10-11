@@ -42,7 +42,7 @@ python3 harness/daytrader/run-workload.py \
 
 Six reset runs pass HTTP/fresh-session and stopped-DB SQL business invariants.
 375 total purchases (75 warmup, 300 measured) retain correct cash, completed
-orders, holdings, quantities, fees and links. All six servers stop in finally.
+orders, holdings, quantities, fees and links. All six servers stop in finally; a final [native status check](final-server-status.log) confirms the isolated server is not running.
 [Raw evidence and per-run summaries](results/), [console](console.log),
 [GC summaries](gc-summary.json), [hardware](hardware.txt),
 [input checksums](input-sha256.txt), [formatting](formatting.txt).

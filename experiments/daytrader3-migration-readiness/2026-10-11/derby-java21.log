@@ -1,0 +1,17 @@
+----------------------------------------------------------------
+Sun Oct 11 17:40:51 CEST 2026:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-01a1-2b9f-bc79-00000f92ddc8 
+on database directory /private/tmp/daytrader-target-probe/derby-java21 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c854dc5 
+Loaded from file:/private/tmp/daytrader-gradle-inspection/user-home/caches/modules-2/files-2.1/org.apache.derby/derby/10.10.1.1/9f6f910f0373adc1b23c10f9b4bb151b7e7449f/derby-10.10.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=21.0.12.1+1-LTS
+user.dir=/Users/middlewareman/Work/Migration
+os.name=Mac OS X
+os.arch=aarch64
+os.version=27.0.1
+derby.system.home=null
+derby.stream.error.file=/private/tmp/daytrader-target-probe/derby-java21.log
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Oct 11 17:40:51 CEST 2026:
+Shutting down instance a816c00e-01a1-2b9f-bc79-00000f92ddc8 on database directory /private/tmp/daytrader-target-probe/derby-java21 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2c854dc5 
