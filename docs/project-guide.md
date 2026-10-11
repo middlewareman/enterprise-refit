@@ -199,12 +199,14 @@ After establishing the baseline and tests, a first transformation sequence could
 Durable project knowledge should explain the current architecture, build/run commands, known quirks, chosen target stack, decisions, and exact evidence required for completion. Write it for both humans and agents, and keep it versioned and concise enough to remain useful across sessions and tool changes. Markdown documentation can provide a shared account of the intent and procedure, while scripts make repeatable operations executable.
 
 The author accepted the [documentation arrangement in ADR 0001](decisions/0001-documentation-and-checkpoints.md)
-following the [planning reflection](planning-and-checkpoints.md). Keep each
-artifact responsible for a distinct kind of context:
+following the [planning reflection](planning-and-checkpoints.md), then separated
+the public README from this detailed guide under [ADR 0003](decisions/0003-readme-relocation.md).
+Keep each artifact responsible for a distinct kind of context:
 
 | Artifact | Responsibility |
 |---|---|
-| README | Stable purpose, vocabulary, method and evidence requirements. |
+| [README](../README.md) | Concise portfolio introduction, strategy, demonstrated result and routes to the evidence. |
+| Project guide | Detailed purpose, vocabulary, method, workspace setup and evidence requirements. |
 | [AGENTS.md](../AGENTS.md) | Operating rules, privacy boundaries and coordinated commit/publication constraints. |
 | [PLAN.md](../PLAN.md) | One active milestone, current verified state/revision, unresolved issues, one next action and a short parked list. Replace status rather than append handoffs. |
 | [Project history](project-history.md) | Earlier project decisions, corrections and historical checkpoints; not a live task list. |

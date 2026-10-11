@@ -39,9 +39,12 @@ The author requested making the repository easier for prospective clients to
 understand. The agent recommended a concise README and featured DayTrader case
 study linked to the detailed evidence. The author authorized relocating the
 entire README first, in a separate commit; [ADR 0003](decisions/0003-readme-relocation.md)
-records that preservation step. A portfolio rewrite remains proposed. Assess
-the entry point by whether a visitor can identify the problem, demonstrated
-result, author/AI contributions and evidence without reading the full guide.
+records that preservation step. The author then requested the README overview,
+providing personal motivation, learning style and emphasis on iterative
+restoration, testing, transformation and review, then requested committing the
+overview as a separate editorial milestone. Assess the entry point by whether a
+visitor can identify the problem, demonstrated result, author/AI contributions
+and evidence without reading the full guide.
 
 ## Knowledge and provenance
 

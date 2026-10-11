@@ -14,16 +14,18 @@ traceability limits and later reflection sources distinguished. [ADR 0002](docs/
 captures standing attribution requirements. This supports the project's comparison
 and portfolio goals while retaining corrections and evidence.
 
-The author authorized relocating the entire detailed README and committing the
-move separately for traceability. The [project guide](docs/project-guide.md) now
-contains the original wording with relative links adjusted; the minimal
-[README](README.md) points to it. [ADR 0003](docs/decisions/0003-readme-relocation.md)
-records the accepted relocation and updated agent navigation. A concise portfolio
-introduction and featured DayTrader case-study summary remain agent recommendations.
+The detailed README relocation is committed locally as `72d1c07`. The author then
+requested a concise public [README](README.md), supplying personal motivation,
+learning style and emphasis on iterative restoration, testing, transformation
+and review. The overview links to the verified DayTrader evidence;
+[ADR 0003](docs/decisions/0003-readme-relocation.md) records its source and status.
+The [project guide](docs/project-guide.md) retains the detailed material and now
+describes the README/guide responsibilities. The author requested committing
+the overview as a separate local editorial milestone.
 
-**Next action:** draft the concise portfolio README for author review, using the
-existing evidence and keeping the editorial changes separate from the relocation.
-Migration and performance engineering remain paused.
+**Next action:** discuss a concise DayTrader case-study summary with the author
+as the next proposed portfolio improvement. Migration and performance engineering
+remain paused.
 
 ## Verified state and evidence
 
@@ -34,6 +36,12 @@ Migration and performance engineering remain paused.
   (271 lines, 29 relative-link changes), 126 local links/10 anchors and whitespace
   checks. ADR 0003 records the evidence. This local relocation milestone does
   not change subject/gitlink or reference revisions.
+- The 461-word README overview and responsibility update form the author-requested
+  local editorial milestone, separate from relocation commit `72d1c07`.
+  Document review passes: 64 local links/three anchors, whitespace checks and
+  result-claim review against existing records. The new personal account is an
+  agent paraphrase of context supplied for this README, with the verbatim source
+  retained in ignored storage. Publication has not been requested.
 - DayTrader is pinned at `6e6cfa787553e918e5c90edfd1e8882ce2c84d54` on
   `experiment/001/jakarta-ee11`, with frozen input `d25398b`. The
   [migration record](experiments/daytrader3-jakarta-migration/2026-10-11/README.md)
