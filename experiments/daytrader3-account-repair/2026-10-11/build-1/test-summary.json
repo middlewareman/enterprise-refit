@@ -1,0 +1,47 @@
+[
+  {
+    "module": "daytrader3-ee6-ejb",
+    "phase": "test",
+    "suite": "baseline.FinancialCalculationsTest",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "test",
+    "suite": "baseline.SessionContractTest",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "test",
+    "suite": "baseline.TradingContractTest",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "restartTest",
+    "suite": "baseline.RestartPersistenceTest",
+    "tests": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "persistedTest",
+    "suite": "baseline.PersistedStateTest",
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+]

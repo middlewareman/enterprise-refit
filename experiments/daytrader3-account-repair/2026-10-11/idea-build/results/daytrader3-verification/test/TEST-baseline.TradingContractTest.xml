@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.TradingContractTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-11T15:33:08.781Z" hostname="Monet.local" time="1.461">
+  <properties/>
+  <testcase name="Full EJB synchronous" classname="baseline.TradingContractTest" time="0.576"/>
+  <testcase name="Direct JDBC synchronous" classname="baseline.TradingContractTest" time="0.238"/>
+  <testcase name="Session EJB to JDBC synchronous" classname="baseline.TradingContractTest" time="0.14"/>
+  <testcase name="Full EJB asynchronous two-phase" classname="baseline.TradingContractTest" time="0.166"/>
+  <testcase name="unknownQuotePurchaseRollsBackTradingState()" classname="baseline.TradingContractTest" time="0.116"/>
+  <testcase name="quoteReturnsTheFixedFixturePrice()" classname="baseline.TradingContractTest" time="0.015"/>
+  <testcase name="simultaneousPurchasesFromIndependentSessionsPreserveBothDebitsAndHoldings()" classname="baseline.TradingContractTest" time="0.153"/>
+  <testcase name="buyDebitsExecutionValueAndFeeAndCreatesHolding()" classname="baseline.TradingContractTest" time="0.051"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

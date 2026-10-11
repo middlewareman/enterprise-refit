@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.RestartPersistenceTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-11T15:33:19.601Z" hostname="Monet.local" time="1.048">
+  <properties/>
+  <testcase name="durable trading state after restart: account 4" classname="baseline.RestartPersistenceTest" time="0.641"/>
+  <testcase name="durable trading state after restart: account 5" classname="baseline.RestartPersistenceTest" time="0.042"/>
+  <testcase name="durable trading state after restart: account 10" classname="baseline.RestartPersistenceTest" time="0.062"/>
+  <testcase name="durable trading state after restart: account 11" classname="baseline.RestartPersistenceTest" time="0.029"/>
+  <testcase name="durable trading state after restart: account 12" classname="baseline.RestartPersistenceTest" time="0.032"/>
+  <testcase name="durable trading state after restart: account 13" classname="baseline.RestartPersistenceTest" time="0.029"/>
+  <testcase name="durable trading state after restart: account 20" classname="baseline.RestartPersistenceTest" time="0.034"/>
+  <testcase name="order history survives restart: account 4" classname="baseline.RestartPersistenceTest" time="0.024"/>
+  <testcase name="order history survives restart: account 5" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <testcase name="order history survives restart: account 10" classname="baseline.RestartPersistenceTest" time="0.025"/>
+  <testcase name="order history survives restart: account 11" classname="baseline.RestartPersistenceTest" time="0.021"/>
+  <testcase name="order history survives restart: account 12" classname="baseline.RestartPersistenceTest" time="0.024"/>
+  <testcase name="order history survives restart: account 13" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <testcase name="order history survives restart: account 20" classname="baseline.RestartPersistenceTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

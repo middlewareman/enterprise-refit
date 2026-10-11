@@ -1,0 +1,1 @@
+IDEA MCP reformat_file: TradeSLSBBean.java, project code style; result ok. Full diff and whitespace-independent diff reviewed before validation. Formatting within the changed file includes Javadoc and layout changes.

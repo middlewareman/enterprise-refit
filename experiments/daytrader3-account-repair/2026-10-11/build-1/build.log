@@ -1,0 +1,114 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :daytrader3-ee6-ejb:clean
+> Task :daytrader3-ee6-web:clean
+> Task :daytrader3-ee6-rest:clean
+> Task :daytrader3-verification:clean
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+
+> Task :daytrader3-ee6-ejb:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :daytrader3-ee6-ejb:processResources
+> Task :daytrader3-ee6-ejb:classes
+> Task :daytrader3-ee6-ejb:jar
+> Task :daytrader3-ee6-rest:compileJava
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes
+> Task :daytrader3-ee6-rest:war
+> Task :daytrader3-ee6-web:compileJava
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes
+> Task :daytrader3-ee6-web:war
+> Task :daytrader3-ee6:ear
+> Task :daytrader3-ee6:assemble
+> Task :daytrader3-ee6-ejb:compileTestJava
+> Task :daytrader3-ee6-ejb:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-ejb:testClasses
+> Task :daytrader3-ee6-ejb:test
+> Task :daytrader3-verification:compileJava
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes
+> Task :daytrader3-verification:jar
+> Task :daytrader3-verification:compileTestJava
+> Task :daytrader3-ee6:installLiberty UP-TO-DATE
+> Task :daytrader3-ee6:installDayTraderFeatures SKIPPED
+> Task :daytrader3-verification:prepareTestServer
+
+> Task :daytrader3-verification:loadFixture
+Deterministic fixture: 40 accounts, 40 quotes, zero holdings/orders; fixed timestamps and key seeds.
+
+> Task :daytrader3-verification:startTestServer
+
+Starting server daytrader3_Baseline.
+Server daytrader3_Baseline started with process ID 46973.
+
+> Task :daytrader3-verification:processTestResources NO-SOURCE
+> Task :daytrader3-verification:testClasses
+> Task :daytrader3-verification:test
+
+> Task :daytrader3-verification:stopTestServer
+
+Stopping server daytrader3_Baseline.
+Server daytrader3_Baseline stopped.
+
+> Task :daytrader3-verification:restartTestServer
+
+Starting server daytrader3_Baseline.
+Server daytrader3_Baseline started with process ID 47081.
+
+> Task :daytrader3-verification:restartTest
+
+> Task :daytrader3-verification:stopAfterRestart
+
+Stopping server daytrader3_Baseline.
+Server daytrader3_Baseline stopped.
+
+> Task :daytrader3-verification:persistedTest
+> Task :daytrader3-verification:prepareCoverageClasses
+> Task :daytrader3-ee6:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6:processTestResources NO-SOURCE
+> Task :daytrader3-ee6:testClasses UP-TO-DATE
+> Task :daytrader3-ee6:test NO-SOURCE
+> Task :daytrader3-ee6-ejb:assemble
+> Task :daytrader3-ee6-ejb:check
+> Task :daytrader3-ee6-ejb:build
+> Task :daytrader3-ee6-rest:assemble
+> Task :daytrader3-ee6-rest:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6-rest:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-rest:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-rest:test NO-SOURCE
+> Task :daytrader3-ee6-rest:check UP-TO-DATE
+> Task :daytrader3-ee6-rest:build
+> Task :daytrader3-ee6-web:assemble
+> Task :daytrader3-ee6-web:compileTestJava NO-SOURCE
+> Task :daytrader3-ee6-web:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-web:testClasses UP-TO-DATE
+> Task :daytrader3-ee6-web:test NO-SOURCE
+> Task :daytrader3-ee6-web:check UP-TO-DATE
+> Task :daytrader3-ee6-web:build
+> Task :daytrader3-verification:assemble
+> Task :daytrader3-verification:applicationCoverage
+
+> Task :daytrader3-verification:coverageSummary
+Application source coverage summary: [EJB:[linesCovered:1390, linesTotal:2959, branchesCovered:258, branchesTotal:732], web:[linesCovered:307, linesTotal:1732, branchesCovered:84, branchesTotal:343], REST:[linesCovered:22, linesTotal:99, branchesCovered:0, branchesTotal:10]]
+
+> Task :daytrader3-verification:check
+> Task :daytrader3-ee6:fvt
+> Task :daytrader3-ee6:check
+> Task :daytrader3-ee6:build
+> Task :daytrader3-verification:build
+
+[Incubating] Problems report is available at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 40s
+31 actionable tasks: 29 executed, 2 up-to-date

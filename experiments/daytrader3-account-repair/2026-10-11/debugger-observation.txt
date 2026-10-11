@@ -1,0 +1,8 @@
+Transcribed from IDEA DRAIN_EVENTS, 2026-10-11. Non-suspending logpoints, condition userID.equals("test:20"). No expression errors.
+
+15:30:02.188Z buy-read thread=Default Executor-thread-5 symbol=s:20 balance=30000.00 debit=164.95
+15:30:02.195Z buy-read thread=Default Executor-thread-4 symbol=s:21 balance=30000.00 debit=237.95
+15:30:02.215Z buy-write thread=Default Executor-thread-5 symbol=s:20 balance=29835.05
+15:30:02.220Z buy-write thread=Default Executor-thread-4 symbol=s:21 balance=29762.05
+
+TradeSLSBBean.java input lines 158 (before setBalance) and 160 (after). These events demonstrate stale read/modify/write in separate executor threads; they do not show the database commit order. Diagnostic test failed its cash assertion.
