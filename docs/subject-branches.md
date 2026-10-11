@@ -55,6 +55,9 @@ work rather than creating root commits solely to synchronize intermediate pins.
    then commit the related root documentation and gitlink together as one milestone.
    A milestone may contain several purposeful subject commits without a root
    pointer update for each. Git cannot make one atomic commit across repositories.
+   Staging or committing a pointer before the subject is fetchable is authorized.
+   Clearly report its exact revision and branch still needing publication so the
+   author can push it afterwards; no separate approval is needed for local preparation.
 3. When publication is authorized, push affected subject branches first. Verify
    that every referenced subject commit is fetchable from its configured remote;
    when it is the branch tip, compare the full commit ID with `git ls-remote`.

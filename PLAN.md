@@ -21,15 +21,47 @@ The author has identified a tendency to become absorbed in details and lose sigh
 
 ## Current focus and next action
 
-**Current focus (milestone 4 outcome):** the validated functional Java 21 / Jakarta EE 11 migration and its performance gap are recorded as one coordinated code/evidence milestone. The transformation keeps the EAR, trading interface, Derby/schema and JMS architecture. Provider failures required a Collection-compatible servlet and explicit shared-cache disabling; the unchanged financial assertions now pass.
+**Current focus (author-requested pause and reflection):** pause further migration/performance engineering and examine how the collaboration worked. Milestone 4's bounded functional result is preserved in root `0da7a65` and subject `6e6cfa7`; the performance gap remains open. This reflection serves the project's comparison and portfolio goals without starting another implementation iteration.
 
 **Completion evidence:** two fresh 52-case shell suites, clean compilation/packaging and portable target installation, Java 21 bytecode/dependency inventory, frozen test hashes, IDEA integration execution/shutdown, six matching target workloads and an initial threshold investigation. Functional acceptance is demonstrated; steady-state performance acceptance remains unresolved. Interactive target startup, complete UI/REST behavior, CI's two-JDK configuration and broader concurrency/JMS failures remain outside the demonstrated result.
 
 **Publication checkpoint:** the author pushed DayTrader. `git ls-remote origin refs/heads/experiment/001/jakarta-ee11` verifies exact remote tip `6e6cfa787553e918e5c90edfd1e8882ce2c84d54`. The coordinated root milestone includes this fetchable gitlink with its evidence. Root publication has not been requested.
 
-**Next action (agent recommendation):** run longer, alternating baseline/target measurements with a stabilization check and aligned diagnostics. Retain the predefined thresholds and correctness settings. Stop once the gap is reproducibly characterized and there is evidence to choose an optimization or report a remaining limitation. Avoid expanding into unrelated cleanup or framework replacement.
+**Next action:** discuss the IDEA integration first: distinguish MCP tools from GUI actions, trace one concrete debugger example, and identify the author's enabling setup versus details we have not verified. Follow the reflection agenda below as the author adds thoughts. Resume engineering only when the author asks.
 
 **Environment/IDE state:** Gradle 8.14.3 / Liberty plugin 3.10.0 are retained. Application/unit/server use pinned Temurin 21.0.12.1+1; external HTTP/fixture/SQL tools retain Zulu 8u504. The verified IDEA run uses an explicit temporary Java 21 toolchain path with a Java 8 Gradle JVM; Java 21 SDK registration/reimport was not verified. The ignored old `build/wlp` was overlaid during an invalid attempt and must be replaced before legacy reuse. Accepted target installations are separate and clean; interactive data was not reset.
+
+## Reflection agenda
+
+Author topics to follow up at suitable points; these are questions for discussion,
+not authorization for new migration work or claims that comparative research has run.
+
+- **IDEA and tool choice:** how edits, formatting, run configurations and debugger
+  probes were performed; what each gained, failed to achieve or could disturb;
+  what the author enabled; what a shell-only workflow would require instead.
+  Project import, run configurations and code style are visible. The exact plugin
+  installation/connection steps behind the supplied MCP tools/skill are unverified.
+- **Planning, steps and commits:** assess the checked-in plan/status and separated
+  restoration, tooling, repair, baseline and migration milestones. Consider a
+  shorter current-state plan with history in experiment records, ADRs for decisions,
+  issue boards and different commit/checkpoint choices. Study how selected reference
+  approaches handle this before calling their practices observed or best practice.
+- **Knowledge and provenance:** inventory project documents, application/test
+  evidence, skills, official documentation and general model knowledge. For the
+  DayTrader migration, workspace context included README/PLAN/AGENTS, the contract,
+  subject code, frozen tests and earlier experiment records. The IDEA integration
+  supplied the `ij-debugger` skill; official Jakarta/Liberty/Gradle/provider material
+  informed platform choices and diagnosis. Private Theseus material and reference
+  target implementations were not consulted for this migration. Public project
+  descriptions of Theseus were present in context; earlier private-history work
+  is a separate activity. Individual pretrained knowledge sources are not traceable.
+
+Initial agent assessment: checked-in context and milestone boundaries support
+continuity, review and accurate attribution. PLAN.md accumulated historical status
+and superseded next actions, creating maintenance and drift risk. Prefer one short
+current state/next action with links to detailed evidence. The large final migration
+diff also combines required namespace changes with IDEA formatting; assess its
+review cost rather than assuming either smaller commits or fewer commits are always better.
 
 ## Working roadmap
 
@@ -87,6 +119,8 @@ Before ending a substantive work session, update this file with verified progres
 
 | 2026-10-11 | Author: go ahead with the proposed migration after discussing Java 21, EclipseLink, preserved interfaces/tests and performance reporting. | Authorizes the combined target-stack migration as a collaborative case study. Preserve financial assertions and record provider-related failures; finish baseline prerequisites before transformation. |
 
+| 2026-10-11 | Author: pause engineering to reflect on IDEA use/enablement, checked-in planning and commit boundaries, alternatives and knowledge/skill provenance. Permit staging pointers before they are fetchable, with explicit publication status. | Preserve the reflection agenda; supersede the earlier supplied fetchability-before-staging restriction. Local staging/commits need no extra permission; subject publication/verification must precede root publication. |
+
 Record later material decisions here with their origin, rationale, and relevant evidence. Keep recommendations distinguishable from accepted decisions.
 
 ## Parked work
@@ -95,6 +129,10 @@ These ideas can be revisited when they serve a concrete milestone:
 
 - A broad comparison of servers, target frameworks, or every reference repository: revisit when choosing an experiment or comparator.
 - Spring Boot and Quarkus comparisons, framework replacement, and structural cleanup: revisit after baseline evidence and the primary Jakarta EE 11 migration contract exist. The author may want all three paths; they are not concurrent active milestones.
+- Longer alternating baseline/target workload measurements with stabilization and
+  aligned diagnostics: revisit when the author resumes engineering. Both p95
+  investigation thresholds remain crossed; preserve thresholds and correctness
+  settings, and stop once evidence supports an optimization or a stated limitation.
 - REST single-address XML defect: revisit after the migration; legacy GET without Content-Type returns 415 and its media-type comparison appears incorrect. JSON search is characterized.
 - Broad JMS fault injection/redelivery testing: revisit when defining asynchronous guarantees in the migration contract, or if the bounded baseline scenarios reveal a messaging defect. Preserve the existing asynchronous happy-path checks; avoid an open-ended failure-testing campaign before the tooling upgrade.
 - Sophisticated planning automation or a custom planning skill: revisit if these two documents prove insufficient in practice.
