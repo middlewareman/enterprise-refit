@@ -1,0 +1,16 @@
+{
+  "status": "running",
+  "breakpointErrorsTail": [],
+  "tracepointOutputsTail": [
+    {
+      "type": "TRACEPOINT_OUTPUT",
+      "timestampMs": 1791743419343,
+      "timestampIso": "2026-10-11T18:30:19.343Z",
+      "sessionId": "DayTrader Debug Attach",
+      "message": "debug-setup quote=s:0\n",
+      "breakpointId": "line|file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java|426",
+      "filePath": "file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/src/main/java/com/ibm/websphere/samples/daytrader/ejb3/TradeSLSBBean.java",
+      "line": 427
+    }
+  ]
+}

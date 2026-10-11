@@ -1,0 +1,5 @@
+gradle.projectsEvaluated {
+    gradle.rootProject.project(':daytrader3-verification').tasks.named('startDebugServer') {
+        doLast { throw new GradleException('Intentional failed-start cleanup probe after readiness') }
+    }
+}

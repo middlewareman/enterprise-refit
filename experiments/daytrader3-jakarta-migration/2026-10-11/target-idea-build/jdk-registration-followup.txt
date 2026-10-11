@@ -1,0 +1,30 @@
+JDK setup follow-up, 2026-10-11, after the recorded acceptance build.
+
+Author action: installed temurin@21 and registered it as a JDK in IDEA.
+Native java_home inventory:
+  /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
+  Eclipse Adoptium, arm64, version 21.0.12.1
+Native java -version:
+  OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+IDEA SDK registry entry:
+  name: temurin-21
+  homePath: /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home
+
+Gradle discovery check from the subject checkout, without a path override:
+  JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+  GRADLE_USER_HOME=/private/tmp/daytrader-gradle-inspection/user-home
+  ./gradlew --offline --no-daemon --console=plain javaToolchains
+Result: BUILD SUCCESSFUL; one inspection task executed. Java 8 is Current JVM;
+Temurin 21.0.12.1+1-LTS and Temurin 25 are detected by MacOS java_home.
+The same inspection under Java 21 also succeeds and detects retained Java 8.
+This inspects toolchain availability; no application build/test/server launch ran.
+
+Local DayTrader Build scriptParameters now contain only --console=plain:
+the temporary -Porg.gradle.java.installations.paths override was removed through
+IDEA's patch tool after discovery verification. Gradle JVM remains zulu-1.8;
+project SDK remains temurin-25. The agent did not change global SDK settings.
+Gradle reimport and interactive target startup remain unverified.
+
+The installed runtime's version matches the pinned migration version. Its new
+installation was not validated against the original downloaded archive checksum.
+context.txt is retained unchanged as evidence of the earlier acceptance run.

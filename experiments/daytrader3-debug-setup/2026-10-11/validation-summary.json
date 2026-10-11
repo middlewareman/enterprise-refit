@@ -1,0 +1,32 @@
+{
+  "rootStartingRevision": "9fe49e6a08116b54a8d33f22783f0976cc09b751",
+  "subjectRevision": "6e6cfa787553e918e5c90edfd1e8882ce2c84d54",
+  "subjectWorkingTreeClean": true,
+  "implementationSha256": {
+    "harness/daytrader/debug.gradle": "d6321ccd1fcb6e798607e138fd42a5362273a51d1668710d5f9be66068c087d3",
+    ".run/DayTrader_Debug_Start.run.xml": "2124ffcdbcc72caa017c47a4ac2829105a67bb6aa8898f34c6c1c25aa747b110",
+    ".run/DayTrader_Debug_Stop.run.xml": "5580cec71d655491198c47e2278a0ab3abdab177cd866479f5f30499dcda503d",
+    ".run/DayTrader_Debug_Attach.run.xml": "d49a5ecb7eb984bf380d86c9d3682bec4df3f2c63c6621ea4be6bcbe0fb36da4"
+  },
+  "preservedFixtures": [
+    {
+      "directory": "subjects/upstream/sample.daytrader3/daytrader3-ee6-wlpcfg/shared/resources/data",
+      "fileCount": 98,
+      "unchanged": true
+    },
+    {
+      "directory": "subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-user/shared/resources/data",
+      "fileCount": 100,
+      "unchanged": true
+    }
+  ],
+  "frozenTestSourcesMatch": {
+    "daytrader3-ee6-ejb/src/test/java/baseline/FinancialCalculationsTest.java": true,
+    "daytrader3-verification/src/test/java/baseline/PersistedStateTest.java": true,
+    "daytrader3-verification/src/test/java/baseline/TradeClient.java": true,
+    "daytrader3-verification/src/test/java/baseline/RestartPersistenceTest.java": true,
+    "daytrader3-verification/src/test/java/baseline/AuxiliaryInterfacesTest.java": true,
+    "daytrader3-verification/src/test/java/baseline/TradingContractTest.java": true,
+    "daytrader3-verification/src/test/java/baseline/SessionContractTest.java": true
+  }
+}

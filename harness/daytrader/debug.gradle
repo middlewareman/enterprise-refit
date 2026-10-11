@@ -1,0 +1,154 @@
+import org.gradle.jvm.toolchain.JavaLanguageVersion
+
+// Opt-in workspace adapter: ordinary subject builds do not load these tasks.
+gradle.projectsEvaluated {
+    def verification = gradle.rootProject.project(':daytrader3-verification')
+    def ear = gradle.rootProject.project(':daytrader3-ee6')
+    def user = verification.file('build/debug-liberty-user')
+    def output = verification.file('build/debug-liberty-output')
+    def serverName = 'daytrader3_Debug'
+    def server = new File(user, "servers/${serverName}")
+    def database = new File(user, 'shared/resources/data/tradedb')
+    def ports = [http: 19084, https: 19444, jms: 17277, jmsSsl: 17287, debug: 15005]
+    def javaHome = verification.javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(21)
+    }.get().metadata.installationPath.asFile.absolutePath
+    def runtime = ear.findProperty('daytraderLibertyHome') ?
+            ear.file(ear.property('daytraderLibertyHome')) : ear.file('build/jakarta-runtime/wlp')
+    def executable = new File(runtime, "bin/server${System.getProperty('os.name').toLowerCase().contains('windows') ? '.bat' : ''}")
+
+    def requireIdleDebugServer = {
+        def probes = []
+        try {
+            ports.each { name, port ->
+                def socket = new java.net.ServerSocket()
+                probes << socket
+                socket.reuseAddress = true
+                try {
+                    socket.bind(new java.net.InetSocketAddress('127.0.0.1', port))
+                } catch (java.net.BindException failure) {
+                    throw new GradleException("Debug ${name} port ${port} is occupied; stopDebugServer or release the port before starting.", failure)
+                }
+            }
+        } finally {
+            probes.each { it.close() }
+        }
+        def lock = new File(output, "${serverName}/workarea/.sLock")
+        if (lock.exists()) {
+            def channel = java.nio.channels.FileChannel.open(lock.toPath(), java.nio.file.StandardOpenOption.WRITE)
+            try {
+                def held = channel.tryLock()
+                if (held == null) throw new GradleException('Debug server is running; stopDebugServer before resetting its fixture.')
+                held.release()
+            } finally {
+                channel.close()
+            }
+        }
+    }
+
+    def prepare = verification.tasks.register('prepareDebugServer') {
+        group = 'Debugging'
+        description = 'Resets only the isolated debug server; refuses occupied ports or an active fixture.'
+        dependsOn ':daytrader3-ee6:ear', ':daytrader3-ee6:installDayTraderFeatures', ':daytrader3-verification:classes'
+        doLast {
+            requireIdleDebugServer()
+            verification.delete user, output
+            server.mkdirs()
+            def xml = gradle.rootProject.file('daytrader3-ee6-wlpcfg/servers/daytrader3_Sample/server.xml').text
+                    .replace('httpPort="9083"', 'httpPort="' + ports.http + '"')
+                    .replace('httpsPort="9443"', 'httpsPort="' + ports.https + '"')
+                    .replace('location="daytrader3-ee6.ear"', 'location="' + ear.tasks.ear.archiveFile.get().asFile.absolutePath + '"')
+                    .replace('</server>', '<wasJmsEndpoint wasJmsPort="' + ports.jms + '" wasJmsSSLPort="' + ports.jmsSsl + '" /></server>')
+            new File(server, 'server.xml').text = xml
+            verification.copy {
+                from verification.configurations.runtimeClasspath.filter { it.name == 'derby-10.10.1.1.jar' }
+                into new File(user, 'shared/resources/Daytrader3_SampleDerbyLibs')
+            }
+            new File(server, 'jvm.options').text = "-Xms256m\n-Xmx512m\n-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:${ports.debug}\n"
+        }
+    }
+
+    // Fail before prerequisites can provision the shared runtime; recheck before deleting the fixture.
+    gradle.taskGraph.whenReady { graph ->
+        if (graph.hasTask(prepare.get())) requireIdleDebugServer()
+    }
+
+    verification.tasks.register('loadDebugFixture', JavaExec) {
+        group = 'Debugging'
+        description = 'Loads the existing deterministic fixture into the separate debug database.'
+        dependsOn 'prepareDebugServer'
+        javaLauncher = verification.javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(8) }
+        mainClass = 'baseline.DerbyFixture'
+        classpath = verification.sourceSets.main.runtimeClasspath
+        workingDir verification.buildDir
+        systemProperty 'derby.stream.error.file', verification.file('build/debug-derby-fixture.log').absolutePath
+        args database.absolutePath, gradle.rootProject.file('daytrader3-ee6-web/src/main/webapp/dbscripts/derby/Table.ddl').absolutePath
+    }
+
+    def stop = verification.tasks.register('stopDebugServer', Exec) {
+        group = 'Debugging'
+        description = 'Stops only the isolated debug server; retains its database for inspection.'
+        onlyIf { server.exists() }
+        environment 'JAVA_HOME', javaHome
+        environment 'WLP_USER_DIR', user.absolutePath
+        environment 'WLP_OUTPUT_DIR', output.absolutePath
+        commandLine executable.absolutePath, 'stop', serverName
+    }
+
+    def start = verification.tasks.register('startDebugServer', Exec) {
+        group = 'Debugging'
+        description = 'Starts a fresh isolated fixture on HTTP 19084 and JDWP 15005, then leaves it running for debugging.'
+        dependsOn 'loadDebugFixture'
+        environment 'JAVA_HOME', javaHome
+        environment 'WLP_USER_DIR', user.absolutePath
+        environment 'WLP_OUTPUT_DIR', output.absolutePath
+        commandLine executable.absolutePath, 'start', serverName
+        doLast {
+            def deadline = System.nanoTime() + java.util.concurrent.TimeUnit.SECONDS.toNanos(90)
+            boolean ready = false
+            while (!ready && System.nanoTime() < deadline) {
+                def connection = new URL("http://127.0.0.1:${ports.http}/daytrader/").openConnection()
+                connection.connectTimeout = 1000
+                connection.readTimeout = 1000
+                try {
+                    ready = connection.responseCode == 200
+                } catch (IOException ignored) {
+                } finally {
+                    connection.disconnect()
+                }
+                if (!ready) Thread.sleep(250)
+            }
+            if (!ready) throw new GradleException('Debug server did not become ready within 90 seconds; inspect debug-liberty-output.')
+            def connection = new URL("http://127.0.0.1:${ports.http}/daytrader/config").openConnection()
+            connection.connectTimeout = 5000
+            connection.readTimeout = 5000
+            connection.requestMethod = 'POST'
+            connection.doOutput = true
+            connection.setRequestProperty('Content-Type', 'application/x-www-form-urlencoded')
+            try {
+                connection.outputStream.withCloseable {
+                    it.write('action=updateConfig&RunTimeMode=0&OrderProcessingMode=0&MaxUsers=40&MaxQuotes=40&EnablePublishQuotePriceChange=on'.getBytes('UTF-8'))
+                }
+                if (connection.responseCode != 200 || !connection.inputStream.withCloseable { it.getText('UTF-8') }.contains('DayTrader Configuration Updated')) {
+                    throw new GradleException('Could not apply the Full EJB/synchronous debug profile.')
+                }
+            } finally {
+                connection.disconnect()
+            }
+            verification.logger.lifecycle("Debug fixture ready: http://127.0.0.1:${ports.http}/daytrader/; attach to 127.0.0.1:${ports.debug}. Run stopDebugServer when finished.")
+        }
+    }
+
+    verification.tasks.register('cleanupFailedDebugStart') {
+        onlyIf { start.get().state.failure != null }
+        doLast {
+            if (server.exists()) verification.exec {
+                environment 'JAVA_HOME', javaHome
+                environment 'WLP_USER_DIR', user.absolutePath
+                environment 'WLP_OUTPUT_DIR', output.absolutePath
+                commandLine executable.absolutePath, 'stop', serverName
+            }
+        }
+    }
+    start.configure { finalizedBy 'cleanupFailedDebugStart' }
+}

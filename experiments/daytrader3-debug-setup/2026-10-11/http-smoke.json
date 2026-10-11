@@ -1,0 +1,12 @@
+[
+  {
+    "request": "login",
+    "httpStatus": 200,
+    "containsExpectedText": true
+  },
+  {
+    "request": "quote",
+    "httpStatus": 200,
+    "containsExpectedText": true
+  }
+]

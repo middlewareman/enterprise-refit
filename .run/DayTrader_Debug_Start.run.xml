@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="DayTrader Debug Start" type="GradleRunConfiguration" factoryName="Gradle">
+        <ExternalSystemSettings>
+            <option name="externalProjectPath" value="$PROJECT_DIR$/subjects/upstream/sample.daytrader3"/>
+            <option name="externalSystemIdString" value="GRADLE"/>
+            <option name="scriptParameters"
+                    value="--console=plain --init-script $PROJECT_DIR$/harness/daytrader/debug.gradle"/>
+            <option name="taskDescriptions">
+                <list/>
+            </option>
+            <option name="taskNames">
+                <list>
+                    <option value=":daytrader3-verification:startDebugServer"/>
+                </list>
+            </option>
+            <option name="vmOptions" value=""/>
+        </ExternalSystemSettings>
+        <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+        <method v="2"/>
+    </configuration>
+</component>

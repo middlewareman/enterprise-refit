@@ -1,0 +1,77 @@
+{
+  "sessions": {
+    "sessions": []
+  },
+  "breakpoints": {
+    "breakpoints": [
+      {
+        "id": "exception||-1",
+        "type": "exception",
+        "enabled": false,
+        "owner": "user",
+        "isLogMessage": false,
+        "isLogStack": false,
+        "temporary": false,
+        "suspendPolicy": "all",
+        "hitCount": 0
+      },
+      {
+        "id": "exception||-1",
+        "type": "exception",
+        "enabled": true,
+        "owner": "user",
+        "isLogMessage": false,
+        "isLogStack": false,
+        "temporary": false,
+        "suspendPolicy": "all",
+        "hitCount": 0
+      },
+      {
+        "id": "exception||-1",
+        "type": "exception",
+        "enabled": false,
+        "owner": "user",
+        "isLogMessage": false,
+        "isLogStack": false,
+        "temporary": false,
+        "suspendPolicy": "all",
+        "hitCount": 0
+      },
+      {
+        "id": "DlvErrorBreakpoint||-1",
+        "type": "DlvErrorBreakpoint",
+        "enabled": true,
+        "owner": "user",
+        "isLogMessage": false,
+        "isLogStack": false,
+        "temporary": false,
+        "suspendPolicy": "all",
+        "hitCount": 0
+      },
+      {
+        "id": "exception||-1",
+        "type": "exception",
+        "enabled": false,
+        "owner": "user",
+        "isLogMessage": false,
+        "isLogStack": false,
+        "temporary": false,
+        "suspendPolicy": "all",
+        "hitCount": 0
+      },
+      {
+        "id": "exception||-1",
+        "type": "exception",
+        "enabled": true,
+        "owner": "user",
+        "isLogMessage": false,
+        "isLogStack": false,
+        "temporary": false,
+        "suspendPolicy": "all",
+        "hitCount": 0
+      }
+    ],
+    "totalCount": 6,
+    "enabledCount": 3
+  }
+}

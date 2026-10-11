@@ -192,6 +192,15 @@ After establishing the baseline and tests, a first transformation sequence could
 
 Durable project knowledge should explain the current architecture, build/run commands, known quirks, chosen target stack, decisions, and exact evidence required for completion. Write it for both humans and agents, and keep it versioned and concise enough to remain useful across sessions and tool changes. Markdown documentation can provide a shared account of the intent and procedure, while scripts make repeatable operations executable.
 
+[How the agent used IntelliJ IDEA](docs/idea-agent-workflow.md) records concrete
+formatting, editing, debugger and build-tool use in DayTrader, the supplied skill,
+GUI limitations, author contributions and alternatives. It distinguishes observed
+capabilities from setup details and potential features that remain unverified.
+The [isolated DayTrader debug guide](docs/daytrader-debugging.md) explains the
+shared Start/Attach/Stop configurations, disposable fixture and cleanup;
+[setup evidence](experiments/daytrader3-debug-setup/2026-10-11/README.md) records
+IDEA attachment, reset refusal, fixture preservation and failed-start cleanup.
+
 For Codex, a root `AGENTS.md` can define workspace boundaries and subject-specific instructions can refine them. Check instruction discovery and precedence for each agent/tool; merely placing instructions in the superproject does not ensure every invocation uses them.
 
 - Keep original upstream and reference checkouts untouched; write application changes only to assigned work branches in author-controlled forks or assigned implementation checkouts. Preserve original source pins and distinguish restoration, tooling, and migration revisions.
