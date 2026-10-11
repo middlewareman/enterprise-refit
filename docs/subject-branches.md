@@ -30,7 +30,7 @@ A repair branch and a tooling branch need not form a mandatory sequence. Try the
 - Branch names identify purpose; commit IDs identify evidence. Record the untouched source, restoration result, any tooling prerequisite, and each experiment's starting and final revisions separately.
 - Treat a restored baseline as validated only after its stated checks pass. A branch called `restore/build` does not establish buildability or preserved behavior. An optional `baseline/<id>` tag can mark a checked baseline; retain its commit ID and validation record, and never move the tag to replace an earlier result.
 - Keep shared repairs in separate commits. Incorporating one into an experiment changes the run's inputs and requires recording the new revision and affected validation. Do not merge one comparator's migration into another.
-- A submodule's gitlink is the selected workspace revision. Switching a local work branch can make it differ from that pin; do not stage that difference as routine cleanup. Update the pin only for an intentional recorded milestone, once its commit is available from the configured fork.
+- A submodule's gitlink is the selected workspace revision. Switching a local work branch can make it differ from that pin; do not stage that difference as routine cleanup. Update the pin only for an intentional recorded milestone. Local root commits may reference local subject commits; publication requires the referenced commits to be available from the configured fork.
 - Before changing branches or restoring a pinned checkout, inspect and preserve outstanding work. Normal submodule initialization produces a detached HEAD; create an explicit work branch before editing. For concurrent experiments, separate worktrees or implementation checkouts avoid sharing one checked-out branch.
 - Changing branch or checkout layout does not establish an agent access boundary. Independent migration evaluation still requires excluding reference solutions and held-out tests from the migration agent's accessible workspace.
 
@@ -41,6 +41,31 @@ git -C subjects/upstream/sample.daytrader3 switch -c restore/build a2d61af8c75c7
 ```
 
 The command is an example and was not executed during fork configuration. No branch tip is selected through `.gitmodules`; the superproject continues to pin exact commits.
+
+## Coordinated milestone commits and publication
+
+Author preference, recorded 2026-10-11: apply IDEA project formatting before
+committing agent-written code, or leave it for the author to format. Group related
+work rather than creating root commits solely to synchronize intermediate pins.
+
+1. Complete the subject change, apply IDEA formatting, inspect the diff and run
+   appropriate validation on the final code. Prepare the related root evidence
+   and documentation alongside it.
+2. Commit the subject change locally. Use its exact commit ID in the root evidence,
+   then commit the related root documentation and gitlink together as one milestone.
+   A milestone may contain several purposeful subject commits without a root
+   pointer update for each. Git cannot make one atomic commit across repositories.
+3. When publication is authorized, push affected subject branches first. Verify
+   that every referenced subject commit is fetchable from its configured remote;
+   when it is the branch tip, compare the full commit ID with `git ls-remote`.
+4. Push the root branch only after subject publication and verification succeed.
+   Use `git push --recurse-submodules=check` as an additional guard. If a subject
+   push fails, retain the local root commit and resolve that failure before
+   publishing it; do not create another root commit just to repeat the same pin.
+
+The publication order is required for reproducible checkout; the local root
+commit does not require an earlier subject push. These steps describe the agreed
+workflow, not commands executed during this documentation update.
 
 ## Local remote setup
 

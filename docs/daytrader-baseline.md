@@ -300,8 +300,14 @@ test results and coverage, repeated performance/resource measurements, known def
 and accepted scope/tolerances. A fresh baseline run must reproduce the checks;
 unmeasured dimensions stay explicitly unknown.
 
-**Next action:** implement the proposed external JUnit suite and deterministic fixture, starting with named Full EJB3/synchronous
-characterization tests for login → quote → buy → sell, including fees, cash, order
-state, and persisted holdings. Then collect coverage to find gaps before extending
-transaction profiles and measuring the validated workload. This advances milestone 3;
-application modernization remains subsequent work.
+**Next action (recommendation updated 2026-10-11):** rerun the ordinary build on
+the currently pinned test-formatting revision `1c43422`. The suite and server
+coverage already recorded at `fd8c371` satisfy the prerequisite for a separate
+Gradle/Liberty-plugin upgrade. Verify the same assertions and unchanged Java EE 6
+runtime after that tooling change. Then add a bounded same-account concurrency
+scenario, checking cash against execution values and fees, completed orders and
+holdings, including persisted state. Finish controlled performance measurements
+and the migration contract before application transformation. Exact tooling
+versions remain to be selected and validated; this is not an accepted upgrade
+decision. This advances milestone 3 without making exhaustive coverage a
+prerequisite for progress.

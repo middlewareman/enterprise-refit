@@ -166,7 +166,7 @@ git submodule update --init --recursive
 git submodule status --recursive
 ```
 
-Submodules normally initialize at a detached HEAD. Perform editable experiments on explicit branches in forks or independent checkouts. Push implementation commits before updating and committing their superproject pointers so collaborators can fetch them. Keep reference updates separate from experiment runs; avoid automatically advancing to upstream HEAD during evaluation.
+Submodules normally initialize at a detached HEAD. Perform editable experiments on explicit branches in forks or independent checkouts. Group related subject work and root documentation/pointer updates into meaningful milestones; the repositories still require separate commits. Local root commits can reference local subject commits. Before publishing the root commit, push the referenced subject commits and verify that collaborators can fetch them. See [the coordinated workflow](docs/subject-branches.md#coordinated-milestone-commits-and-publication). Keep reference updates separate from experiment runs; avoid automatically advancing to upstream HEAD during evaluation.
 
 [The proposed subject branch convention](docs/subject-branches.md) separates `restore/*`, `tooling/*`, and `experiment/*` in author-controlled forks. The fork's default branch preserves upstream history; experiment records identify exact starting and result commits. Fork-backed subjects may be edited on assigned branches at their existing paths. Other original upstream and reference checkouts remain untouched.
 
