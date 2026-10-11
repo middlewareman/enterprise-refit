@@ -1,0 +1,73 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+Executing Gradle on JVM versions 16 and lower has been deprecated. This will fail with an error in Gradle 9.0. Use JVM 17 or greater to execute Gradle. Projects can continue to use older JVM versions via toolchains. Consult the upgrading guide for further information: https://docs.gradle.org/8.14.3/userguide/upgrading_version_8.html#minimum_daemon_jvm_version
+
+> Configure project :daytrader3-ee6-ejb
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/build.gradle': line 19
+The org.gradle.api.plugins.JavaPluginConvention type has been deprecated. This is scheduled to be removed in Gradle 9.0. Consult the upgrading guide for further information: https://docs.gradle.org/8.14.3/userguide/upgrading_version_8.html#java_convention_deprecation
+	at build_5yddywgqt9731oisvyl7wl9ku.run(/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/build.gradle:19)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/build.gradle': line 20
+The org.gradle.api.plugins.JavaPluginConvention type has been deprecated. This is scheduled to be removed in Gradle 9.0. Consult the upgrading guide for further information: https://docs.gradle.org/8.14.3/userguide/upgrading_version_8.html#java_convention_deprecation
+	at build_5yddywgqt9731oisvyl7wl9ku.run(/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/build.gradle:20)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+
+> Configure project :daytrader3-verification
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle': line 4
+The org.gradle.api.plugins.JavaPluginConvention type has been deprecated. This is scheduled to be removed in Gradle 9.0. Consult the upgrading guide for further information: https://docs.gradle.org/8.14.3/userguide/upgrading_version_8.html#java_convention_deprecation
+	at build_bodiwqpfs8jgcm71hd7oc6hq0.run(/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle:4)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle': line 5
+The org.gradle.api.plugins.JavaPluginConvention type has been deprecated. This is scheduled to be removed in Gradle 9.0. Consult the upgrading guide for further information: https://docs.gradle.org/8.14.3/userguide/upgrading_version_8.html#java_convention_deprecation
+	at build_bodiwqpfs8jgcm71hd7oc6hq0.run(/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build.gradle:5)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+The ProjectDependency.getDependencyProject() method has been deprecated. This is scheduled to be removed in Gradle 9.0. Consult the upgrading guide for further information: https://docs.gradle.org/8.14.3/userguide/upgrading_version_8.html#deprecate_get_dependency_project
+
+> Task :daytrader3-ee6-ejb:clean
+> Task :daytrader3-ee6-web:clean
+> Task :daytrader3-ee6-rest:clean
+> Task :daytrader3-verification:clean
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources
+> Task :daytrader3-ee6:classes
+
+> Task :daytrader3-ee6-ejb:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :daytrader3-ee6-ejb:processResources
+> Task :daytrader3-ee6-ejb:classes
+> Task :daytrader3-ee6-ejb:jar
+> Task :daytrader3-ee6-rest:compileJava
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes
+> Task :daytrader3-ee6-rest:war
+> Task :daytrader3-ee6-web:compileJava
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes
+> Task :daytrader3-ee6-web:war
+> Task :daytrader3-ee6:ear
+> Task :daytrader3-ee6:assemble
+> Task :daytrader3-ee6-ejb:compileTestJava FAILED
+
+[Incubating] Problems report is available at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':daytrader3-ee6-ejb:compileTestJava'.
+> Could not resolve all files for configuration ':daytrader3-ee6-ejb:testCompileClasspath'.
+   > Could not resolve org.junit.jupiter:junit-jupiter:5.10.3.
+     Required by:
+         project :daytrader3-ee6-ejb
+      > Dependency resolution is looking for a library compatible with JVM runtime version 7, but 'org.junit.jupiter:junit-jupiter:5.10.3' is only compatible with JVM runtime version 8 or newer.
+
+* Try:
+> Change the dependency on 'org.junit.jupiter:junit-jupiter:5.10.3' to an earlier version that supports JVM runtime version 7.
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 11s
+14 actionable tasks: 14 executed

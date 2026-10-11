@@ -1,0 +1,40 @@
+Downloading https://services.gradle.org/distributions/gradle-8.14.3-bin.zip
+...................................................................................................................................
+
+Welcome to Gradle 8.14.3!
+
+Here are the highlights of this release:
+ - Java 24 support
+ - GraalVM Native Image toolchain selection
+ - Enhancements to test reporting
+ - Build Authoring improvements
+
+For more details see https://docs.gradle.org/8.14.3/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+
+[Incubating] Problems report is available at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-ejb/build.gradle' line: 5
+
+* What went wrong:
+A problem occurred evaluating project ':daytrader3-ee6-ejb'.
+> Could not find method baseName() for arguments [dt-ejb] on task ':daytrader3-ee6-ejb:jar' of type org.gradle.api.tasks.bundling.Jar.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 19s

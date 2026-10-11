@@ -1,0 +1,4 @@
+IntelliJ IDEA MCP reformat_file returned ok for the root, EAR, EJB, web, REST and verification build.gradle files.
+Open EJB/web/REST files were corrected through IDEA apply_patch and reformatted after stale document content replaced external edits.
+Generated Gradle wrapper files are official task output, not hand-formatted source.
+Project style: .idea/codeStyles/Project.xml in the root repository.

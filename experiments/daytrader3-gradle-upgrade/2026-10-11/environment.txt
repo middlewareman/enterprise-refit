@@ -1,0 +1,6 @@
+Gradle 4.10.3 -> 8.14.3; Liberty Gradle plugin 2.4 -> 3.10.0
+Zulu Java 8u504; Darwin/arm64; IBM Liberty 24.0.0.9; Derby 10.10.1.1
+JUnit Jupiter 5.10.3; explicit Platform launcher 1.10.3; Jsoup 1.17.2; JaCoCo 0.8.12
+JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+GRADLE_USER_HOME=/private/tmp/daytrader-gradle-inspection/user-home
+Compiler/test/isolated-server toolchain: Java 8. EJB application bytecode: 51; web/REST: 52.

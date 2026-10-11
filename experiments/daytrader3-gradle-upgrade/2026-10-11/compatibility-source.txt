@@ -1,0 +1,13 @@
+Fetched 2026-10-11: https://raw.githubusercontent.com/OpenLiberty/ci.gradle/main/README.md
+Moving documentation snapshot; versions are pinned independently.
+
+### Compatibility / Support
+
+For the full Java and Gradle version compatibility matrix, see the [Gradle Compatibility Matrix](https://docs.gradle.org/current/userguide/compatibility.html).
+
+- **Gradle 9.x** requires Java 17 or later and plugin version **4.0.0** or later.
+- **Gradle 7.6 / 8.x** works with Java 8, 11, 17, or 21 and plugin version **3.8.2** or later, but it is **not compatible** with **4.x** or later versions.
+
+The Liberty Gradle Plugin is tested with Long-Term-Support (LTS) releases of Java. The plugin, as of release 4.0.0, supports Java 17, 21 and 25. Versions 3.8 to 3.10.x support Java 8, 11, 17 and 21. Versions 3.5 to 3.7.x support Java 8, 11 and 17. Prior to version 3.5, the plugin is supported on Java 8 and 11. For running applications on older versions of Java, please check out our Java toolchain support.
+
+For Liberty Gradle Plugin-specific compatibility details, known limitations, and migration guidance, see the [Compatibility Requirements](docs/Gradle9MigrationGuide.md#compatibility-requirements) in the Migration Guide.

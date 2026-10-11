@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.RestartPersistenceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-11T14:52:16.821Z" hostname="Monet.local" time="0.993">
+  <properties/>
+  <testcase name="durable trading state after restart: account 4" classname="baseline.RestartPersistenceTest" time="0.663"/>
+  <testcase name="durable trading state after restart: account 5" classname="baseline.RestartPersistenceTest" time="0.037"/>
+  <testcase name="durable trading state after restart: account 10" classname="baseline.RestartPersistenceTest" time="0.06"/>
+  <testcase name="durable trading state after restart: account 11" classname="baseline.RestartPersistenceTest" time="0.027"/>
+  <testcase name="durable trading state after restart: account 12" classname="baseline.RestartPersistenceTest" time="0.028"/>
+  <testcase name="durable trading state after restart: account 13" classname="baseline.RestartPersistenceTest" time="0.03"/>
+  <testcase name="order history survives restart: account 4" classname="baseline.RestartPersistenceTest" time="0.023"/>
+  <testcase name="order history survives restart: account 5" classname="baseline.RestartPersistenceTest" time="0.02"/>
+  <testcase name="order history survives restart: account 10" classname="baseline.RestartPersistenceTest" time="0.024"/>
+  <testcase name="order history survives restart: account 11" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <testcase name="order history survives restart: account 12" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <testcase name="order history survives restart: account 13" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

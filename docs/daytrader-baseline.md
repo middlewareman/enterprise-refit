@@ -300,17 +300,12 @@ test results and coverage, repeated performance/resource measurements, known def
 and accepted scope/tolerances. A fresh baseline run must reproduce the checks;
 unmeasured dimensions stay explicitly unknown.
 
-**Next action (recommendation updated 2026-10-11):** select and verify an exact
-Gradle/Liberty-plugin/build-JDK tuple on a separate tooling branch from `1c43422`.
-The [baseline refresh](../experiments/daytrader3-baseline/2026-10-11/README.md)
-passes all 44 cases across the ordinary build and a separate unit refresh, with
-server coverage retained. It records the installed Java 8 patch-version change
-to `8u504`; compilation and packaging were incremental. Verify clean packaging,
-the same assertions and unchanged Java EE 6 runtime after the tooling change.
-Then add a bounded same-account concurrency
-scenario, checking cash against execution values and fees, completed orders and
-holdings, including persisted state. Finish controlled performance measurements
-and the migration contract before application transformation. Exact tooling
-versions remain to be selected and validated; this is not an accepted upgrade
-decision. This advances milestone 3 without making exhaustive coverage a
-prerequisite for progress.
+**Next action (second author-assigned iteration, 2026-10-11):** add bounded
+same-account concurrent purchases through independent sessions, preserving the
+existing checks and extending financial, order/holding, restart and SQL assertions.
+The [tooling upgrade](../experiments/daytrader3-gradle-upgrade/2026-10-11/README.md)
+now passes clean before/after 44-case builds under Gradle 8.14.3 / Liberty plugin
+3.10.0 / Java 8u504, with all 452 expanded EAR entries unchanged. Application Java
+sources, IBM Liberty 24.0.0.9 and Java EE 6 remain unchanged. Finish controlled
+performance measurements and the migration contract before application
+transformation.
