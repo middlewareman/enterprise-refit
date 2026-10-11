@@ -96,3 +96,7 @@ Documentation review passed: 134 local links, 17 section anchors and 15 table
 blocks across the affected documents were checked, along with authored whitespace.
 Inspection of the two saved shell result summaries confirms 52 cases each with
 zero failures/errors/skips; that is a check of recorded results, not a new test run.
+Those link/anchor checks verify destinations and identifiers, not click navigation
+in IDEA preview. A later [navigation investigation](idea-markdown-navigation.md)
+found a matching reported bug. After a temporary plain-file workaround, the author
+chose to restore the contract's heading link and retain standard cross-file anchors.

@@ -45,6 +45,12 @@ recovered; resume engineering only at the author's request.
 ## Unresolved issues
 
 - Exact IDEA plugin/connection/skill-installation provenance awaits author input.
+- [Markdown preview navigation](docs/idea-markdown-navigation.md): a close matching
+  cross-file heading-link bug is reported in PY-93086. IDEA inspection finds no
+  provenance-document errors; local preview reproduction and exact build matching
+  remain unverified. The author reported upvoting the issue and chose to retain
+  standard heading anchors; the temporarily changed contract link is restored.
+  Source-editor navigation remains the reported workaround.
 - Functional evidence is bounded: full UI/REST behavior, original interactive
   startup, CI's two-JDK setup and broader concurrency/JMS failures are unverified.
 - Theseus disclosure and selected reference-license questions remain pending;
