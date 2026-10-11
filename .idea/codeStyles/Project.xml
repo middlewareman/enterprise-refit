@@ -1,8 +1,19 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
+    <JavaCodeStyleSettings>
+      <option name="DO_NOT_WRAP_AFTER_SINGLE_ANNOTATION" value="true" />
+      <option name="DO_NOT_WRAP_AFTER_SINGLE_ANNOTATION_IN_PARAMETER" value="true" />
+      <option name="SPACES_INSIDE_BLOCK_BRACES_WHEN_BODY_IS_PRESENT" value="true" />
+    </JavaCodeStyleSettings>
+    <codeStyleSettings language="Groovy">
+      <option name="RIGHT_MARGIN" value="160" />
+      <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+      <option name="SOFT_MARGINS" value="80,120,140,160" />
+    </codeStyleSettings>
     <codeStyleSettings language="JAVA">
       <option name="RIGHT_MARGIN" value="160" />
-      <option name="SOFT_MARGINS" value="120,160" />
+      <option name="SPACE_WITHIN_BRACES" value="true" />
+      <option name="SOFT_MARGINS" value="80,120,140,160" />
     </codeStyleSettings>
   </code_scheme>
 </component>
