@@ -28,7 +28,8 @@ public final class TradingWorkload {
             return;
         }
         int workers = Integer.parseInt(args[2]);
-        int warmup = 5, measured = 20;
+        int warmup = Integer.parseInt(args[3]), measured = Integer.parseInt(args[4]);
+        require(workers > 0 && warmup > 0 && measured > 0, "Positive workload parameters required");
         Properties expectations = new Properties();
         new TradeClient().configure(0, 0);
         ExecutorService pool = Executors.newFixedThreadPool(workers);

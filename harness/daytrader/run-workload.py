@@ -20,6 +20,11 @@ parser.add_argument("--subject", type=Path, required=True)
 parser.add_argument("--output", type=Path, required=True)
 parser.add_argument("--java-home", type=Path, required=True)
 parser.add_argument("--gradle-home", type=Path, required=True)
+parser.add_argument("--warmup", type=int, default=100)
+parser.add_argument("--measured", type=int, default=500)
+parser.add_argument("--runtime", type=Path)
+parser.add_argument("--server-java-home", type=Path)
+parser.add_argument("--gradle-argument", action="append", default=[])
 args = parser.parse_args()
 subject, output = args.subject.resolve(), args.output.resolve()
 output.mkdir(parents=True, exist_ok=False)
@@ -49,14 +54,18 @@ execute([str(args.java_home / "bin/javac"), "-cp", str(jsoup), "-d", str(classes
          str(subject / "daytrader3-verification/src/test/java/baseline/TradeClient.java")],
         output / "compile.log")
 classpath = os.pathsep.join(map(str, [classes, jsoup, derby]))
-server = subject / "daytrader3-ee6/build/wlp/bin/server"
+server = (args.runtime or subject / "daytrader3-ee6/build/wlp") / "bin/server"
 build = subject / "daytrader3-verification/build"
-server_env = dict(env, WLP_USER_DIR=str(build / "liberty-user"), WLP_OUTPUT_DIR=str(build / "liberty-output"))
+server_java = args.server_java_home or args.java_home
+server_env = dict(env, JAVA_HOME=str(server_java), WLP_USER_DIR=str(build / "liberty-user"),
+                  WLP_OUTPUT_DIR=str(build / "liberty-output"))
 manifest = {"subject": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=subject, text=True).strip(),
             "platform": platform.platform(), "machine": platform.machine(), "cpuCount": os.cpu_count(),
             "javaHome": str(args.java_home), "heap": "-Xms256m -Xmx512m",
             "instrumentation": "No JaCoCo, debugger or application tracing",
-            "workload": "Full EJB synchronous, independent accounts, 1 share purchases; 5 warmup + 20 measured per worker; 20ms think time",
+            "serverJavaHome": str(server_java),
+            "workload": {"mode": "Full EJB synchronous independent-account purchases", "warmupPerWorker": args.warmup,
+                         "measuredPerWorker": args.measured, "thinkTimeMs": 20},
             "hashes": {str(p): hashlib.sha256(p.read_bytes()).hexdigest()
                        for p in [source / "TradingWorkload.java", source / "run-workload.py", jsoup, derby]}}
 (output / "environment.json").write_text(json.dumps(manifest, indent=2) + "\n")
@@ -66,11 +75,16 @@ for workers in [1, 4]:
     for repeat in range(1, 4):
         run = output / ("workers-" + str(workers) + "-run-" + str(repeat))
         run.mkdir()
-        execute(["./gradlew", "--offline", "--no-daemon", "--console=plain",
-                 ":daytrader3-verification:loadFixture"], run / "fixture.log")
+        gradle_arguments = list(args.gradle_argument)
+        if args.runtime:
+            gradle_arguments.append("-PlibertyRoot=" + str(args.runtime.resolve()))
+        execute(["./gradlew", "--offline", "--no-daemon", "--console=plain"] + gradle_arguments +
+                [":daytrader3-verification:loadFixture"], run / "fixture.log")
         jvm = build / "liberty-user/servers/daytrader3_Baseline/jvm.options"
-        jvm.write_text(
-            "-Xms256m\n-Xmx512m\n-XX:+PrintGCDetails\n-XX:+PrintGCTimeStamps\n-Xloggc:" + str(run / "gc.log") + "\n")
+        gc_flags = ("-XX:+PrintGCDetails\n-XX:+PrintGCTimeStamps\n-Xloggc:" + str(run / "gc.log")
+                    if server_java == args.java_home else "-Xlog:gc*:file=" + str(
+            run / "gc.log") + ":time,uptime,level,tags")
+        jvm.write_text("-Xms256m\n-Xmx512m\n" + gc_flags + "\n")
         stop_sampling = threading.Event()
         sampler = None
         try:
@@ -106,7 +120,8 @@ for workers in [1, 4]:
             sampler = threading.Thread(target=sample)
             sampler.start()
             execute([str(args.java_home / "bin/java"), "-Ddaytrader.baseUrl=http://localhost:19083/daytrader",
-                     "-cp", classpath, "baseline.TradingWorkload", "http", str(run), str(workers)],
+                     "-cp", classpath, "baseline.TradingWorkload", "http", str(run), str(workers), str(args.warmup),
+                     str(args.measured)],
                     run / "http.log")
         finally:
             stop_sampling.set()

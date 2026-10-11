@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.SessionContractTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-11T15:56:34.874Z" hostname="Monet.local" time="1.192">
+  <properties/>
+  <testcase name="validLoginShowsTheCorrectAccountAndCash()" classname="baseline.SessionContractTest" time="0.625"/>
+  <testcase name="separateCookieJarsKeepAccountsIsolated()" classname="baseline.SessionContractTest" time="0.132"/>
+  <testcase name="unauthenticatedRequestsCannotReachPortfolio()" classname="baseline.SessionContractTest" time="0.012"/>
+  <testcase name="registrationCreatesAnAccountWithTheRequestedOpeningBalance()" classname="baseline.SessionContractTest" time="0.059"/>
+  <testcase name="profileUpdatePersistsAndTheNewPasswordAuthenticates()" classname="baseline.SessionContractTest" time="0.05"/>
+  <testcase name="wrongPasswordCannotAuthenticate()" classname="baseline.SessionContractTest" time="0.227"/>
+  <testcase name="logoutInvalidatesTheSession()" classname="baseline.SessionContractTest" time="0.033"/>
+  <testcase name="profileUpdateRejectsMismatchedPasswordsWithoutChangingThePassword()" classname="baseline.SessionContractTest" time="0.05"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
