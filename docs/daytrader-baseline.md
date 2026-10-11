@@ -300,11 +300,14 @@ test results and coverage, repeated performance/resource measurements, known def
 and accepted scope/tolerances. A fresh baseline run must reproduce the checks;
 unmeasured dimensions stay explicitly unknown.
 
-**Next action (recommendation updated 2026-10-11):** rerun the ordinary build on
-the currently pinned test-formatting revision `1c43422`. The suite and server
-coverage already recorded at `fd8c371` satisfy the prerequisite for a separate
-Gradle/Liberty-plugin upgrade. Verify the same assertions and unchanged Java EE 6
-runtime after that tooling change. Then add a bounded same-account concurrency
+**Next action (recommendation updated 2026-10-11):** select and verify an exact
+Gradle/Liberty-plugin/build-JDK tuple on a separate tooling branch from `1c43422`.
+The [baseline refresh](../experiments/daytrader3-baseline/2026-10-11/README.md)
+passes all 44 cases across the ordinary build and a separate unit refresh, with
+server coverage retained. It records the installed Java 8 patch-version change
+to `8u504`; compilation and packaging were incremental. Verify clean packaging,
+the same assertions and unchanged Java EE 6 runtime after the tooling change.
+Then add a bounded same-account concurrency
 scenario, checking cash against execution values and fees, completed orders and
 holdings, including persisted state. Finish controlled performance measurements
 and the migration contract before application transformation. Exact tooling

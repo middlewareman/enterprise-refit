@@ -1,0 +1,16 @@
+Superproject starting revision: 40e1cc6ea5bab0449db162eb3f2e69749604168f
+Subject revision: 1c4342211ef627c433cfe3463f9905ded0833c9c
+Subject branch: tooling/baseline-tests
+OS: Darwin arm64
+Gradle: 4.10.3 (checksum-pinned wrapper)
+Liberty Gradle plugin: 2.4
+IBM Liberty: 24.0.0.9
+Derby: 10.10.1.1
+JUnit Jupiter: 5.10.3
+Jsoup: 1.17.2
+JaCoCo: 0.8.12
+JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+GRADLE_USER_HOME=/private/tmp/daytrader-gradle-inspection/user-home
+openjdk version "1.8.0_504"
+OpenJDK Runtime Environment (Zulu 8.96.0.205-CA-macos-aarch64) (build 1.8.0_504-b01)
+OpenJDK 64-Bit Server VM (Zulu 8.96.0.205-CA-macos-aarch64) (build 25.504-b01, mixed mode)

@@ -1,0 +1,2 @@
+797a75a4141c8e4e0ee167e3d58b7e213afeb44c6306dc6df044928dc3171e88  daytrader3-ee6/build/libs/daytrader3-ee6.ear
+49acd53d2d9f8c632fe1a343ddf551580430b4549d6ed1b6a7459ec905087629  daytrader3-ee6-ejb/build/libs/dt-ejb.jar

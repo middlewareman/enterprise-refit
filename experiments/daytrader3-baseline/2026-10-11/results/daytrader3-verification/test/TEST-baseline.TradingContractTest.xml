@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.TradingContractTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-11T14:40:28" hostname="Monet.local" time="3.536">
+  <properties/>
+  <testcase name="buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int)[1]" classname="baseline.TradingContractTest" time="2.348"/>
+  <testcase name="buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int)[2]" classname="baseline.TradingContractTest" time="0.304"/>
+  <testcase name="buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int)[3]" classname="baseline.TradingContractTest" time="0.143"/>
+  <testcase name="buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int)[4]" classname="baseline.TradingContractTest" time="0.425"/>
+  <testcase name="unknownQuotePurchaseRollsBackTradingState()" classname="baseline.TradingContractTest" time="0.218"/>
+  <testcase name="quoteReturnsTheFixedFixturePrice()" classname="baseline.TradingContractTest" time="0.02"/>
+  <testcase name="buyDebitsExecutionValueAndFeeAndCreatesHolding()" classname="baseline.TradingContractTest" time="0.07"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

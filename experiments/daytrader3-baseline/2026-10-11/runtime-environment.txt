@@ -1,0 +1,5 @@
+java.home = /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home/jre
+java.version = 1.8.0_504
+java.runtime = OpenJDK Runtime Environment (1.8.0_504-b01)
+[10/11/26 16:40:40:572 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [beanValidation-1.0, ejbLite-3.1, jaxrs-1.1, jca-1.6, jdbc-4.0, jmsMdb-3.1, jndi-1.0, jpa-2.0, jsf-2.0, json-1.0, jsp-2.2, servlet-3.0, wasJmsClient-1.1, wasJmsServer-1.0].
+[10/11/26 16:40:40:572 CEST] 00000023 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The daytrader3_Baseline server is ready to run a smarter planet. The daytrader3_Baseline server started in 3.646 seconds.
