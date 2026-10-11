@@ -2,7 +2,7 @@
 
 ## Purpose and language
 
-This project investigates and compares approaches to modernizing legacy enterprise Java. Read [README.md](README.md) for the purpose, vocabulary, experiment workflow, and evidence requirements. Read [PLAN.md](PLAN.md) for the current focus, decisions, and next action.
+This project investigates and compares approaches to modernizing legacy enterprise Java. Read [README.md](README.md) for the purpose, vocabulary, experiment workflow, and evidence requirements. Read [PLAN.md](PLAN.md) for the current verified state, active milestone, unresolved issues, and next action. Historical decisions and handoffs are in [project history](docs/project-history.md); consult them and linked experiment records when relevant, rather than treating historical next actions as current instructions.
 
 Write project documentation, plans, experiment reports, and reusable instructions in English, even when the conversation uses another language.
 
@@ -14,7 +14,9 @@ The author intends to use the project as a portfolio showing how AI supports eng
 - Check the plan against the actual workspace. Resolve stale status using inspectable evidence and distinguish facts, hypotheses, recommendations, and accepted decisions.
 - Briefly state the active milestone, intended outcome, and connection between the requested task and the project goal. Keep this proportional to the task.
 - Treat repository documents as durable context. Do not assume access to earlier chats or that another agent or integration automatically discovers these instructions. When checking a new integration, verify which instructions it loaded.
-- Before ending substantive work, update PLAN.md with verified progress, material decisions, unresolved issues, and one concrete next action. Update the detailed experiment record when relevant. Avoid logging routine conversation turns or duplicating evidence.
+- Before ending substantive work, replace PLAN.md's current status with verified progress, accepted revision/evidence links, unresolved issues, and one concrete next action. Keep one active milestone and a short parked list. Do not append session handoffs, decision-log rows, superseded next actions or detailed execution history to PLAN.md.
+- Keep commands, validation checkpoints, failures and human interventions in the relevant experiment record. Preserve earlier project decisions and handoffs in project history; do not erase corrections or private/public boundaries when shortening current documentation.
+- Keep experiment-local decisions with their experiment. Use a short Architecture Decision Record (ADR) under `docs/decisions/` only for consequential choices governing multiple experiments: context, alternatives, decision/status and consequences. Attribute recommendations and author acceptance separately. See [ADR 0001](docs/decisions/0001-documentation-and-checkpoints.md) for the accepted documentation arrangement.
 
 ## Help maintain direction
 
@@ -43,6 +45,7 @@ The author welcomes help recognizing when detailed work displaces the larger obj
 
 - Before committing code written or changed by an agent, apply IntelliJ IDEA formatting using the project's code style in `.idea/codeStyles/`. Limit formatting to the changed code/files and inspect the resulting diff. If IDEA formatting cannot be applied, leave the code uncommitted for the author to format; do not claim manual approximation is IDEA formatting. Continue independent work while that handoff is pending.
 - Group related code, formatting, validation evidence, documentation and gitlink updates into meaningful milestones. Do not create root commits solely to mirror every intermediate subject commit. Separate repositories necessarily have separate commits, but the root milestone commit should include its related documentation and the selected subject revision together.
+- Distinguish work steps, validation checkpoints and commits. Use targeted checks during diagnosis and the required acceptance checks on the final milestone state; do not commit every attempt or rerun broad checks without a relevant change or unresolved concern. Group commits by reviewable purpose, keeping intentional repairs separate from migration and coupled compatibility changes together where necessary. A labeled failing or incomplete recovery checkpoint may be committed with its observed evidence; it is not an accepted working migration. Formatting may be separately reviewable within the same milestone, but final validation must describe the final code.
 - An unpublished subject pointer does not require permission to stage or commit locally. Explicitly report which subject branch/revision needs pushing so the author can do it afterwards. Distinguish staged, locally committed and remotely verified status; do not imply that local preparation establishes public checkout reproducibility.
 - When publication is authorized, handle push ordering: push affected subject branches, verify the referenced commits are fetchable from their configured remotes, then push the root branch. Stop root publication if a subject push or verification fails. `git push --recurse-submodules=check` is an additional guard, not a substitute for deliberate branch publication and verification. See [the coordinated workflow](docs/subject-branches.md#coordinated-milestone-commits-and-publication).
 

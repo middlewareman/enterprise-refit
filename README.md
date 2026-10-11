@@ -186,7 +186,7 @@ The following is a starting hypothesis for a useful migration method. Planning, 
 2. **Restore a runnable baseline.** Reconstruct the original build/runtime environment. Record dependency-resolution fixes or minimal repairs separately from migration. If the original cannot run, state the limitation and identify which claims can still be tested.
 3. **Establish verification baselines.** Preserve existing tests and add missing coverage using controlled fixtures and scenarios covering responses, persisted state, side effects, errors, and relevant concurrency. Record test identities/results and scoped line/branch coverage. Capture performance and resource use with a validated workload, fixed environments, warm-up, repeated runs, and recorded variability before selecting regression tolerances. Review generated characterization tests against original behavior and domain expectations. [DayTrader baseline plan](docs/daytrader-baseline.md).
 4. **Define the contract and plan.** Select target versions and compatible components, permitted changes, excluded scope, checkpoints, and rollback strategy. Bundle changes only where compatibility requires it.
-5. **Transform incrementally.** Apply bounded changes using manual work, scripts, agents, or a combination. At each completed step, build, run, and validate the application so the next step begins from a working state. Interdependent changes may need to form one step. Save decisions and unresolved issues in the repository.
+5. **Transform incrementally.** Apply bounded changes using manual work, scripts, agents, or a combination. Use targeted checks during diagnosis and the required acceptance checks at completed milestones. Aim to start each completed transformation step from a validated working state; interdependent changes may need to form one step. Work steps, validation checkpoints and commits need not occur at equal frequency. Preserve explicitly labeled failing or incomplete recovery checkpoints without presenting them as accepted working migrations. Group commits by reviewable purpose and save decisions and unresolved issues in their designated records.
 6. **Evaluate independently.** Run the preserved baseline suite and target checks. Review diffs for disabled features, weakened tests, hidden fallback paths, and unintended behavior changes. For schema changes, test existing-data conversion and recovery.
 7. **Report, learn, and refine.** Record failures and human interventions, compare against the baseline, and extract reusable instructions after they have worked on concrete cases. Use necessary manual fixes to improve documentation, scripts, tests, and subsequent agent-driven transformations.
 
@@ -197,6 +197,24 @@ After establishing the baseline and tests, a first transformation sequence could
 ## Shared context and verification
 
 Durable project knowledge should explain the current architecture, build/run commands, known quirks, chosen target stack, decisions, and exact evidence required for completion. Write it for both humans and agents, and keep it versioned and concise enough to remain useful across sessions and tool changes. Markdown documentation can provide a shared account of the intent and procedure, while scripts make repeatable operations executable.
+
+The author accepted the [documentation arrangement in ADR 0001](docs/decisions/0001-documentation-and-checkpoints.md)
+following the [planning reflection](docs/planning-and-checkpoints.md). Keep each
+artifact responsible for a distinct kind of context:
+
+| Artifact | Responsibility |
+|---|---|
+| README | Stable purpose, vocabulary, method and evidence requirements. |
+| [AGENTS.md](AGENTS.md) | Operating rules, privacy boundaries and coordinated commit/publication constraints. |
+| [PLAN.md](PLAN.md) | One active milestone, current verified state/revision, unresolved issues, one next action and a short parked list. Replace status rather than append handoffs. |
+| [Project history](docs/project-history.md) | Earlier project decisions, corrections and historical checkpoints; not a live task list. |
+| [Reflection agenda](docs/reflection-agenda.md) | Collaboration questions and links to their assessments. PLAN selects the active topic. |
+| [Experiment records](experiments/) | Contracts, inputs, executed checks, failures, interventions and outcomes. Keep local decisions with their experiment. |
+| [Architecture Decision Records](docs/decisions/) | Short records of consequential choices affecting multiple experiments, with alternatives, acceptance/status and consequences. |
+
+Read history and detailed records when they serve the current task. Preserve
+evidence by linking it, rather than maintaining duplicate current-status accounts.
+An issue board or planning automation remains conditional on a demonstrated need.
 
 [How the agent used IntelliJ IDEA](docs/idea-agent-workflow.md) records concrete
 formatting, editing, debugger and build-tool use in DayTrader, the supplied skill,

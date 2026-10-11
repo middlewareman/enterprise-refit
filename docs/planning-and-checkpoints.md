@@ -1,7 +1,10 @@
 # Reflection: planning, steps and commits
 
-Recorded 2026-10-11 during the author's engineering pause. This is an agent
-assessment for discussion, not an accepted change to the working agreements.
+Recorded 2026-10-11 during the author's engineering pause. This began as an agent
+assessment for discussion. The author subsequently accepted implementing its
+documentation arrangement; [ADR 0001](decisions/0001-documentation-and-checkpoints.md)
+records that decision. The original assessment and reference-inspection limits
+below remain distinguishable from the later implementation.
 The question is whether our planning and checkpoint method makes the DayTrader
 work easier to continue, review and compare without obscuring the evidence.
 The stopping condition is a bounded assessment of this case and two pinned
@@ -147,10 +150,14 @@ benchmark. A wider reference survey is unnecessary for this reflection.
 | Issue board | Consider when concurrent contributors or independent work streams need ownership and dependencies. For the present single active milestone it adds another status surface to maintain. |
 | Commits | Group by a reviewable purpose and evidence boundary. Separate an intentional repair from migration; keep coupled compatibility changes together when needed. Label incomplete checkpoints and record what passed. Preserve subject/root publication ordering. |
 
-The immediate recommendation is to shorten PLAN and move its historical log and
+The immediate recommendation was to shorten PLAN and move its historical log and
 handoff into an explicitly historical record, preserving the decisions and links.
-This is a proposal awaiting discussion; that restructuring has not been applied.
-No new board, ADR system or planning skill is needed to test the smaller change.
+The author accepted this change after reflection commit `f69cae4`. PLAN now holds
+current direction; [project history](project-history.md) preserves earlier decisions
+and handoffs, and [the reflection agenda](reflection-agenda.md) retains the topics.
+README and AGENTS define their responsibilities, checkpoint checks and commit
+boundaries. A single ADR records this cross-experiment choice; no board, planning
+skill or automated planning system was introduced.
 
 For the next engineering milestone, define its question, expected evidence and
 stopping condition before execution; use targeted checks during diagnosis and
@@ -160,7 +167,12 @@ identify the active objective, exact accepted state, remaining gap and next acti
 without reconciling contradictory summaries. This is a proposed criterion, not
 a completed comparative evaluation.
 
-Inspection used Git status/log/show/diff, Markdown reads, and source reads through
+The initial inspection used Git status/log/show/diff, Markdown reads, and source reads through
 Codex (GPT-6). No agents were delegated, application tests run, reference revisions
 advanced, private Theseus material read, commits made or publication performed.
 Token usage, cost and total effort are unknown.
+
+The subsequent split is documentation-only. History text and relative links are
+preserved; current state is reconciled with the workspace rather than copied from
+superseded handoffs. Document checks assess the structure and navigation, not
+application behavior or an improvement in planning efficiency.

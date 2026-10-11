@@ -48,6 +48,14 @@ Author preference, recorded 2026-10-11: apply IDEA project formatting before
 committing agent-written code, or leave it for the author to format. Group related
 work rather than creating root commits solely to synchronize intermediate pins.
 
+Work steps, validation checkpoints and commits can have different boundaries.
+Use targeted checks while diagnosing and required acceptance checks on the final
+milestone state. A subject may contain several focused commits within one root
+milestone; label failing or incomplete recovery checkpoints with observed evidence
+and distinguish them from accepted working results. Preserve intentional repairs
+separately from migration. See [ADR 0001](decisions/0001-documentation-and-checkpoints.md)
+for the accepted documentation and checkpoint arrangement.
+
 1. Complete the subject change, apply IDEA formatting, inspect the diff and run
    appropriate validation on the final code. Prepare the related root evidence
    and documentation alongside it.
