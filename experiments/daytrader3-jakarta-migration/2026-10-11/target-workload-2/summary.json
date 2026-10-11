@@ -1,0 +1,98 @@
+[
+  {
+    "workers": 1,
+    "repeat": 1,
+    "measuredPurchases": 500,
+    "measurementSeconds": 19.633273792,
+    "completedPurchasesPerSecond": 25.466970271852254,
+    "buyResponseMs": {
+      "p50": 7.814541,
+      "p95": 18.459458,
+      "p99": 26.786667
+    },
+    "startupToHttpReadySeconds": 8.79447925000568,
+    "sampledPeakRssKiB": 567680.0,
+    "sampledPeakCpuPercent": 207.8,
+    "HTTPAndSqlInvariants": "pass"
+  },
+  {
+    "workers": 1,
+    "repeat": 2,
+    "measuredPurchases": 500,
+    "measurementSeconds": 18.076954042,
+    "completedPurchasesPerSecond": 27.659527088374503,
+    "buyResponseMs": {
+      "p50": 6.330542,
+      "p95": 11.051666,
+      "p99": 17.860084
+    },
+    "startupToHttpReadySeconds": 8.743716416007373,
+    "sampledPeakRssKiB": 572944.0,
+    "sampledPeakCpuPercent": 248.9,
+    "HTTPAndSqlInvariants": "pass"
+  },
+  {
+    "workers": 1,
+    "repeat": 3,
+    "measuredPurchases": 500,
+    "measurementSeconds": 17.811091208,
+    "completedPurchasesPerSecond": 28.072395686538332,
+    "buyResponseMs": {
+      "p50": 6.292125,
+      "p95": 10.99075,
+      "p99": 20.551083
+    },
+    "startupToHttpReadySeconds": 8.209485125000356,
+    "sampledPeakRssKiB": 587920.0,
+    "sampledPeakCpuPercent": 283.0,
+    "HTTPAndSqlInvariants": "pass"
+  },
+  {
+    "workers": 4,
+    "repeat": 1,
+    "measuredPurchases": 2000,
+    "measurementSeconds": 16.5659765,
+    "completedPurchasesPerSecond": 120.7293756573903,
+    "buyResponseMs": {
+      "p50": 4.742208,
+      "p95": 9.572542,
+      "p99": 17.725666
+    },
+    "startupToHttpReadySeconds": 11.539594250003574,
+    "sampledPeakRssKiB": 612096.0,
+    "sampledPeakCpuPercent": 293.2,
+    "HTTPAndSqlInvariants": "pass"
+  },
+  {
+    "workers": 4,
+    "repeat": 2,
+    "measuredPurchases": 2000,
+    "measurementSeconds": 15.88043825,
+    "completedPurchasesPerSecond": 125.94110870964157,
+    "buyResponseMs": {
+      "p50": 4.421708,
+      "p95": 6.912709,
+      "p99": 9.108291
+    },
+    "startupToHttpReadySeconds": 7.253919832990505,
+    "sampledPeakRssKiB": 613824.0,
+    "sampledPeakCpuPercent": 311.9,
+    "HTTPAndSqlInvariants": "pass"
+  },
+  {
+    "workers": 4,
+    "repeat": 3,
+    "measuredPurchases": 2000,
+    "measurementSeconds": 18.158081833,
+    "completedPurchasesPerSecond": 110.14379263151325,
+    "buyResponseMs": {
+      "p50": 6.040417,
+      "p95": 14.732958,
+      "p99": 31.037375
+    },
+    "startupToHttpReadySeconds": 9.478319083020324,
+    "sampledPeakRssKiB": 637664.0,
+    "sampledPeakCpuPercent": 313.3,
+    "HTTPAndSqlInvariants": "pass"
+  }
+]

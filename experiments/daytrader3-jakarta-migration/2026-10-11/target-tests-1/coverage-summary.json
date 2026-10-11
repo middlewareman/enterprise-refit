@@ -1,0 +1,67 @@
+{
+    "scope": "Application source lines and branches with source-line metadata; OpenJPA generated methods excluded",
+    "modules": {
+        "EJB": {
+            "linesCovered": 1377,
+            "linesTotal": 2961,
+            "branchesCovered": 250,
+            "branchesTotal": 732
+        },
+        "web": {
+            "linesCovered": 316,
+            "linesTotal": 1733,
+            "branchesCovered": 86,
+            "branchesTotal": 343
+        },
+        "REST": {
+            "linesCovered": 48,
+            "linesTotal": 101,
+            "branchesCovered": 5,
+            "branchesTotal": 12
+        }
+    },
+    "criticalClasses": {
+        "TradeSLSBBean": {
+            "linesCovered": 231,
+            "linesTotal": 363,
+            "branchesCovered": 53,
+            "branchesTotal": 122
+        },
+        "TradeDirect": {
+            "linesCovered": 469,
+            "linesTotal": 1147,
+            "branchesCovered": 81,
+            "branchesTotal": 238
+        },
+        "TradeAppServlet": {
+            "linesCovered": 73,
+            "linesTotal": 87,
+            "branchesCovered": 29,
+            "branchesTotal": 40
+        },
+        "TradeServletAction": {
+            "linesCovered": 123,
+            "linesTotal": 205,
+            "branchesCovered": 20,
+            "branchesTotal": 34
+        },
+        "FinancialUtils": {
+            "linesCovered": 35,
+            "linesTotal": 43,
+            "branchesCovered": 10,
+            "branchesTotal": 12
+        },
+        "DTBroker3MDB": {
+            "linesCovered": 29,
+            "linesTotal": 62,
+            "branchesCovered": 9,
+            "branchesTotal": 24
+        },
+        "DTStreamer3MDB": {
+            "linesCovered": 18,
+            "linesTotal": 48,
+            "branchesCovered": 7,
+            "branchesTotal": 20
+        }
+    }
+}

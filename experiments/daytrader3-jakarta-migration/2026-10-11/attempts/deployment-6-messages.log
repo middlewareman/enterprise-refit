@@ -1,0 +1,1084 @@
+********************************************************************************
+product = Open Liberty 26.0.0.9 (wlp-1.0.117.cl260920260824-0859)
+wlp.install.dir = /private/tmp/daytrader-target-probe/liberty/wlp/
+server.config.dir = /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-user/servers/daytrader3_Baseline/
+server.output.dir = /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/
+java.home = /private/tmp/daytrader-target-probe/java21/jdk-21.0.12.1+1/Contents/Home
+java.version = 21.0.12.1
+java.runtime = OpenJDK Runtime Environment (21.0.12.1+1-LTS)
+os = Mac OS X (27.0.1; aarch64) (en_GB)
+process = 56340@Monet.local
+Classpath = /private/tmp/daytrader-target-probe/liberty/wlp/bin/tools/ws-server.jar
+Java Library path = /Users/middlewareman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+********************************************************************************
+[11/10/2026, 18:10:39:552 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server daytrader3_Baseline has been launched.
+[11/10/2026, 18:10:40:550 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.137 seconds
+[11/10/2026, 18:10:40:946 CEST] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[11/10/2026, 18:10:42:257 CEST] 00000028 com.ibm.ws.security.registry.basic.internal.BasicRegistry    W CWWKS3103W: There are no users defined for the BasicRegistry configuration of ID com.ibm.ws.security.registry.basic.config[daytraderSampleRegistry].
+[11/10/2026, 18:10:42:276 CEST] 00000028 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[11/10/2026, 18:10:42:421 CEST] 00000029 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[11/10/2026, 18:10:42:551 CEST] 0000002c com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[11/10/2026, 18:10:42:552 CEST] 0000002c com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[11/10/2026, 18:10:42:553 CEST] 0000002c com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/10/2026, 18:10:42:626 CEST] 00000029 org.jboss.weld.Version                                       I WELD-000900: 6.0.2 (Final)
+[11/10/2026, 18:10:42:698 CEST] 00000030 com.ibm.ws.ssl.config.WSKeyStore                             I CWPKI0802I: Creating the SSL certificate. This may take a few seconds.
+[11/10/2026, 18:10:43:276 CEST] 00000028 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1553I: The minimum reserved size in the configuration information of the permanent store file is 20,971,520 bytes. The maximum size is 209,715,200 bytes.
+[11/10/2026, 18:10:43:283 CEST] 00000028 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1557I: The minimum reserved size in the configuration information of the temporary store file is 20,971,520 bytes. The maximum size is 209,715,200 bytes.
+[11/10/2026, 18:10:43:442 CEST] 00000028 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[11/10/2026, 18:10:43:462 CEST] 0000003a com.ibm.ws.security.token.ltpa.LTPAKeyInfoManager            I CWWKS4103I: Creating the LTPA keys. This may take a few seconds.
+[11/10/2026, 18:10:43:501 CEST] 00000028 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[11/10/2026, 18:10:43:574 CEST] 0000003a com.ibm.ws.security.token.ltpa.LTPAKeyInfoManager            A CWWKS4104A: LTPA keys created in 0.112 seconds. LTPA key file: /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/resources/security/ltpa.keys
+[11/10/2026, 18:10:43:578 CEST] 0000003a com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[11/10/2026, 18:10:43:578 CEST] 0000003a com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.117 seconds.
+[11/10/2026, 18:10:43:690 CEST] 00000028 com.ibm.ws.security.jaspi.AuthConfigFactoryWrapper           I CWWKS1655I: The default Java Authentication SPI for Containers (JASPIC) AuthConfigFactory class com.ibm.ws.security.jaspi.ProviderRegistry is being used because the Java security property authconfigprovider.factory is not set. 
+[11/10/2026, 18:10:43:712 CEST] 00000030 com.ibm.ws.ssl.config.WSKeyStore                             A CWPKI0803A: SSL certificate created in 1.014 seconds. SSL key file: /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/resources/security/key.p12
+[11/10/2026, 18:10:43:712 CEST] 00000030 com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/resources/security/key.p12 of type: PKCS12
+[11/10/2026, 18:10:43:903 CEST] 0000002b com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2809/NameService.
+[11/10/2026, 18:10:44:088 CEST] 00000039 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application daytrader3.
+[11/10/2026, 18:10:44:088 CEST] 00000039 bm.ws.app.manager.ear.internal.EARDeployedAppInfoFactoryImpl I CWWKZ0136I: The daytrader3 application is using the archive file at the /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6/build/libs/daytrader3-ee6.ear location.
+[11/10/2026, 18:10:44:498 CEST] 00000039 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[TradeDataSource].
+[11/10/2026, 18:10:44:584 CEST] 00000039 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (daytrader3_Baseline).
+[11/10/2026, 18:10:44:612 CEST] 0000005c com.ibm.ws.recoverylog.spi.LogHandle                         I CWRLS0007I: No existing recovery log files found in /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/tranlog. Cold starting the recovery log.
+[11/10/2026, 18:10:44:613 CEST] 0000005c com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/tranlog/log1.
+[11/10/2026, 18:10:44:622 CEST] 0000005c com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/tranlog/log2.
+[11/10/2026, 18:10:44:640 CEST] 0000005c com.ibm.ws.recoverylog.spi.LogHandle                         I CWRLS0007I: No existing recovery log files found in /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/partnerlog. Cold starting the recovery log.
+[11/10/2026, 18:10:44:640 CEST] 0000005c com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/partnerlog/log1.
+[11/10/2026, 18:10:44:642 CEST] 0000005c com.ibm.ws.recoverylog.spi.LogFileHandle                     I CWRLS0006I: Creating new recovery log file /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/tranlog/partnerlog/log2.
+[11/10/2026, 18:10:44:662 CEST] 00000039 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (daytrader3_Baseline).
+[11/10/2026, 18:10:44:662 CEST] 0000005c com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[11/10/2026, 18:10:44:668 CEST] 00000039 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[NoTxTradeDataSource].
+[11/10/2026, 18:10:45:856 CEST] 00000039 org.jboss.weld.Event                                         I WELD-000411: Observer method [BackedAnnotatedMethod] org.apache.myfaces.config.annotation.CdiAnnotationProviderExtension.processAnnotatedType(@Observes ProcessAnnotatedType<T>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+[11/10/2026, 18:10:45:900 CEST] 00000039 org.hibernate.validator.internal.util.Version                I HV000001: Hibernate Validator 9.0.0.Final
+[11/10/2026, 18:10:47:444 CEST] 00000039 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[11/10/2026, 18:10:47:482 CEST] 00000039 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The dt-ejb.jar EJB module in the daytrader3 application is starting.
+[11/10/2026, 18:10:47:570 CEST] 00000039 .ibm.ws.security.authorization.jacc.internal.JaccServiceImpl I CWWKS2850I: The JACC service is starting. The Policy Provider class name is io.openliberty.security.authorization.jacc.internal.proxy.JakartaPolicyFactoryProxyImpl. The PolicyConfigurationFactory class name is io.openliberty.security.authorization.jacc.internal.proxy.JakartaPolicyConfigFactoryProxy.
+[11/10/2026, 18:10:47:572 CEST] 00000039 .ibm.ws.security.authorization.jacc.internal.JaccServiceImpl I CWWKS2851I: The JACC service has started. The Policy Provider class name is io.openliberty.security.authorization.jacc.internal.proxy.JakartaPolicyFactoryProxyImpl. The PolicyConfigurationFactory class name is io.openliberty.security.authorization.jacc.internal.proxy.JakartaPolicyConfigFactoryProxy.
+[11/10/2026, 18:10:47:766 CEST] 00000039 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal interface of the DirectSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:daytrader3/dt-ejb.jar/DirectSLSBBean#com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal
+[11/10/2026, 18:10:47:772 CEST] 00000039 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal interface of the DirectSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal
+[11/10/2026, 18:10:47:772 CEST] 00000039 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal interface of the DirectSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: java:global/daytrader3-ee6/dt-ejb/DirectSLSBBean!com.ibm.websphere.samples.daytrader.ejb3.DirectSLSBLocal
+[11/10/2026, 18:10:47:772 CEST] 00000039 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:daytrader3/dt-ejb.jar/TradeSLSBBean#com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[11/10/2026, 18:10:47:772 CEST] 00000039 com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl    I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: ejblocal:com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[11/10/2026, 18:10:47:772 CEST] 00000039 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal interface of the TradeSLSBBean enterprise bean in the dt-ejb.jar module of the daytrader3 application.  The binding location is: java:global/daytrader3-ee6/dt-ejb/TradeSLSBBean!com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBLocal
+[11/10/2026, 18:10:47:773 CEST] 00000039 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The DTStreamer3MDB message-driven bean in the dt-ejb.jar module of the daytrader3 application is bound to the eis/TradeStreamerMDB activation specification.
+[11/10/2026, 18:10:47:773 CEST] 00000039 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0180I: The DTBroker3MDB message-driven bean in the dt-ejb.jar module of the daytrader3 application is bound to the eis/TradeBrokerMDB activation specification.
+[11/10/2026, 18:10:47:773 CEST] 00000039 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4001I: The dt-ejb.jar EJB module in the daytrader3 application has started successfully.
+[11/10/2026, 18:10:48:031 CEST] 00000039 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: DayTrader Web.
+[11/10/2026, 18:10:48:035 CEST] 00000039 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module DayTrader Web has been bound to default_host.
+[11/10/2026, 18:10:48:037 CEST] 00000039 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:19083/daytrader/
+[11/10/2026, 18:10:48:058 CEST] 00000036 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/daytrader
+[11/10/2026, 18:10:48:067 CEST] 00000036 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/10/2026, 18:10:48:073 CEST] 00000039 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Rest.
+[11/10/2026, 18:10:48:073 CEST] 00000039 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Rest has been bound to default_host.
+[11/10/2026, 18:10:48:073 CEST] 00000039 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:19083/rest/
+[11/10/2026, 18:10:48:073 CEST] 00000038 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/rest
+[11/10/2026, 18:10:48:091 CEST] 00000038 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/10/2026, 18:10:48:164 CEST] 00000038 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/10/2026, 18:10:48:177 CEST] 00000036 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/10/2026, 18:10:48:177 CEST] 00000038 org.apache.myfaces.webapp.MyFacesContainerInitializer        I Using io.openliberty.faces40.internal.ee.WASMyFacesContainerInitializer
+[11/10/2026, 18:10:48:190 CEST] 00000038 resteasy.server.component.RESTfulServletContainerInitializer W UNMAPPED_APPLICATION_CWWKW1302W 
+                                                                                                               Rest
+                                                                                                               com.ibm.websphere.samples.daytrader.rest.AddressApplication
+[11/10/2026, 18:10:48:701 CEST] 0000003a com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/liberty-output/daytrader3_Baseline/logs/state/plugin-cfg.xml.
+[11/10/2026, 18:10:48:784 CEST] 00000036 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Found jakarta.faces.application.ApplicationFactory factory implementation: io.openliberty.faces40.internal.config.WASApplicationFactoryImpl
+[11/10/2026, 18:10:48:789 CEST] 00000036 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading config /WEB-INF/faces-config.xml
+[11/10/2026, 18:10:49:029 CEST] 00000036 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Core Bean Validation support enabled
+[11/10/2026, 18:10:49:045 CEST] 00000038 org.jboss.resteasy.resteasy_jaxrs.i18n                       I RESTEASY002225: Deploying jakarta.ws.rs.core.Application: class org.jboss.weld.generated.proxies.ws.rs.core.Application$Proxy$_$$_WeldClientProxy
+[11/10/2026, 18:10:49:202 CEST] 00000036 org.apache.myfaces.webapp.FacesInitializerImpl               W org.apache.myfaces.USE_ENCRYPTION is set to false. This is unsecure and should only be used for local or intranet applications!
+[11/10/2026, 18:10:49:207 CEST] 00000036 org.apache.myfaces.view.facelets.ViewPoolProcessor           I org.apache.myfaces.CACHE_EL_EXPRESSIONS web config parameter is set to "noCache". To enable view pooling this param must be set to "alwaysRecompile". View Pooling disabled.
+[11/10/2026, 18:10:49:214 CEST] 00000038 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/rest] [jakarta.ws.rs.core.Application]: Initialization successful.
+[11/10/2026, 18:10:49:220 CEST] 00000036 org.apache.myfaces.webapp.FacesInitializerImpl               I MyFaces Core has started, it took [1023] ms.
+[11/10/2026, 18:10:49:360 CEST] 00000036 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application daytrader3 started in 5.272 seconds.
+[11/10/2026, 18:10:49:377 CEST] 00000034 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 19083.
+[11/10/2026, 18:10:49:382 CEST] 00000034 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint503 has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 17276.
+[11/10/2026, 18:10:49:387 CEST] 00000034 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 19443.
+[11/10/2026, 18:10:49:390 CEST] 00000034 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint503-ssl has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 17286.
+[11/10/2026, 18:10:49:527 CEST] 00000034 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination TradeTopicSpace on bus defaultBus has been successfully created.
+[11/10/2026, 18:10:49:527 CEST] 00000034 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification eis/TradeStreamerMDB will now be able to receive the messages from destination TradeTopicSpace.
+[11/10/2026, 18:10:49:529 CEST] 00000034 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification eis/TradeStreamerMDB and message driven bean application daytrader3#dt-ejb.jar#DTStreamer3MDB is activated.
+[11/10/2026, 18:10:49:533 CEST] 00000034 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0777I: A connection to messaging engine defaultME for destination TradeBrokerQueue on bus defaultBus has been successfully created.
+[11/10/2026, 18:10:49:534 CEST] 00000034 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIV0556I: Connection to the Messaging Engine was successful. The message-driven bean with activation specification eis/TradeBrokerMDB will now be able to receive the messages from destination TradeBrokerQueue.
+[11/10/2026, 18:10:49:534 CEST] 00000034 com.ibm.ws.jca.service.EndpointActivationService             I J2CA8801I: The message endpoint for activation specification eis/TradeBrokerMDB and message driven bean application daytrader3#dt-ejb.jar#DTBroker3MDB is activated.
+[11/10/2026, 18:10:49:599 CEST] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appAuthentication-3.1, appAuthorization-3.0, appClientSupport-2.0, appSecurity-6.0, batch-2.1, cdi-4.1, concurrent-3.1, connectors-2.1, data-1.0, distributedMap-1.0, enterpriseBeansLite-4.0, enterpriseBeansPersistentTimer-4.0, enterpriseBeansRemote-4.0, expressionLanguage-6.0, faces-4.1, jakartaee-11.0, jdbc-4.2, jndi-1.0, jsonb-3.0, jsonp-2.1, mail-2.1, mdb-4.0, messaging-3.1, messagingClient-3.0, messagingSecurity-3.0, messagingServer-3.0, pages-4.0, persistence-3.2, persistenceContainer-3.2, restfulWS-4.0, restfulWSClient-4.0, servlet-6.1, ssl-1.0, transportSecurity-1.0, validation-3.1, webProfile-11.0, websocket-2.2, xmlBinding-4.0].
+[11/10/2026, 18:10:49:600 CEST] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 9.051 seconds.
+[11/10/2026, 18:10:49:600 CEST] 00000034 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The daytrader3_Baseline server is ready to run a smarter planet. The daytrader3_Baseline server started in 10.188 seconds.
+[11/10/2026, 18:10:51:159 CEST] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [TradeConfigServlet]: Initialization successful.
+[11/10/2026, 18:10:51:163 CEST] 00000034 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:52:211 CEST] 00000034 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/config.jsp]: Initialization successful.
+[11/10/2026, 18:10:52:347 CEST] 00000039 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [Faces Servlet]: Initialization successful.
+[11/10/2026, 18:10:52:353 CEST] 00000039 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Core Servlet 6.0 support enabled
+[11/10/2026, 18:10:52:439 CEST] 00000039 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Core: EL 6.0 support enabled
+[11/10/2026, 18:10:52:440 CEST] 00000039 org.apache.myfaces.el.ELResolverBuilder                      I Chain of EL resolvers: [org.apache.myfaces.el.resolver.implicitobject.ImplicitObjectResolver@120f8f27, org.jboss.weld.module.web.el.WeldELResolver@750787ad, org.apache.myfaces.el.resolver.CompositeComponentELResolver@1470c031, org.apache.myfaces.el.resolver.FlashELResolver@7aff8ee3, org.apache.myfaces.el.resolver.ResourceResolver@14e7402c, jakarta.el.ResourceBundleELResolver@5d9497f2, org.apache.myfaces.el.resolver.ResourceBundleResolver@4f77a539, org.apache.myfaces.el.resolver.ImportConstantsELResolver@4979a2a2, org.apache.el.stream.StreamELResolverImpl@67b16d81, jakarta.el.StaticFieldELResolver@1e634d82, jakarta.el.MapELResolver@6c4f6d1a, jakarta.el.ListELResolver@68a7ae83, jakarta.el.ArrayELResolver@4961b73, jakarta.el.OptionalELResolver@1d593e, jakarta.el.RecordELResolver@17adc39a, jakarta.el.BeanELResolver@422bb45a]
+[11/10/2026, 18:10:52:960 CEST] 00000039 eclipselink                                                  I CWWJP9990I: [eclipselink] EclipseLink, version: Eclipse Persistence Services - 5.0.1.v202606291238-b81f6203960431f4ef8a54433b094b5acea71bdd
+[11/10/2026, 18:10:54:018 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[11/10/2026, 18:10:54:020 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.10.1.1 - (1458268)
+[11/10/2026, 18:10:54:020 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[11/10/2026, 18:10:54:020 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.10.1.1 - (1458268)
+[11/10/2026, 18:10:54:098 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8203I: Database product name : Apache Derby
+[11/10/2026, 18:10:54:098 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8204I: Database product version : 10.10.1.1 - (1458268)
+[11/10/2026, 18:10:54:098 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8205I: JDBC driver name  : Apache Derby Embedded JDBC Driver
+[11/10/2026, 18:10:54:098 CEST] 00000039 com.ibm.ws.rsadapter.impl.DatabaseHelper                     I DSRA8206I: JDBC driver version  : 10.10.1.1 - (1458268)
+[11/10/2026, 18:10:55:435 CEST] 00000066 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:55:541 CEST] 00000038 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [TradeAppServlet]: Initialization successful.
+[11/10/2026, 18:10:56:077 CEST] 00000038 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/tradehome.jsp]: Initialization successful.
+[11/10/2026, 18:10:56:172 CEST] 00000038 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/marketSummary.jsp]: Initialization successful.
+[11/10/2026, 18:10:56:256 CEST] 0000006b com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:0
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:56:555 CEST] 0000006b com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:0 com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82" at ffdc_26.10.11_18.10.56.0.log
+[11/10/2026, 18:10:56:595 CEST] 0000006b com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:0 com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144" at ffdc_26.10.11_18.10.56.1.log
+[11/10/2026, 18:10:56:598 CEST] 0000006b com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:0 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.56.2.log
+[11/10/2026, 18:10:56:696 CEST] 0000006b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/error.jsp]: Initialization successful.
+[11/10/2026, 18:10:56:716 CEST] 00000039 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:56:770 CEST] 00000036 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:7
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:56:881 CEST] 00000036 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:7 com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82" at ffdc_26.10.11_18.10.56.3.log
+[11/10/2026, 18:10:56:897 CEST] 00000036 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:7 com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144" at ffdc_26.10.11_18.10.56.4.log
+[11/10/2026, 18:10:56:908 CEST] 00000036 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:7 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.56.5.log
+[11/10/2026, 18:10:56:943 CEST] 00000034 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:56:952 CEST] 0000006a SystemOut                                                    O TradeAppServlet service error: User Not Logged in
+[11/10/2026, 18:10:57:048 CEST] 0000006a com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/welcome.jsp]: Initialization successful.
+[11/10/2026, 18:10:57:060 CEST] 0000007b SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:141 CEST] 0000007f com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =registered:test
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:57:229 CEST] 0000007f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =registered:test com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82" at ffdc_26.10.11_18.10.57.0.log
+[11/10/2026, 18:10:57:250 CEST] 0000007f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =registered:test com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144" at ffdc_26.10.11_18.10.57.1.log
+[11/10/2026, 18:10:57:268 CEST] 0000007f com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =registered:test com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.57.2.log
+[11/10/2026, 18:10:57:307 CEST] 00000039 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:338 CEST] 00000068 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:9
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccountUpdate(TradeServletAction.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:179)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 38 more
+
+[11/10/2026, 18:10:57:404 CEST] 00000068 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:9 com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82" at ffdc_26.10.11_18.10.57.3.log
+[11/10/2026, 18:10:57:423 CEST] 00000068 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:9 com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144" at ffdc_26.10.11_18.10.57.4.log
+[11/10/2026, 18:10:57:426 CEST] 00000068 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:9 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.57.5.log
+[11/10/2026, 18:10:57:439 CEST] 00000067 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:454 CEST] 0000006c com.ibm.ejs.container.BusinessExceptionMappingStrategy       E CNTR0020E: EJB threw an unexpected (non-declared) exception during invocation of method "login" on bean "BeanId(daytrader3#dt-ejb.jar#TradeSLSBBean, null)". Exception data: jakarta.ejb.EJBException: AccountBean:Login failure for account: 1
+	Incorrect password-->test:1:xxx
+	at com.ibm.websphere.samples.daytrader.AccountDataBean.login(AccountDataBean.java:275)
+	at com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean.login(TradeSLSBBean.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.ibm.ejs.container.EJSContainer.invokeProceed(EJSContainer.java:4888)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:594)
+	at com.ibm.ws.cdi.ejb.impl.InterceptorChain.proceed(InterceptorChain.java:118)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.invokeInterceptors(EJBCDIInterceptorWrapper.java:133)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.aroundInvoke(EJBCDIInterceptorWrapper.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:78)
+	at com.ibm.ws.cdi.ejb.interceptor.WeldSessionBeanInterceptorWrapper.aroundInvoke(WeldSessionBeanInterceptorWrapper.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInterceptor(InvocationContextImpl.java:300)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInvoke(InvocationContextImpl.java:269)
+	at com.ibm.ejs.container.EJSContainer.invoke(EJSContainer.java:4790)
+	at com.ibm.websphere.samples.daytrader.ejb3.EJSLocal0SLTradeSLSBBean_13a83d61.login(EJSLocal0SLTradeSLSBBean_13a83d61.java)
+	at com.ibm.websphere.samples.daytrader.TradeAction.login(TradeAction.java:514)
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doLogin(TradeServletAction.java:321)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:125)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[11/10/2026, 18:10:57:469 CEST] 0000006c com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.ejb.EJBException: AccountBean:Login failure for account: 1
+	Incorrect password-->test:1:xxx com.ibm.ejs.container.BusinessExceptionMappingStrategy.setUncheckedException 506" at ffdc_26.10.11_18.10.57.6.log
+[11/10/2026, 18:10:57:471 CEST] 0000006c com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doLogin:357'
+jakarta.servlet.ServletException: TradeServletAction.doLogin(...)Exception logging in user test:1with passwordwrong
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doLogin(TradeServletAction.java:357)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:125)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: jakarta.ejb.EJBException: AccountBean:Login failure for account: 1
+	Incorrect password-->test:1:xxx
+	at com.ibm.websphere.samples.daytrader.AccountDataBean.login(AccountDataBean.java:275)
+	at com.ibm.websphere.samples.daytrader.ejb3.TradeSLSBBean.login(TradeSLSBBean.java:569)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.ibm.ejs.container.EJSContainer.invokeProceed(EJSContainer.java:4888)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:594)
+	at com.ibm.ws.cdi.ejb.impl.InterceptorChain.proceed(InterceptorChain.java:118)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.invokeInterceptors(EJBCDIInterceptorWrapper.java:133)
+	at com.ibm.ws.cdi.ejb.impl.EJBCDIInterceptorWrapper.aroundInvoke(EJBCDIInterceptorWrapper.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at org.jboss.weld.module.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:78)
+	at com.ibm.ws.cdi.ejb.interceptor.WeldSessionBeanInterceptorWrapper.aroundInvoke(WeldSessionBeanInterceptorWrapper.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at com.ibm.ejs.container.interceptors.InterceptorProxy.invokeInterceptor(InterceptorProxy.java:191)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.proceed(InvocationContextImpl.java:579)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInterceptor(InvocationContextImpl.java:300)
+	at com.ibm.ejs.container.interceptors.InvocationContextImpl.doAroundInvoke(InvocationContextImpl.java:269)
+	at com.ibm.ejs.container.EJSContainer.invoke(EJSContainer.java:4790)
+	at com.ibm.websphere.samples.daytrader.ejb3.EJSLocal0SLTradeSLSBBean_13a83d61.login(EJSLocal0SLTradeSLSBBean_13a83d61.java)
+	at com.ibm.websphere.samples.daytrader.TradeAction.login(TradeAction.java:514)
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doLogin(TradeServletAction.java:321)
+	... 37 more
+
+[11/10/2026, 18:10:57:528 CEST] 0000006c com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doLogin(...)Exception logging in user test:1with passwordwrong com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144" at ffdc_26.10.11_18.10.57.7.log
+[11/10/2026, 18:10:57:535 CEST] 0000006c com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doLogin(...)Exception logging in user test:1with passwordwrong com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.57.8.log
+[11/10/2026, 18:10:57:543 CEST] 0000006d SystemOut                                                    O TradeAppServlet service error: User Not Logged in
+[11/10/2026, 18:10:57:550 CEST] 00000038 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:602 CEST] 00000064 SystemOut                                                    O TradeAppServlet service error: User Not Logged in
+[11/10/2026, 18:10:57:610 CEST] 0000007b SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:639 CEST] 00000080 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:6
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccountUpdate(TradeServletAction.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:179)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 38 more
+
+[11/10/2026, 18:10:57:648 CEST] 00000080 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:6 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.57.9.log
+[11/10/2026, 18:10:57:716 CEST] 00000081 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:747 CEST] 0000003a SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:57:896 CEST] 00000067 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/quote.jsp]: Initialization successful.
+[11/10/2026, 18:10:57:981 CEST] 00000067 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/displayQuote.jsp]: Initialization successful.
+[11/10/2026, 18:10:58:249 CEST] 0000006c com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/order.jsp]: Initialization successful.
+[11/10/2026, 18:10:58:268 CEST] 00000036 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:10
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:58:272 CEST] 00000036 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:10 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.58.0.log
+[11/10/2026, 18:10:58:297 CEST] 0000007d SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:58:305 CEST] 00000080 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Direct (JDBC)
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:58:512 CEST] 0000006b com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/account.jsp]: Initialization successful.
+[11/10/2026, 18:10:58:583 CEST] 00000069 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [daytrader3] [/daytrader] [/portfolio.jsp]: Initialization successful.
+[11/10/2026, 18:10:58:776 CEST] 00000067 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:58:782 CEST] 00000066 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Session (EJB3) To Direct
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:031 CEST] 00000066 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:037 CEST] 00000038 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Asynchronous_2-Phase
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:085 CEST] 0000007b com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:13
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:59:089 CEST] 0000007b com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:13 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.59.0.log
+[11/10/2026, 18:10:59:101 CEST] 0000007e SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:128 CEST] 00000036 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:5
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:59:191 CEST] 00000036 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:5 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.59.1.log
+[11/10/2026, 18:10:59:200 CEST] 00000081 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:248 CEST] 00000082 SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:289 CEST] 0000006d com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:20
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:10:59:301 CEST] 0000006d com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:20 com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1064" at ffdc_26.10.11_18.10.59.2.log
+[11/10/2026, 18:10:59:319 CEST] 0000006e SystemOut                                                    O 
+
+########## Trade configuration update. Current config:
+
+		RunTimeMode:		Full EJB3
+		OrderProcessingMode:	Synchronous
+		Workload Mix:		Standard
+		Web Interface:		JSP
+		CachingType:		No Caching
+		#Trade  Users:		40
+		#Trade Quotes:		40
+		Market Summary Interval:		20
+		Primitive Iterations:		1
+		TradeStreamer MDB Enabled:	true
+		Long Run Enabled:		false
+[11/10/2026, 18:10:59:384 CEST] 0000007e com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount:97'
+jakarta.servlet.ServletException: TradeServletAction.doAccount(...) exception user =test:4
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:97)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.performTask(TradeAppServlet.java:171)
+	at com.ibm.websphere.samples.daytrader.web.TradeAppServlet.doPost(TradeAppServlet.java:92)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:653)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1262)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:751)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:448)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:197)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:100)
+	at com.ibm.websphere.samples.daytrader.web.OrdersAlertFilter.doFilter(OrdersAlertFilter.java:86)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:58)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:203)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1069)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1260)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1078)
+	at com.ibm.ws.webcontainer.servlet.CacheServletWrapper.handleRequest(CacheServletWrapper.java:77)
+	at com.ibm.ws.webcontainer40.servlet.CacheServletWrapper40.handleRequest(CacheServletWrapper40.java:87)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:978)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:293)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1626)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:781)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:741)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:574)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:505)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:365)
+	at com.ibm.ws.http.channel.internal.inbound.HttpICLReadCallback.complete(HttpICLReadCallback.java:72)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:513)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:583)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:967)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1056)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:344)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassCastException: class org.eclipse.persistence.indirection.IndirectList cannot be cast to class java.util.ArrayList (org.eclipse.persistence.indirection.IndirectList is in unnamed module of loader org.eclipse.osgi.internal.loader.EquinoxClassLoader @112af51b; java.util.ArrayList is in module java.base of loader 'bootstrap')
+	at com.ibm.websphere.samples.daytrader.web.TradeServletAction.doAccount(TradeServletAction.java:73)
+	... 37 more
+
+[11/10/2026, 18:11:00:547 CEST] 00000023 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Sunday, 11 October 2026 at 18:11. The server daytrader3_Baseline is shutting down.
+[11/10/2026, 18:11:00:555 CEST] 00000085 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[11/10/2026, 18:11:00:564 CEST] 0000007b com.ibm.ws.jca.service.EndpointActivationService             I J2CA8804I: The message endpoint for activation specification eis/TradeStreamerMDB and message driven bean application daytrader3#dt-ejb.jar#DTStreamer3MDB is deactivated.
+[11/10/2026, 18:11:00:565 CEST] 0000006a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 19443.
+[11/10/2026, 18:11:00:566 CEST] 0000007b com.ibm.ws.jca.service.EndpointActivationService             I J2CA8804I: The message endpoint for activation specification eis/TradeBrokerMDB and message driven bean application daytrader3#dt-ejb.jar#DTBroker3MDB is deactivated.
+[11/10/2026, 18:11:00:568 CEST] 0000006a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint503 has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 17276.
+[11/10/2026, 18:11:00:569 CEST] 0000006a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 19083.
+[11/10/2026, 18:11:00:569 CEST] 0000006a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:19083/daytrader/
+[11/10/2026, 18:11:00:569 CEST] 0000006a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:19083/rest/
+[11/10/2026, 18:11:00:571 CEST] 0000006a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint503-ssl has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 17286.
+[11/10/2026, 18:11:00:573 CEST] 00000082 .ibm.ws.ejbcontainer.mdb.internal.MessageEndpointFactoryImpl I CNTR4014I: The message endpoint for the DTStreamer3MDB message-driven bean has been deactivated and is unavailable to accept messages.
+[11/10/2026, 18:11:00:574 CEST] 00000082 .ibm.ws.ejbcontainer.mdb.internal.MessageEndpointFactoryImpl I CNTR4014I: The message endpoint for the DTBroker3MDB message-driven bean has been deactivated and is unavailable to accept messages.
+[11/10/2026, 18:11:00:598 CEST] 00000085 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is activated.
+[11/10/2026, 18:11:00:599 CEST] 00000085 com.ibm.jbatch.container.impl.BatchKernelImpl                I CWWKY0008I: The batch feature is using persistence type In-Memory.
+[11/10/2026, 18:11:00:677 CEST] 00000085 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[11/10/2026, 18:11:00:721 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/rest] [jakarta.ws.rs.core.Application]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [TradeAppServlet]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/config.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/account.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/displayQuote.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/welcome.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/order.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/error.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/marketSummary.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/tradehome.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [TradeConfigServlet]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/portfolio.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:751 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [/quote.jsp]: Destroy successful.
+[11/10/2026, 18:11:00:752 CEST] 0000006e com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [daytrader3] [/daytrader] [Faces Servlet]: Destroy successful.
+[11/10/2026, 18:11:00:773 CEST] 0000006e com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4003I: The dt-ejb.jar EJB module in the daytrader3 application is stopping.
+[11/10/2026, 18:11:00:782 CEST] 0000006e com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4004I: The dt-ejb.jar EJB module in the daytrader3 application has stopped successfully.
+[11/10/2026, 18:11:00:808 CEST] 0000006e com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application daytrader3 has stopped successfully.
+[11/10/2026, 18:11:00:967 CEST] 00000085 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is deactivated.
+[11/10/2026, 18:11:01:023 CEST] 00000085 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0002I: The CORBA name server is no longer available at corbaloc:iiop:localhost:2809/NameService.
+[11/10/2026, 18:11:01:053 CEST] 00000085 com.ibm.tx.jta.impl.FailureScopeController                   A WTRN0105I: The transaction service has shutdown successfully with no transactions requiring recovery.
+[11/10/2026, 18:11:01:369 CEST] 00000085 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[11/10/2026, 18:11:01:372 CEST] 00000085 .ibm.ws.security.authorization.jacc.internal.JaccServiceImpl I CWWKS2852I: The JACC service has stopped. The Policy Provider class name is io.openliberty.security.authorization.jacc.internal.proxy.JakartaPolicyFactoryProxyImpl. The built-in authorization service is activated.
+[11/10/2026, 18:11:01:375 CEST] 00000085 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[11/10/2026, 18:11:01:545 CEST] 00000085 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[11/10/2026, 18:11:01:699 CEST] 00000085 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[11/10/2026, 18:11:02:158 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server daytrader3_Baseline stopped after 22.745 seconds.

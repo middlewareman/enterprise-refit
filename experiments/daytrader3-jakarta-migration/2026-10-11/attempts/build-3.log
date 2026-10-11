@@ -1,0 +1,290 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :daytrader3-ee6:compileJava NO-SOURCE
+> Task :daytrader3-ee6:processResources UP-TO-DATE
+> Task :daytrader3-ee6:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:compileJava UP-TO-DATE
+> Task :daytrader3-ee6-ejb:processResources UP-TO-DATE
+> Task :daytrader3-ee6-ejb:classes UP-TO-DATE
+> Task :daytrader3-ee6-ejb:jar UP-TO-DATE
+> Task :daytrader3-ee6-rest:compileJava
+> Task :daytrader3-ee6-rest:processResources NO-SOURCE
+> Task :daytrader3-ee6-rest:classes
+> Task :daytrader3-ee6-rest:war
+
+> Task :daytrader3-ee6-web:compileJava
+/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession1.java:78: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+                ival = new Integer(count++);
+                       ^
+/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession2.java:77: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+                ival = new Integer(1);
+                       ^
+/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingSession2.java:79: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+                ival = new Integer(ival.intValue() + 1);
+                       ^
+/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeAppServlet.java:161: warning: [removal] Integer(int) in Integer has been deprecated and marked for removal
+            tsAction.doSell(ctx, req, resp, userID, new Integer(holdingID));
+                                                    ^
+/Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/java/com/ibm/websphere/samples/daytrader/web/TradeServletAction.java:196: warning: [removal] Double(String) in Double has been deprecated and marked for removal
+            OrderDataBean orderData = tAction.buy(userID, symbol, new Double(
+                                                                  ^
+Note: /Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-ee6-web/src/main/java/com/ibm/websphere/samples/daytrader/web/prims/PingServlet2PDF.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+5 warnings
+
+> Task :daytrader3-ee6-web:processResources NO-SOURCE
+> Task :daytrader3-ee6-web:classes
+> Task :daytrader3-ee6-web:war
+> Task :daytrader3-ee6:ear
+> Task :daytrader3-ee6:assemble
+> Task :daytrader3-ee6-ejb:compileTestJava
+> Task :daytrader3-ee6-ejb:processTestResources NO-SOURCE
+> Task :daytrader3-ee6-ejb:testClasses
+> Task :daytrader3-ee6-ejb:test
+> Task :daytrader3-verification:compileJava
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes
+> Task :daytrader3-verification:jar
+> Task :daytrader3-verification:compileTestJava
+> Task :daytrader3-ee6:installLiberty
+
+> Task :daytrader3-ee6:installDayTraderFeatures
+
+[1A[2K[0mInitializing ...
+[31m<[32;5m[0m[31m---------------------> 0%[0m
+[1A[2K[0mUsing 8 threads to download artifacts.
+[31m<[32;5m[0m[31m---------------------> 0%[0m
+[1A[2K[0m[31m<[32;5m==[0m[31m-------------------> 10%[0m
+[1A[2K[0m[31m<[32;5m====[0m[31m-----------------> 15%[0m
+[1A[2K[0mResolving remote features. This process might take several minutes to complete.
+[31m<[32;5m====[0m[31m-----------------> 15%[0m
+[1A[2K[0mPreparing assets for installation. This process might take several minutes to complete.
+[31m<[32;5m======[0m[31m---------------> 25%[0m
+[1A[2K[0mEstablishing a connection to the configured Maven repository ...
+This process might take several minutes to complete.
+[31m<[32;5m======[0m[31m---------------> 25%[0m
+[1A[2K[0mSuccessfully connected to the configured repository.
+[31m<[32;5m======[0m[31m---------------> 25%[0m
+[1A[2K[0mDownloading required features ...
+[31m<[32;5m======[0m[31m---------------> 25%[0m
+[1A[2K[0m[31m<[32;5m==========[0m[31m-----------> 50%[0m
+[1A[2K[0mVerifying signatures ...
+[31m<[32;5m============[0m[31m---------> 60%[0m
+[1A[2K[0m[31m<[32;5m==============[0m[31m-------> 70%[0m
+[1A[2K[0mAll features were successfully verified.
+[31m<[32;5m==============[0m[31m-------> 70%[0m
+[1A[2K[0mStarting installation ...
+[31m<[32;5m==============[0m[31m-------> 70%[0m
+[1A[2K[0m[31m<[32;5m==============[0m[31m-------> 70%[0m
+[1A[2K[0m[31m<[32;5m==============[0m[31m-------> 71%[0m
+[1A[2K[0m[31m<[32;5m==============[0m[31m-------> 71%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 71%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 71%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 72%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 72%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 72%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 73%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 73%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 73%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 73%[0m
+[1A[2K[0mSuccessfully installed feature cdi-4.1.
+[31m<[32;5m================[0m[31m-----> 74%[0m
+[1A[2K[0mSuccessfully installed feature servlet-6.1.
+[31m<[32;5m================[0m[31m-----> 74%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 74%[0m
+[1A[2K[0mSuccessfully installed feature expressionLanguage-6.0.
+[31m<[32;5m================[0m[31m-----> 74%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 75%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 75%[0m
+[1A[2K[0mSuccessfully installed feature appSecurity-6.0.
+[31m<[32;5m================[0m[31m-----> 75%[0m
+[1A[2K[0mSuccessfully installed feature persistenceContainer-3.2.
+[31m<[32;5m================[0m[31m-----> 76%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 76%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 76%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 76%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 77%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 77%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 77%[0m
+[1A[2K[0mSuccessfully installed feature restfulWSClient-4.0.
+[31m<[32;5m================[0m[31m-----> 78%[0m
+[1A[2K[0mSuccessfully installed feature persistence-3.2.
+[31m<[32;5m================[0m[31m-----> 78%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 78%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 78%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 79%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 79%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 79%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 80%[0m
+[1A[2K[0m[31m<[32;5m================[0m[31m-----> 80%[0m
+[1A[2K[0mSuccessfully installed feature appAuthentication-3.1.
+[31m<[32;5m================[0m[31m-----> 80%[0m
+[1A[2K[0mSuccessfully installed feature faces-4.1.
+[31m<[32;5m================[0m[31m-----> 80%[0m
+[1A[2K[0mSuccessfully installed feature restfulWS-4.0.
+[31m<[32;5m================[0m[31m-----> 81%[0m
+[1A[2K[0mSuccessfully installed feature data-1.0.
+[31m<[32;5m================[0m[31m-----> 81%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 81%[0m
+[1A[2K[0mSuccessfully installed feature websocket-2.2.
+[31m<[32;5m==================[0m[31m---> 82%[0m
+[1A[2K[0mSuccessfully installed feature pages-4.0.
+[31m<[32;5m==================[0m[31m---> 82%[0m
+[1A[2K[0mSuccessfully installed feature concurrent-3.1.
+[31m<[32;5m==================[0m[31m---> 82%[0m
+[1A[2K[0mSuccessfully installed feature jsonb-3.0.
+[31m<[32;5m==================[0m[31m---> 82%[0m
+[1A[2K[0mSuccessfully installed feature validation-3.1.
+[31m<[32;5m==================[0m[31m---> 83%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 83%[0m
+[1A[2K[0mSuccessfully installed feature webProfile-11.0.
+[31m<[32;5m==================[0m[31m---> 83%[0m
+[1A[2K[0mSuccessfully installed feature appAuthorization-3.0.
+[31m<[32;5m==================[0m[31m---> 83%[0m
+[1A[2K[0mSuccessfully installed feature jakartaee-11.0.
+[31m<[32;5m==================[0m[31m---> 84%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 84%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 84%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 85%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 85%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 85%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 85%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 86%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 86%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 86%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 87%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 87%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 87%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 87%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 88%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 88%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 88%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 89%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 89%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 89%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 89%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 90%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 90%[0m
+[1A[2K[0mSuccessfully installed feature mpFaultTolerance-4.1.
+[31m<[32;5m==================[0m[31m---> 90%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 91%[0m
+[1A[2K[0m[31m<[32;5m==================[0m[31m---> 91%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 91%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 91%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 92%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 92%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 92%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 92%[0m
+[1A[2K[0mSuccessfully installed feature mpOpenAPI-4.0.
+[31m<[32;5m====================[0m[31m-> 93%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 93%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 93%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 94%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 94%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 94%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 94%[0m
+[1A[2K[0mSuccessfully installed feature mpRestClient-4.0.
+[31m<[32;5m====================[0m[31m-> 95%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 95%[0m
+[1A[2K[0mAll features were successfully installed.
+[31m<[32;5m====================[0m[31m-> 95%[0m
+[1A[2K[0m[31m<[32;5m====================[0m[31m-> 100%[0m
+[1A[2K[0m
+[1A[2K[0mStart product validation...
+Product validation completed successfully.
+
+> Task :daytrader3-verification:prepareTestServer
+
+> Task :daytrader3-verification:loadFixture
+Deterministic fixture: 40 accounts, 40 quotes, zero holdings/orders; fixed timestamps and key seeds.
+
+> Task :daytrader3-verification:startTestServer
+
+Starting server daytrader3_Baseline.
+Server daytrader3_Baseline started with process ID 55460.
+
+> Task :daytrader3-verification:processTestResources NO-SOURCE
+> Task :daytrader3-verification:testClasses
+
+> Task :daytrader3-verification:test FAILED
+
+AuxiliaryInterfacesTest > facesRendersAQuoteAndRetainsViewStateOnPostback() FAILED
+    java.io.IOException at AuxiliaryInterfacesTest.java:19
+
+AuxiliaryInterfacesTest > restSingleAddressRejectsGetWithoutContentType() FAILED
+    org.opentest4j.AssertionFailedError at AuxiliaryInterfacesTest.java:69
+
+SessionContractTest > validLoginShowsTheCorrectAccountAndCash() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > separateCookieJarsKeepAccountsIsolated() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > unauthenticatedRequestsCannotReachPortfolio() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > registrationCreatesAnAccountWithTheRequestedOpeningBalance() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > profileUpdatePersistsAndTheNewPasswordAuthenticates() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > wrongPasswordCannotAuthenticate() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > logoutInvalidatesTheSession() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+SessionContractTest > profileUpdateRejectsMismatchedPasswordsWithoutChangingThePassword() FAILED
+    java.io.IOException at SessionContractTest.java:18
+
+TradingContractTest > buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int) > Full EJB synchronous FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int) > Direct JDBC synchronous FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int) > Session EJB to JDBC synchronous FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > buyAndSellPreserveCashFeesOrdersAndFreshSessionState(String, int, int, int) > Full EJB asynchronous two-phase FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > unknownQuotePurchaseRollsBackTradingState() FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > quoteReturnsTheFixedFixturePrice() FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > simultaneousPurchasesFromIndependentSessionsPreserveBothDebitsAndHoldings() FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+TradingContractTest > buyDebitsExecutionValueAndFeeAndCreatesHolding() FAILED
+    java.io.IOException at TradingContractTest.java:44
+
+19 tests completed, 18 failed
+
+> Task :daytrader3-verification:stopTestServer
+
+Stopping server daytrader3_Baseline.
+Server daytrader3_Baseline stopped.
+
+[Incubating] Problems report is available at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':daytrader3-verification:test'.
+> There were failing tests. See the report at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 2m 10s
+21 actionable tasks: 17 executed, 4 up-to-date

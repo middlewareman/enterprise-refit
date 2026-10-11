@@ -1,0 +1,62 @@
+[
+  {
+    "name": "baseline.FinancialCalculationsTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:18:24.126Z",
+    "hostname": "Monet.local",
+    "time": "0.074"
+  },
+  {
+    "name": "baseline.RestartPersistenceTest",
+    "tests": "14",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:18:43.616Z",
+    "hostname": "Monet.local",
+    "time": "1.018"
+  },
+  {
+    "name": "baseline.SessionContractTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:18:37.214Z",
+    "hostname": "Monet.local",
+    "time": "0.283"
+  },
+  {
+    "name": "baseline.TradingContractTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:18:33.485Z",
+    "hostname": "Monet.local",
+    "time": "3.424"
+  },
+  {
+    "name": "baseline.AuxiliaryInterfacesTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:18:36.917Z",
+    "hostname": "Monet.local",
+    "time": "0.291"
+  },
+  {
+    "name": "baseline.PersistedStateTest",
+    "tests": "11",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:18:46.441Z",
+    "hostname": "Monet.local",
+    "time": "0.277"
+  }
+]

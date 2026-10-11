@@ -60,6 +60,9 @@ server_java = args.server_java_home or args.java_home
 server_env = dict(env, JAVA_HOME=str(server_java), WLP_USER_DIR=str(build / "liberty-user"),
                   WLP_OUTPUT_DIR=str(build / "liberty-output"))
 manifest = {"subject": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=subject, text=True).strip(),
+            "subjectWorkingTree": subprocess.check_output(["git", "status", "--short"], cwd=subject, text=True),
+            "earSha256": hashlib.sha256(
+                (subject / "daytrader3-ee6/build/libs/daytrader3-ee6.ear").read_bytes()).hexdigest(),
             "platform": platform.platform(), "machine": platform.machine(), "cpuCount": os.cpu_count(),
             "javaHome": str(args.java_home), "heap": "-Xms256m -Xmx512m",
             "instrumentation": "No JaCoCo, debugger or application tracing",
@@ -77,7 +80,7 @@ for workers in [1, 4]:
         run.mkdir()
         gradle_arguments = list(args.gradle_argument)
         if args.runtime:
-            gradle_arguments.append("-PlibertyRoot=" + str(args.runtime.resolve()))
+            gradle_arguments.append("-PdaytraderLibertyHome=" + str(args.runtime.resolve()))
         execute(["./gradlew", "--offline", "--no-daemon", "--console=plain"] + gradle_arguments +
                 [":daytrader3-verification:loadFixture"], run / "fixture.log")
         jvm = build / "liberty-user/servers/daytrader3_Baseline/jvm.options"

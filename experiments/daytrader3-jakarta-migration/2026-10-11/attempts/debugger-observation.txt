@@ -1,0 +1,18 @@
+IDEA runtime inspection, 2026-10-11, clean Open Liberty 26.0.0.9 / Java 21.
+Non-suspending createOrder logpoints:
+16:14:02.371Z account10 buy id10001
+16:14:02.790Z account10 sell id10002
+16:15:28.127Z account20 buy id12001
+16:15:28.160Z account20 buy id13001
+
+Paused getOrders, TradeSLSBBean.java:376, userID=test:20.
+Call path getOrders -> TradeAction.getOrders -> TradeServletAction.doAccount -> TradeAppServlet.performTask.
+Account balance29597.10, orders IndirectList size0, holdings IndirectList size2.
+Provider org.eclipse.persistence.jpa.PersistenceProvider; shared cache UNSPECIFIED;
+account cache invalidation policy NoExpiryCacheInvalidationPolicy.
+Collection rendering during paused inspection may initialize lazy state; no source or database mutation was requested.
+The initialized/count logpoint expressions failed due to unavailable IDE provider type metadata (first inconvertible generics, then unknown expression type).
+After two failed expressions, one request was paused and inspected directly.
+One intermediate attempt could not connect after the native background command ended; switched to foreground server run.
+User breakpoints untouched. Agent breakpoints/configuration removed; server stopped.
+These diagnostic fixtures are excluded from ordinary acceptance and performance results.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.AuxiliaryInterfacesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-11T16:18:36.917Z" hostname="Monet.local" time="0.291">
+  <properties/>
+  <testcase name="facesRendersAQuoteAndRetainsViewStateOnPostback()" classname="baseline.AuxiliaryInterfacesTest" time="0.196"/>
+  <testcase name="restSearchReturnsTheFixedAddress()" classname="baseline.AuxiliaryInterfacesTest" time="0.08"/>
+  <testcase name="restSingleAddressRejectsGetWithoutContentType()" classname="baseline.AuxiliaryInterfacesTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

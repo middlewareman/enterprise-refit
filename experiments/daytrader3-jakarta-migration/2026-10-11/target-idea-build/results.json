@@ -1,0 +1,74 @@
+[
+  {
+    "module": "daytrader3-ee6-ejb",
+    "phase": "test",
+    "name": "baseline.FinancialCalculationsTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:19:15.733Z",
+    "hostname": "Monet.local",
+    "time": "0.08"
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "restartTest",
+    "name": "baseline.RestartPersistenceTest",
+    "tests": "14",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:27:45.163Z",
+    "hostname": "Monet.local",
+    "time": "1.202"
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "test",
+    "name": "baseline.SessionContractTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:27:35.851Z",
+    "hostname": "Monet.local",
+    "time": "0.79"
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "test",
+    "name": "baseline.TradingContractTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:27:36.670Z",
+    "hostname": "Monet.local",
+    "time": "1.271"
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "test",
+    "name": "baseline.AuxiliaryInterfacesTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:27:34.482Z",
+    "hostname": "Monet.local",
+    "time": "1.366"
+  },
+  {
+    "module": "daytrader3-verification",
+    "phase": "persistedTest",
+    "name": "baseline.PersistedStateTest",
+    "tests": "11",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-11T16:27:48.522Z",
+    "hostname": "Monet.local",
+    "time": "0.394"
+  }
+]

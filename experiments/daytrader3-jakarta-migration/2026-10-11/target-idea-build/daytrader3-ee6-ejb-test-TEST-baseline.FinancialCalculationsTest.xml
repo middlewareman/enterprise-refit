@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.FinancialCalculationsTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-11T16:19:15.733Z" hostname="Monet.local" time="0.08">
+  <properties/>
+  <testcase name="noHoldingsHaveZeroPurchaseValue()" classname="baseline.FinancialCalculationsTest" time="0.013"/>
+  <testcase name="[1] 120.00, 100.00, 20.00" classname="baseline.FinancialCalculationsTest" time="0.011"/>
+  <testcase name="[2] 80.00, 100.00, -20.00" classname="baseline.FinancialCalculationsTest" time="0.001"/>
+  <testcase name="[3] 100.00, 0.00, 0.00" classname="baseline.FinancialCalculationsTest" time="0.001"/>
+  <testcase name="holdingsValueUsesQuantityTimesPurchasePriceIncludingFractionalShares()" classname="baseline.FinancialCalculationsTest" time="0.002"/>
+  <testcase name="[1] 120.00, 100.00, 20.00" classname="baseline.FinancialCalculationsTest" time="0.001"/>
+  <testcase name="[2] 80.00, 100.00, -20.00" classname="baseline.FinancialCalculationsTest" time="0.002"/>
+  <testcase name="[3] 100.00, 100.00, 0.00" classname="baseline.FinancialCalculationsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

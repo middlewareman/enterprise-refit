@@ -1,0 +1,8 @@
+IDEA DayTrader Build: :daytrader3-ee6:build
+Run argument: --console=plain -Porg.gradle.java.installations.paths=/private/tmp/daytrader-target-probe/java21/jdk-21.0.12.1+1/Contents/Home
+Gradle JVM: zulu-1.8, as recorded in ignored .idea/gradle.xml. Project SDK remains temurin-25.
+Application toolchain/server: Temurin 21.0.12.1+1; external verification Java 8.
+44 integration cases executed; 8 units up-to-date from target-tests-2. Compilation incremental.
+GUI JDK registration/Gradle JVM selection attempts did not change configuration.
+Final native server status with explicit verification WLP_USER_DIR/WLP_OUTPUT_DIR and portable target runtime: Server daytrader3_Baseline is not running (exit 1). An earlier status without user-directory selection found no server; it was not used as shutdown evidence.
+Build log excludes repetitive carriage-return download progress only.

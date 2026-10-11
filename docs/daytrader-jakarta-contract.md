@@ -1,8 +1,10 @@
 # First DayTrader Jakarta EE 11 migration contract
 
 Prepared 2026-10-11 after the author chose to repair discovered defects before
-migration. This is an agent-prepared experiment contract and target proposal;
-no application transformation or target-platform acceptance run has occurred.
+migration, then authorized the proposed target. The compatibility contract below
+guided transformation. The [migration record](../experiments/daytrader3-jakarta-migration/2026-10-11/README.md)
+now reports two passing 52-case target suites and an IDEA integration build;
+performance investigation remains open because both p95 thresholds were crossed.
 
 ## Question and input
 
@@ -10,11 +12,13 @@ Can the repaired legacy EAR retain its trading behavior on Jakarta EE 11 and
 Java 21, with the same external scenario/assertion source and explicit platform
 adapters? Preserve the enterprise architecture and HTML trading interface.
 
-Source: subject commit `f43c5f2` on `repair/concurrent-account-updates`;
+Repaired application source: subject commit `f43c5f2` on `repair/concurrent-account-updates`;
 [repair evidence](../experiments/daytrader3-account-repair/2026-10-11/README.md).
 Keep original `a2d61af`, restored `37a8fac`, tooling `a73e1ef` and known failing
 `7a4b337` as separate evidence. The account correction is an intentional input
-change, not a migration result.
+change, not a migration result. Final frozen input is `d25398b` on
+`tooling/migration-contract-tests`, adding three JSF/REST characterization cases
+before transformation. All 52 pass on the baseline; hashes are in the input manifest.
 
 Freeze application, harness, workload and environment at their exact final
 commits/checksums before the transformation. Use a separate experiment branch
@@ -22,7 +26,7 @@ from this repaired source. Reference target implementations must be excluded by
 an enforced access boundary if the run is to assess independent agent performance.
 No such independent run or boundary has been established in this preparation.
 
-## Proposed target and compatibility evidence
+## Authorized target and initial compatibility evidence
 
 | Dimension | Proposed choice | Evidence and unresolved work |
 |---|---|---|
@@ -38,7 +42,9 @@ Official pages were consulted on 2026-10-11; documentation support is not
 reproduced deployment evidence. Exact binaries are now checksum-verified, product validation passes, and a
 corrected application-free feature/resource-configuration probe starts cleanly.
 [Probe evidence and initial LTPA failure](../experiments/daytrader3-migration-readiness/2026-10-11/README.md).
-Application compatibility and plugin integration remain unexecuted.
+These were preparation checks. Subsequent clean application builds, target
+deployment and plugin installation pass; see the migration record for executed
+evidence rather than treating the documentation links as verification.
 
 ## Permitted changes and invariants
 
@@ -49,7 +55,7 @@ modules, servlet/JSP/JSF interfaces, synchronous/JDBC/session-to-JDBC profiles,
 asynchronous two-phase mode, fee/pricing rules and the repaired account invariant.
 Change adapter/lifecycle/coverage configuration only as required by the target.
 
-Preserve the 49 named test cases, assertions and independently calculated monetary
+Preserve the original 49 and the three additional frozen test cases, assertions and independently calculated monetary
 expectations. Unknown-quote HTTP 500 and rollback remain characterized behavior;
 correcting the error interface is outside this migration. Preserve random
 post-trade quote changes: compare state using pre-operation execution quotes.
@@ -72,15 +78,16 @@ baseline defect and recorded before deciding whether to expand scope.
 
 1. Clean target compilation/package checks, intended bytecode, dependency inventory
    and exact server/JDK/configuration recorded.
-2. Ordinary target build passes all 49 cases from a reset fixture, including the
+2. Ordinary target build passes all 52 frozen cases from a reset fixture, including the
    concurrent account invariant, fresh sessions, restart, SQL and failure cleanup.
    Repeat the bounded concurrency scenario; record attempted/passed schedules.
 3. Run the same external workload and business-state checks under equivalent
    fixture/heap/load conditions. Compare raw per-run latency/throughput/resources;
    acknowledge changed JVM/provider and short baseline measurement windows.
-   Set performance acceptance criteria before looking at target results; none
-   have yet been accepted. Correctness success can be reported separately from
-   an incomplete or inconclusive performance comparison.
+   Before target results, define investigation thresholds: median throughput
+   below 80% of baseline or median per-run p95 above 120% of baseline triggers
+   investigation. These are local assessment rules, not production SLAs.
+   Correctness success is reported separately from performance acceptance.
 4. Verify IDEA build execution and isolated server shutdown. Interactive startup
    is a separate check; protect the author's existing database.
 5. Publish exact outcomes, failures, source/test changes, human interventions,
@@ -91,14 +98,20 @@ and mixed JDBC/EJB contention, JSF/browser behavior and REST address-book behavi
 The suite proves the named scenarios, not full application equivalence; successful
 deployment of those modules alone does not establish their untested functionality.
 
-## Next bounded iteration
+## Outcome and next bounded iteration
 
-First lengthen the baseline workload windows and establish comparison criteria.
-Then create a separate experiment branch from `f43c5f2`, inventory the necessary
-source/descriptor changes, and compile/package against the pinned Java 21 /
-Open Liberty target without weakening tests. Then deploy/run the strict suite.
-The probe revealed explicit keystore/LTPA configuration and XML Binding feature
-requirements; include those in the isolated target adapter. Source code is still
-untransformed. Use the [target artifact manifest](../experiments/daytrader3-migration-readiness/2026-10-11/artifact-manifest.json)
-to reprovision temporary binaries when necessary. Resolve sustained performance
-acceptance before reporting a completed performance comparison.
+Transformation on `experiment/001/jakarta-ee11` preserves all frozen test-source
+hashes; 77 application classes use Java 21 bytecode and provided APIs are absent
+from deployment. Both shell suites pass; IDEA runs 44 integration cases with
+eight unit results up to date. Provider compatibility required accepting the
+declared Collection interface and disabling shared caching after debugger evidence
+of stale inverse order collections. A REST guard preserves characterized HTTP 415.
+
+All six matching workloads pass financial checks. Throughput is 95.0%/93.5% of
+baseline at one/four workers; p95 is 122.9%/161.6%, crossing both investigation
+thresholds. Initial GC/resource/request review does not identify a cause.
+Recommend a separate longer alternating baseline/target measurement iteration
+with stabilization and aligned diagnostics. Interactive target startup and broader
+behavior remain unverified; no steady-state performance equivalence is claimed.
+Use the [target artifact manifest](../experiments/daytrader3-migration-readiness/2026-10-11/artifact-manifest.json)
+to reprovision temporary binaries when necessary.

@@ -1,0 +1,29 @@
+{
+  "earSha256": "bfe0e04d4e4f14e7b2bdd4c273e95413dcc9b9eb99e6fca8869f302198fb2166",
+  "entries": [
+    "META-INF/",
+    "META-INF/MANIFEST.MF",
+    "dt-ejb.jar",
+    "web.war",
+    "Rest.war",
+    "META-INF/application.xml",
+    "META-INF/DEPENDENCIES",
+    "META-INF/LICENSE.txt"
+  ],
+  "applicationClassVersions": {
+    "dt-ejb.jar": {
+      "65": 28
+    },
+    "web.war": {
+      "65": 43
+    },
+    "Rest.war": {
+      "65": 6
+    }
+  },
+  "bundledNestedJars": [],
+  "runtimeMetadataFiles": [
+    "openliberty.properties"
+  ],
+  "testSourcesChanged": []
+}
