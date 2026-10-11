@@ -1,0 +1,78 @@
+{
+  "run-1": [
+    {
+      "suite": "baseline.FinancialCalculationsTest",
+      "task": "test",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.PersistedStateTest",
+      "task": "persistedTest",
+      "tests": 11,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.RestartPersistenceTest",
+      "task": "restartTest",
+      "tests": 14,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.SessionContractTest",
+      "task": "test",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.TradingContractTest",
+      "task": "test",
+      "tests": 8,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "run-2": [
+    {
+      "suite": "baseline.FinancialCalculationsTest",
+      "task": "test",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.PersistedStateTest",
+      "task": "persistedTest",
+      "tests": 11,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.SessionContractTest",
+      "task": "test",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "baseline.TradingContractTest",
+      "task": "test",
+      "tests": 8,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    }
+  ]
+}

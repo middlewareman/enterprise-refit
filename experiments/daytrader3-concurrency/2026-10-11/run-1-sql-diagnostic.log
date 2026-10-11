@@ -1,0 +1,35 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+> Task :daytrader3-verification:compileJava UP-TO-DATE
+> Task :daytrader3-verification:processResources NO-SOURCE
+> Task :daytrader3-verification:classes UP-TO-DATE
+> Task :daytrader3-verification:compileTestJava UP-TO-DATE
+> Task :daytrader3-verification:processTestResources NO-SOURCE
+> Task :daytrader3-verification:testClasses UP-TO-DATE
+
+> Task :daytrader3-verification:persistedTest FAILED
+
+PersistedStateTest > cashHoldingsAndOrderCountsMatchBusinessExpectations(int) > persisted trading state for account 20 FAILED
+    org.opentest4j.AssertionFailedError at PersistedStateTest.java:53
+
+11 tests completed, 1 failed
+
+[Incubating] Problems report is available at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':daytrader3-verification:persistedTest'.
+> There were failing tests. See the report at: file:///Users/middlewareman/Work/Migration/subjects/upstream/sample.daytrader3/daytrader3-verification/build/reports/tests/persistedTest/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 7s
+3 actionable tasks: 1 executed, 2 up-to-date

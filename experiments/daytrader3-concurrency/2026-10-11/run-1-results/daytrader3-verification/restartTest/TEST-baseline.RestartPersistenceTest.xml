@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.RestartPersistenceTest" tests="14" skipped="0" failures="1" errors="0" timestamp="2026-10-11T15:00:59.861Z" hostname="Monet.local" time="1.031">
+  <properties/>
+  <testcase name="durable trading state after restart: account 4" classname="baseline.RestartPersistenceTest" time="0.643"/>
+  <testcase name="durable trading state after restart: account 5" classname="baseline.RestartPersistenceTest" time="0.06"/>
+  <testcase name="durable trading state after restart: account 10" classname="baseline.RestartPersistenceTest" time="0.036"/>
+  <testcase name="durable trading state after restart: account 11" classname="baseline.RestartPersistenceTest" time="0.027"/>
+  <testcase name="durable trading state after restart: account 12" classname="baseline.RestartPersistenceTest" time="0.03"/>
+  <testcase name="durable trading state after restart: account 13" classname="baseline.RestartPersistenceTest" time="0.027"/>
+  <testcase name="durable trading state after restart: account 20" classname="baseline.RestartPersistenceTest" time="0.024">
+    <failure message="org.opentest4j.AssertionFailedError: 29597.10 != 29835.05 ==&gt; expected: &lt;0&gt; but was: &lt;-1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 29597.10 != 29835.05 ==&gt; expected: &lt;0&gt; but was: &lt;-1&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at baseline.TradingContractTest.moneyEquals(TradingContractTest.java:38)
+	at baseline.RestartPersistenceTest.cashAndHoldingsSurviveRestart(RestartPersistenceTest.java:37)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:272)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:272)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+</failure>
+  </testcase>
+  <testcase name="order history survives restart: account 4" classname="baseline.RestartPersistenceTest" time="0.031"/>
+  <testcase name="order history survives restart: account 5" classname="baseline.RestartPersistenceTest" time="0.021"/>
+  <testcase name="order history survives restart: account 10" classname="baseline.RestartPersistenceTest" time="0.021"/>
+  <testcase name="order history survives restart: account 11" classname="baseline.RestartPersistenceTest" time="0.02"/>
+  <testcase name="order history survives restart: account 12" classname="baseline.RestartPersistenceTest" time="0.021"/>
+  <testcase name="order history survives restart: account 13" classname="baseline.RestartPersistenceTest" time="0.031"/>
+  <testcase name="order history survives restart: account 20" classname="baseline.RestartPersistenceTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

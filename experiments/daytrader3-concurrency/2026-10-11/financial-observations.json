@@ -1,0 +1,26 @@
+[
+  {
+    "run": "run-1",
+    "expectedCash": "29597.10",
+    "observedCash": "29835.05",
+    "clientRequestOverlapNanos": 19804292,
+    "intervals": {
+      "first.startNanos": 156096917317666,
+      "first.endNanos": 156096937135625,
+      "second.startNanos": 156096917331333,
+      "second.endNanos": 156096938596500
+    }
+  },
+  {
+    "run": "run-2",
+    "expectedCash": "29597.10",
+    "observedCash": "29762.05",
+    "clientRequestOverlapNanos": 17544709,
+    "intervals": {
+      "first.startNanos": 156268303460916,
+      "first.endNanos": 156268321005625,
+      "second.startNanos": 156268303455541,
+      "second.endNanos": 156268325283958
+    }
+  }
+]

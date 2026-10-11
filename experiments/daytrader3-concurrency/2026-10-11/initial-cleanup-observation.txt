@@ -1,0 +1,4 @@
+The initial failed full build did not execute stopTestServer.
+A native server status check reported: Server daytrader3_Baseline is running with process ID 42835.
+An explicit native server stop then reported: Server daytrader3_Baseline stopped.
+This observation is transcribed from the tool result; subsequent automatic shutdown evidence is retained in build-2.log and run-1-restart-diagnostic.log.

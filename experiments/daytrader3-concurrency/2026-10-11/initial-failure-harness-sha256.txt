@@ -1,0 +1,1 @@
+90c4a1372b316a151d2b9db00b71d53410c1e3e518d6ee034fb164884e6bdba9  daytrader3-verification/src/test/java/baseline/TradingContractTest.java

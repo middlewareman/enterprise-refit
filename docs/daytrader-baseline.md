@@ -9,6 +9,13 @@ and SQL persistence. An initial harness configuration mismatch was diagnosed
 with runtime debugger evidence and corrected without changing assertions. No load runs have been
 executed; numerical performance limits and the migration contract remain open.
 
+The subsequent [tooling milestone](../experiments/daytrader3-gradle-upgrade/2026-10-11/README.md)
+uses Gradle 8.14.3 / Liberty plugin 3.10.0 / Zulu Java 8u504 and preserves the
+application bytecode, expanded packaging and existing assertions. The latest
+[concurrency milestone](../experiments/daytrader3-concurrency/2026-10-11/README.md)
+is a failing characterization result, not a completed correctness baseline.
+Both are local commits awaiting separately authorized publication.
+
 ## Frozen application and current evidence
 
 Use restoration commit `37a8facf9729f271160aabc02dcf312fff7e0fc9`, preserving original
@@ -300,12 +307,13 @@ test results and coverage, repeated performance/resource measurements, known def
 and accepted scope/tolerances. A fresh baseline run must reproduce the checks;
 unmeasured dimensions stay explicitly unknown.
 
-**Next action (second author-assigned iteration, 2026-10-11):** add bounded
-same-account concurrent purchases through independent sessions, preserving the
-existing checks and extending financial, order/holding, restart and SQL assertions.
-The [tooling upgrade](../experiments/daytrader3-gradle-upgrade/2026-10-11/README.md)
-now passes clean before/after 44-case builds under Gradle 8.14.3 / Liberty plugin
-3.10.0 / Java 8u504, with all 452 expanded EAR entries unchanged. Application Java
-sources, IBM Liberty 24.0.0.9 and Java EE 6 remain unchanged. Finish controlled
-performance measurements and the migration contract before application
-transformation.
+**Next action (updated after the two assigned iterations):** prepare a separate
+baseline repair contract for concurrent cash updates, with the intended financial
+behavior correction explicitly reviewed before application changes. The
+[tooling upgrade](../experiments/daytrader3-gradle-upgrade/2026-10-11/README.md)
+passes all original checks. The
+[concurrency experiment](../experiments/daytrader3-concurrency/2026-10-11/README.md)
+adds five cases and exposes a durable lost debit in two reset fixtures; its
+49-case suite is red. Original 44 checks still pass across the recorded phases.
+Keep strict financial expectations, then validate an accepted repair before
+controlled performance measurements and the Jakarta migration contract.

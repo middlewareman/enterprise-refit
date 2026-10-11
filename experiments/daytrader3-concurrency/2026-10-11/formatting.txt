@@ -1,0 +1,3 @@
+IDEA MCP reformat_file returned ok for TradingContractTest.java, RestartPersistenceTest.java, PersistedStateTest.java and the verification build.gradle.
+All source corrections were applied through IDEA apply_patch to preserve open document state.
+Style: root .idea/codeStyles/Project.xml.

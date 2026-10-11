@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.TradingContractTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2026-10-11T14:57:53.408Z" hostname="Monet.local" time="16.389">
+  <properties/>
+  <testcase name="Full EJB synchronous" classname="baseline.TradingContractTest" time="0.532"/>
+  <testcase name="Direct JDBC synchronous" classname="baseline.TradingContractTest" time="0.213"/>
+  <testcase name="Session EJB to JDBC synchronous" classname="baseline.TradingContractTest" time="0.143"/>
+  <testcase name="Full EJB asynchronous two-phase" classname="baseline.TradingContractTest" time="0.158"/>
+  <testcase name="unknownQuotePurchaseRollsBackTradingState()" classname="baseline.TradingContractTest" time="0.124"/>
+  <testcase name="quoteReturnsTheFixedFixturePrice()" classname="baseline.TradingContractTest" time="0.013"/>
+  <testcase name="simultaneousPurchasesFromIndependentSessionsPreserveBothDebitsAndHoldings()" classname="baseline.TradingContractTest" time="15.13">
+    <failure message="java.lang.AssertionError: Order 10005 did not become completed within 15 seconds" type="java.lang.AssertionError">java.lang.AssertionError: Order 10005 did not become completed within 15 seconds
+	at baseline.TradingContractTest.awaitOrder(TradingContractTest.java:73)
+	at baseline.TradingContractTest.simultaneousPurchasesFromIndependentSessionsPreserveBothDebitsAndHoldings(TradingContractTest.java:247)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+</failure>
+  </testcase>
+  <testcase name="buyDebitsExecutionValueAndFeeAndCreatesHolding()" classname="baseline.TradingContractTest" time="0.069"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
