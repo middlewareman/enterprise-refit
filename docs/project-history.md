@@ -66,6 +66,12 @@ captures source contributions, existing decisions and open installation question
 [ADR 0002](decisions/0002-knowledge-and-evidence-provenance.md) records the standing
 attribution requirements without reclassifying agent choices as author decisions.
 
+The author later requested moving the entire detailed README and committing the
+relocation separately for traceability. [ADR 0003](decisions/0003-readme-relocation.md)
+records the guide's new location, minimal README and updated agent navigation.
+The portfolio rewrite remains a proposed subsequent step; the original wording
+and earlier documentation decisions are preserved.
+
 ## Session handoff
 
 The bullets below preserve earlier observations and recommendations. Their status,

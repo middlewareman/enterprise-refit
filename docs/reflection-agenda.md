@@ -33,6 +33,16 @@ Assess future use by whether a new session can identify the current objective,
 accepted revision, remaining gap and next action without reconciling status copies.
 The split itself does not establish improved efficiency.
 
+## Portfolio accessibility
+
+The author requested making the repository easier for prospective clients to
+understand. The agent recommended a concise README and featured DayTrader case
+study linked to the detailed evidence. The author authorized relocating the
+entire README first, in a separate commit; [ADR 0003](decisions/0003-readme-relocation.md)
+records that preservation step. A portfolio rewrite remains proposed. Assess
+the entry point by whether a visitor can identify the problem, demonstrated
+result, author/AI contributions and evidence without reading the full guide.
+
 ## Knowledge and provenance
 
 Inventory project documents, application/test evidence, skills, official

@@ -2,7 +2,7 @@
 
 Recorded: 2026-10-09
 
-The eight public repositories listed in the README are registered in [.gitmodules](../.gitmodules). The initial selection rule was to capture each repository's default-branch HEAD when added, retaining its full Git history. These are starting snapshots for inspection; no build, runtime behavior, or migration result has been validated. Experiment revisions may be selected differently after feasibility work and must be recorded explicitly.
+The eight public repositories listed in the [project guide](project-guide.md) are registered in [.gitmodules](../.gitmodules). The initial selection rule was to capture each repository's default-branch HEAD when added, retaining its full Git history. These are starting snapshots for inspection; no build, runtime behavior, or migration result has been validated. Experiment revisions may be selected differently after feasibility work and must be recorded explicitly.
 
 ## Initial revisions and license observations
 

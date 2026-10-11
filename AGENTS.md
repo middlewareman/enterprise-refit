@@ -2,7 +2,7 @@
 
 ## Purpose and language
 
-This project investigates and compares approaches to modernizing legacy enterprise Java. Read [README.md](README.md) for the purpose, vocabulary, experiment workflow, and evidence requirements. Read [PLAN.md](PLAN.md) for the current verified state, active milestone, unresolved issues, and next action. Historical decisions and handoffs are in [project history](docs/project-history.md); consult them and linked experiment records when relevant, rather than treating historical next actions as current instructions.
+This project investigates and compares approaches to modernizing legacy enterprise Java. [README.md](README.md) is the public entry point. Read the [project guide](docs/project-guide.md) for the purpose, vocabulary, experiment workflow, and evidence requirements. Read [PLAN.md](PLAN.md) for the current verified state, active milestone, unresolved issues, and next action. Historical decisions and handoffs are in [project history](docs/project-history.md); consult them and linked experiment records when relevant, rather than treating historical next actions as current instructions.
 
 Write project documentation, plans, experiment reports, and reusable instructions in English, even when the conversation uses another language.
 
@@ -10,7 +10,7 @@ The author intends to use the project as a portfolio showing how AI supports eng
 
 ## Continuity across sessions
 
-- At the start of a new session or after losing context, read README.md and PLAN.md before substantive work. Read applicable instructions in the directories involved.
+- At the start of a new session or after losing context, read README.md, docs/project-guide.md and PLAN.md before substantive work. Read applicable instructions in the directories involved.
 - Check the plan against the actual workspace. Resolve stale status using inspectable evidence and distinguish facts, hypotheses, recommendations, and accepted decisions.
 - Briefly state the active milestone, intended outcome, and connection between the requested task and the project goal. Keep this proportional to the task.
 - Treat repository documents as durable context. Do not assume access to earlier chats or that another agent or integration automatically discovers these instructions. When checking a new integration, verify which instructions it loaded.

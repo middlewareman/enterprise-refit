@@ -6,7 +6,7 @@ Status: a provisional account requiring disclosure review, based on reviewed doc
 
 ## Source basis
 
-The [project README](../README.md#theseus-an-independent-starting-point) describes Theseus as an approach developed iteratively by the author while working through migration problems, before stepping back to survey existing approaches. That is the project's retrospective account. It does not establish that the author had no prior exposure to related ideas or that the techniques are novel.
+The [project guide](project-guide.md#theseus-an-independent-starting-point) describes Theseus as an approach developed iteratively by the author while working through migration problems, before stepping back to survey existing approaches. That is the project's retrospective account. It does not establish that the author had no prior exposure to related ideas or that the techniques are novel.
 
 The author answer and its agent-written summary are retained privately. Their detailed narrative is withheld from this account.
 

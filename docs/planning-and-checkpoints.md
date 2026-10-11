@@ -83,7 +83,7 @@ no reference application target was inspected.
 ### 1. AI-assisted code migration: phase commits and human review
 
 Reference: **rmadabusiml/ai-assisted-code-migration**, the Claude Code / Bank of
-Anthos demonstration listed in [README](../README.md#reference-approaches-and-evaluation-resources).
+Anthos demonstration listed in the [project guide](project-guide.md#reference-approaches-and-evaluation-resources).
 Inspected revision: `62e3394379a69a153aef8508c0229070148d98d0`.
 
 - **Source:** [Core Migration checkpoint, pinned MIGRATION.md](https://github.com/rmadabusiml/ai-assisted-code-migration/blob/62e3394379a69a153aef8508c0229070148d98d0/MIGRATION.md#L253-L326)
@@ -108,7 +108,7 @@ test-generation phase also differs from our pre-transformation frozen evaluation
 ### 2. Amazon JavaMigration: experiment identity and execution evidence
 
 Reference: **amazon-science/JavaMigration**, the research agent implementation
-listed in [README](../README.md#reference-approaches-and-evaluation-resources).
+listed in the [project guide](project-guide.md#reference-approaches-and-evaluation-resources).
 Inspected revision: `35b1dce3a5698cde62916ef0312a43f9b0895de9`.
 
 - **Source:** [Repository implementation at the inspected revision](https://github.com/amazon-science/JavaMigration/blob/35b1dce3a5698cde62916ef0312a43f9b0895de9/src/java_migration_agent/core/repository.py)

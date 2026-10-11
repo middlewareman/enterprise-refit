@@ -14,16 +14,26 @@ traceability limits and later reflection sources distinguished. [ADR 0002](docs/
 captures standing attribution requirements. This supports the project's comparison
 and portfolio goals while retaining corrections and evidence.
 
-**Next action:** complete the IDEA installation/connection and skill-origin fields
-in the provenance inventory from the author's setup account, distinguishing
-recollection from verified configuration. Retain unknowns where details cannot be
-recovered; resume engineering only at the author's request.
+The author authorized relocating the entire detailed README and committing the
+move separately for traceability. The [project guide](docs/project-guide.md) now
+contains the original wording with relative links adjusted; the minimal
+[README](README.md) points to it. [ADR 0003](docs/decisions/0003-readme-relocation.md)
+records the accepted relocation and updated agent navigation. A concise portfolio
+introduction and featured DayTrader case-study summary remain agent recommendations.
+
+**Next action:** draft the concise portfolio README for author review, using the
+existing evidence and keeping the editorial changes separate from the relocation.
+Migration and performance engineering remain paused.
 
 ## Verified state and evidence
 
 - Root planning reflection: `f69cae4`; documentation split: `935a656` (including
   the corrected history table); debug enablement: `9a6cde6`. The provenance
   follow-up is documentation-only; no application check was rerun.
+- README relocation against root `b44a5d4` passes exact content preservation
+  (271 lines, 29 relative-link changes), 126 local links/10 anchors and whitespace
+  checks. ADR 0003 records the evidence. This local relocation milestone does
+  not change subject/gitlink or reference revisions.
 - DayTrader is pinned at `6e6cfa787553e918e5c90edfd1e8882ce2c84d54` on
   `experiment/001/jakarta-ee11`, with frozen input `d25398b`. The
   [migration record](experiments/daytrader3-jakarta-migration/2026-10-11/README.md)
@@ -58,6 +68,9 @@ recovered; resume engineering only at the author's request.
 
 ## Parked work
 
+- IDEA installation/connection and skill-origin provenance: revisit when the
+  author supplies the setup account; distinguish recollection from verified
+  configuration and retain unrecoverable details as unknown.
 - Longer alternating performance measurements: revisit when engineering resumes;
   retain correctness settings and the predefined thresholds.
 - Spring Boot/Quarkus, framework replacement, broader subject/reference comparison:
@@ -69,6 +82,6 @@ recovered; resume engineering only at the author's request.
 
 Earlier decisions and checkpoints are in [project history](docs/project-history.md).
 The [reflection agenda](docs/reflection-agenda.md) links completed assessments and
-remaining questions. [README](README.md) and [AGENTS](AGENTS.md) define the stable
-method and working agreements; update this plan by replacing current status,
-not appending a session transcript.
+remaining questions. The [project guide](docs/project-guide.md) and [AGENTS](AGENTS.md)
+define the stable method and working agreements; update this plan by replacing
+current status, not appending a session transcript.

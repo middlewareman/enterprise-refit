@@ -5,6 +5,10 @@
 - Origin: The author requested committing the planning reflection, then implementing
   its document split and updating the working instructions.
 
+The README's purpose/method responsibility was subsequently relocated to the
+[project guide](../project-guide.md) under [ADR 0003](0003-readme-relocation.md).
+The original decision and its validation below are retained as historical evidence.
+
 ## Context
 
 PLAN.md accumulated current status, a decision log, superseded handoffs and a
