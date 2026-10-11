@@ -207,6 +207,11 @@ recreate the whole live IDE integration automatically.
 
 ## Knowledge used and next practice
 
+The later [knowledge/provenance inventory](daytrader-knowledge-provenance.md)
+links these source categories to concrete decisions and captures unresolved
+installation fields. It distinguishes this migration context from subsequent
+planning-reference inspections and enablement research.
+
 Project README/PLAN/AGENTS, the migration contract, subject code, frozen tests and
 previous experiment records supplied local context. Tool schemas supplied the
 operation interfaces. The debugger skill supplied procedural guidance. Official

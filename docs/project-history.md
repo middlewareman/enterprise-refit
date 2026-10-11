@@ -60,6 +60,12 @@ On 2026-10-11 the author requested committing the reflection and then implementi
 its documentation split and updated instructions. [ADR 0001](decisions/0001-documentation-and-checkpoints.md)
 records this accepted project-wide decision. Migration/performance work remains paused.
 
+The author subsequently requested persistent documentation of the remaining
+knowledge/provenance reflection. [The inventory](daytrader-knowledge-provenance.md)
+captures source contributions, existing decisions and open installation questions;
+[ADR 0002](decisions/0002-knowledge-and-evidence-provenance.md) records the standing
+attribution requirements without reclassifying agent choices as author decisions.
+
 ## Session handoff
 
 The bullets below preserve earlier observations and recommendations. Their status,

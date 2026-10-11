@@ -45,7 +45,10 @@ consulted for this migration. Public project descriptions of Theseus were presen
 in context; earlier private-history work is a separate activity. Individual
 pretrained knowledge sources are not traceable.
 
-Next useful result: a concise inventory linking each source category to concrete
-migration choices and separating inspected sources, observed results and general
-knowledge. Stop when that account and its traceability limits are reviewable; do
-not turn it into an attempt to reconstruct unrecorded model reasoning.
+The [knowledge/provenance inventory](daytrader-knowledge-provenance.md) now links
+source categories to concrete choices, preserves decision attribution and separates
+migration context from later reference and enablement study. [ADR 0002](decisions/0002-knowledge-and-evidence-provenance.md)
+records the standing attribution requirements. Exact installation/connection and
+skill-origin details remain open; the author has been asked for their setup account.
+The next useful result is to fill those fields from attributable information or
+retain them as unknown. Do not reconstruct unrecorded model reasoning.

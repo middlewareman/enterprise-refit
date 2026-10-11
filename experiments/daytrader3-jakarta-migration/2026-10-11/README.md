@@ -226,6 +226,12 @@ Exact served model, token/cost totals and effort remain unavailable.
 
 ## Coordinated publication checkpoint
 
+The later [knowledge/provenance reflection](../../../docs/daytrader-knowledge-provenance.md)
+links recorded inputs, official guidance, skill/tool use, decisions and observations.
+It distinguishes migration context from subsequent reference inspections and
+enablement research; this retrospective documentation adds no executed acceptance
+claim and leaves unavailable source/installation details explicit.
+
 The author pushed the subject branch. Remote verification with
 `git ls-remote origin refs/heads/experiment/001/jakarta-ee11` returns
 `6e6cfa787553e918e5c90edfd1e8882ce2c84d54`, matching the local result and

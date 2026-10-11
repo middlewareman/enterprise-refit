@@ -8,19 +8,22 @@ Last updated: 2026-10-11
 Migration/performance engineering remains paused by author request. The planning
 reflection and two pinned reference inspections are committed in `f69cae4`;
 the author has accepted the documentation split in [ADR 0001](docs/decisions/0001-documentation-and-checkpoints.md).
-Current planning, history, remaining reflection topics and operating rules now
-have separate homes. This supports the project's comparison and portfolio goals
-while retaining corrections and evidence.
+The [knowledge/provenance inventory](docs/daytrader-knowledge-provenance.md) now
+links source categories, concrete migration decisions and recorded checks, with
+traceability limits and later reflection sources distinguished. [ADR 0002](docs/decisions/0002-knowledge-and-evidence-provenance.md)
+captures standing attribution requirements. This supports the project's comparison
+and portfolio goals while retaining corrections and evidence.
 
-**Next action:** produce the knowledge/provenance inventory outlined in the
-[reflection agenda](docs/reflection-agenda.md#knowledge-and-provenance), linking
-source categories to concrete DayTrader decisions and stating traceability gaps.
-Stop when the account is reviewable; resume engineering only at the author's request.
+**Next action:** complete the IDEA installation/connection and skill-origin fields
+in the provenance inventory from the author's setup account, distinguishing
+recollection from verified configuration. Retain unknowns where details cannot be
+recovered; resume engineering only at the author's request.
 
 ## Verified state and evidence
 
-- Root reflection commit: `f69cae4`; debug enablement: `9a6cde6`. This split is a
-  documentation change; no application check was rerun.
+- Root planning reflection: `f69cae4`; documentation split: `935a656` (including
+  the corrected history table); debug enablement: `9a6cde6`. The provenance
+  follow-up is documentation-only; no application check was rerun.
 - DayTrader is pinned at `6e6cfa787553e918e5c90edfd1e8882ce2c84d54` on
   `experiment/001/jakarta-ee11`, with frozen input `d25398b`. The
   [migration record](experiments/daytrader3-jakarta-migration/2026-10-11/README.md)

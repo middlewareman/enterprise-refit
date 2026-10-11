@@ -216,6 +216,12 @@ Read history and detailed records when they serve the current task. Preserve
 evidence by linking it, rather than maintaining duplicate current-status accounts.
 An issue board or planning automation remains conditional on a demonstrated need.
 
+The [DayTrader provenance inventory](docs/daytrader-knowledge-provenance.md) links
+instructions, skills, official documentation, model knowledge and recorded checks
+to concrete choices. [ADR 0002](docs/decisions/0002-knowledge-and-evidence-provenance.md)
+records the standing attribution rules, including explicit unknowns and separation
+of migration context from later reflection sources.
+
 [How the agent used IntelliJ IDEA](docs/idea-agent-workflow.md) records concrete
 formatting, editing, debugger and build-tool use in DayTrader, the supplied skill,
 GUI limitations, author contributions and alternatives. It distinguishes observed
