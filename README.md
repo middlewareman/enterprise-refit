@@ -107,6 +107,12 @@ The following are starting points for investigation. Repository documentation an
 
 For each reference, record its pinned revision, prerequisites, license, claimed scope, available evidence, and what we actually reproduce. Some will inform our method without being executable competitors.
 
+The [planning and checkpoint reflection](docs/planning-and-checkpoints.md#comparison-with-two-reference-approaches)
+compares specific practices in the pinned AI-assisted code migration documentation
+and Amazon JavaMigration source with our DayTrader experience. It links the inspected
+sources and distinguishes their contribution to our recommendations from unverified
+outcome claims. This is a descriptive comparison; neither reference approach was run.
+
 ### Theseus: an independent starting point
 
 Theseus has a special place in this investigation because it was developed iteratively by the project's author while working through migration problems, before stepping back to survey existing approaches. It preserves an independent first attempt, with room for both naive assumptions and original ideas.
